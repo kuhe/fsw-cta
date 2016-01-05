@@ -1,0 +1,52 @@
+{terms
+	{aks74u_v3					firing "aks74u_v3"}
+	{as_val_v1					firing "as_val_v1"}
+	{m4a1_v4					firing "m4a1_v4"}
+	{m4a1cqbr_v3				firing "m4a1cqbr_v3"}
+	{mp5_v1b					firing "mp5_v1b"}
+	{uzi_v3						firing "uzi_v3"}
+	{knife_v1					firing "knife_v1"}
+	{knife_v1b					firing "knife_v1b"}
+	{knife_v2					firing "knife_v2"}
+	{knife_v2b					firing "knife_v2b"}
+	{knife_v3					firing "knife_v3"}
+	{knife_v3b					firing "knife_v3b"}
+	{knife_v4					firing "knife_v4"}
+	{knife_v4b					firing "knife_v4b"}
+	{smoke_paradrop_ammo		firing "smoke_paradrop_ammo"}
+	{smoke_paradrop_ammo_heavy	firing "smoke_paradrop_ammo_heavy"}
+	{anm8						firing "anm8"}
+	{rdg_m						firing "rdg-m"}
+	{m67						firing "m67"}
+	{m84						firing "m84"}
+	{molotov					firing "molotov"}
+	{rgd_5						firing "rgd-5"}
+	{c4							firing "c4"}
+	{claymore					firing "claymore"}
+
+	{actor_tank    				actor  "tank"  }
+	{actor_cannon  				actor  "cannon"}
+	{human 		   				actor  "human" }
+    {zero 		   				actor  "zero" }
+	{vehicle_01    				actor  "vision_vehicle_minimum"}
+	{vehicle_02  				actor  "vision_vehicle_low"}
+	{vehicle_03   				actor  "vision_vehicle_medium"}
+	{vehicle_04    				actor  "vision_vehicle_high"}
+	{vehicle_05    				actor  "vision_vehicle_maximum"}
+	{cannon_01     				actor  "vision_cannon_minimum"}
+	{cannon_02     				actor  "vision_cannon_low"}
+	{cannon_03     				actor  "vision_cannon_medium"}
+	{cannon_04     				actor  "vision_cannon_high"}
+	{cannon_05     				actor  "vision_cannon_maximum"}
+	
+	{sniper		   				breed   "sniper"}
+}
+
+{ranges
+	{human
+		{human}
+	}
+	{vehicle
+		{vehicle_03}
+	}
+}

@@ -1,0 +1,44 @@
+;// S-12K standard
+
+{from "pattern bullet"
+	{tag "smg shotgun weapon bullet to_hand shoot_walking"}
+	{filling "ammo 12gauge" 8 120}
+	{inventory
+		{size 6 2}
+		{link_bone "gun_back"}
+		{weight 100}
+	}
+	{entity "saiga12"}
+	{cursor "carbine_on"}
+	{cursorReloading "carbine_reload"}
+	{burst
+		{short 1}
+		{Long 6}
+	}
+	{special
+		{throw_off_always}
+	}
+	{mass 5}
+	{reloadSound "shotgun"}
+	{fireSound "small_arms/saiga/"}
+	{traceFreq 1.0}
+	{Automatic}
+	
+	{range 35 40}
+	{spreading 0.1}
+
+    {RelaxationTime 0.1}
+	("recoveryTime" r(300))
+	{Automatic}
+	{rechargeTime 4.0}
+	("speed" s(500))
+	("burst_medium")
+
+	{ProjectileDamage 8}
+	{ProjectileDamageClip 8}
+	{projectileDamageTable {22.5 5} {250 0}}
+	{healthDamage 600}
+	{HealthDamageClip 600}
+	{calibre 9.72}
+	("accuracy_smg")
+}

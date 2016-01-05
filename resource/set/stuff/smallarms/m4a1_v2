@@ -1,0 +1,6 @@
+;//	M4A1 standard + holographic sight
+
+{from "m4a1_v1"
+	{entity "m4a1_h"}
+	("accuracy_assault_improved")
+}

@@ -1,0 +1,9 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "civilian"}
+	{portrait "hint"}
+	{icon "hint"}
+	{icon_priority 0}
+	{nationality rus}
+}

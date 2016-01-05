@@ -1,0 +1,34 @@
+;//	Mini standard + holographic sight + hand grip
+
+{from "pattern bullet"
+	{tag "pistol weapon bullet to_hand shoot_walking"}
+	{entity "mini_uzi_hg"}
+	{fireSound	"small_arms/uzi/"}
+	{reloadSound "mp44"}	
+	
+	{filling "ammo 9x19c" 30 450}
+	{inventory
+		{size 4 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 3}
+	{traceFreq 0.001}
+	{Automatic}
+
+	{rechargeTime 8.0}
+	("recoveryTime" r(950))
+ 	("speed" s(400))
+	("burst_medium")
+	("spreading_medium")
+	("accuracy_smg_improved")
+;	("accuracy_boost")
+	
+	{healthDamage 100}
+	
+	{projectileDamage 5}
+	{projectileDamageClip 5}
+	{projectileDamageTable {12.5 3} {250 0}}
+
+	{range 55 60}
+}

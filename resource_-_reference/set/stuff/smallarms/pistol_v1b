@@ -1,0 +1,34 @@
+;//	PM Makarov standard
+
+{from "pattern bullet"
+	{tag "pistol weapon bullet to_hand shoot_walking"}
+	{entity "pm"}
+	{fireSound	"small_arms/tokarev/"}
+	{reloadSound "colt"}
+	
+	{filling "ammo 9x18" 10 60}
+	{inventory
+		{size 2 1}
+		{fsm "pistol"}
+		{weight 100 }
+	}
+	{mass 1}
+	{traceFreq 0.001}
+	{Automatic_ai}
+	
+	{rechargeTime 2.5}
+	("recoveryTime" r(500))
+ 	("speed" s(381))
+	("burst_pistol")
+	("spreading_short")
+	("accuracy_pistol")
+;	("accuracy_boost")
+
+	{healthDamage 150}
+	
+	{ProjectileDamage 3}
+	{ProjectileDamageClip 3}
+	{projectileDamageTable {12.5 3} {250 0}}
+	
+	{range 45 50}
+}

@@ -1,0 +1,13 @@
+{bullet
+	{tag "big mortar_smoke"}
+	{inventory
+;		{size 4 2}
+		{size 2 1}
+		{weight 70}
+	}
+	{mass 2}
+	{entity "2b14_ammo_sm"}
+	{view "2b14_ammo_sm"
+	}
+	{detonationThickness 1}
+}

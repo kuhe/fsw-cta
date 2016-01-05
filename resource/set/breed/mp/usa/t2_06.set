@@ -1,0 +1,27 @@
+{breed
+	{skin "usa_t2_3"}
+	{portrait "usa_t2"}
+	{nationality usa}
+	{icon "squad2"}
+	{icon_priority 2}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t2")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "m203a2_v1" filled}
+		{item "ammo 40x46" 20}
+		{item "grenade m67" 1}
+		{item "grenade anm8" 1}
+		{item "knife_v1" 1}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

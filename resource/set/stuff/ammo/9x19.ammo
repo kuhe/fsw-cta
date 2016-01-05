@@ -1,0 +1,18 @@
+{bullet
+	{tag "bullet small stackable pierce 9x19b 9x19c"}
+	{inventory
+		{weight 6.6}
+		{block 15}
+		{size 1 1}
+		{fsm "belt"}
+	}
+	{mass 0.013}
+	{entity "9x19"}
+	{trace
+		{view "/texture/fx/trace_red1.mtl"
+			{ScaleY 0.075}
+			{Light 1}
+		}
+		{length 0.5}
+	}
+}

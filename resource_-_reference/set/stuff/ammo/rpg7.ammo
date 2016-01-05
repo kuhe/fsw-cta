@@ -1,0 +1,17 @@
+{bullet
+	{tag "ammo ap rocketlauncher shell dropboxed cumulative pierce"}
+	{entity "rpg7_ammo"}
+	{view "rpg7_ammo"
+		{tail "bazooka_tail" "tail"}
+	} 
+	{inventory
+		{weight 50}
+		{size 1 5}
+	}	
+	{mass 2.75}
+	{damage blastwave
+		{energy 1}
+		{area 2 8}
+	}
+	{cumulative 0.7}
+}

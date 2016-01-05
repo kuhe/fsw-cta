@@ -1,0 +1,34 @@
+;----- Vehicles -----
+
+
+;같컂eneric같�
+
+(define "generic_v"
+    {charge %c}
+    {score %sc}
+    {tags "%t"}
+    {group "%g"}
+    {button "%b"}
+    {cw %cw}
+    {cp %cp}
+)
+
+
+;같컂eneric_v같�
+
+; 1 vehicle with tankmen
+(define "v"
+    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp/%s/tx_tankman_01:%n1 )"}
+)
+
+; 1 vehicle with supporters
+(define "vs"
+    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp/%s/t2_01:%n1 )"}
+)
+
+;------------------------------------------------------------------------------
+
+	(include "vehicles_usa.set")
+	(include "vehicles_grm.set")

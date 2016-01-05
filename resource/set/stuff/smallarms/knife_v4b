@@ -1,0 +1,8 @@
+;//	Ghurka standard
+
+{from "knife_v1"
+	{entity "knife_gurkha"}
+	{inventory
+		{size 3 1}
+	}	
+}

@@ -1,0 +1,10 @@
+;//	MP-443 Grach standard + laser
+
+{from "pistol_v1b"
+	{entity "mp443"}
+	{fireSound	"small_arms/revolver/"}
+	{filling "ammo 9x18" 18 54}
+ 	("speed" s(325))
+	("accuracy_pistol_improved")
+	{healthDamage 200}
+}

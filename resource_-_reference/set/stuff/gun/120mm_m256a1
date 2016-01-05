@@ -1,0 +1,20 @@
+{from "pattern gun"
+	{filling "bullet120"}
+	{fireSound "gun/cannon_4/"}
+	{reloadSound "new/weapon_tankcannon_reload"}
+	{rechargeTime 8}
+	("range_maximum")
+	
+	("speed" s(1000))
+	("caliber_large")
+	{projectileDamage 1400}
+	("damage" a(1400) b(1200) c(1000) d(800) e(600))
+	{parameters "heat"
+		("damage_cumulative" a(1000))
+	}
+	
+	("accuracy_maximum")
+	
+	{crosshair "crosshair2"}
+	{crosshairReloading "crosshair2_reload"}
+}

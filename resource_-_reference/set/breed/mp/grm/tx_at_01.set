@@ -1,0 +1,27 @@
+{breed
+	{skin "grm_t2_1"}
+	{portrait "grm_t2"}
+	{nationality grm}
+	{icon "squad9"}
+	{icon_priority 3}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t2")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "aks74_v1" filled}
+		{item "rpg7_v1" filled}
+		{item "ammo rpg7" 6}
+		{item "grenade rgd-5" 2}
+		{item "grenade rdg-m" 1}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

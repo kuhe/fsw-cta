@@ -1,0 +1,38 @@
+;//	MK 19 grenade launcher standard
+
+{from "pattern bullet"
+	{tag "mgun weapon bullet to_hand"}
+	{entity "mk19"}
+	{fireSound	"mgun/browning_burst/"}
+	{reloadSound "ptrd"}
+	
+	{filling "ammo mk19" 32}
+	{inventory
+		{size 6 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 31}
+	{traceFreq 1.0}
+	{Automatic}
+	
+	{rechargeTime 15.0}
+	("recoveryTime" r(325))
+	("speed2" s(240))
+	("burst_very_short")
+	("spreading_short_mgun")
+	("accuracy_grenade_launcher")
+;	("accuracy_boost")
+
+	{healthDamage 200}
+
+	{projectileDamage 30}
+	{projectileDamageTable {25 30} {50 25} {75 15} {100 5}}
+	{projectileDamageThreshold 1.1}
+
+	{range 75 80}
+	{aimingTolerance 1}
+	
+	{cursor "cannon_on_fg"}
+	{cursorReloading "cannon_reload_fg"}
+}

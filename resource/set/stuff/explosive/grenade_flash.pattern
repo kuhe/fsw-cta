@@ -1,0 +1,13 @@
+{from "pattern throwable"
+	{tag "fg flashbang"}
+	{throw
+		{range 17.5}
+		{startAngle 40}		
+		{spreading 0.1}
+	}
+	{damage blastwave
+		{energy 0.5} ; kg
+		{area 1.5 5.0}
+	}
+	{possibleDamageRadius 5}
+}

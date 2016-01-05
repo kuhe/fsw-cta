@@ -1,0 +1,7 @@
+;//	AKS-74 standard + holographic sight + laser
+
+{from "aks74_v1"
+	{entity "aks74_hg"}
+	("accuracy_assault_improved")
+	("spreading_medium")
+}

@@ -1,0 +1,34 @@
+;//	G3A4 standard + holographic sight + laser
+
+{from "pattern bullet"
+	{tag "rifle assaultrifle weapon bullet to_hand shoot_walking"}
+	{entity "g3a4"}
+	{fireSound	"small_arms/g3/"}
+	{reloadSound "mp44"}	
+	
+	{filling "ammo 7x51c" 20 300}
+	{inventory
+		{size 6 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 3}
+	{traceFreq 0.001}
+	{Automatic_ai}
+
+	{rechargeTime 3.0}
+	("recoveryTime" r(500))
+ 	("speed" s(948))
+	("burst_single")
+	("spreading_medium")
+	("accuracy_assault_improved")
+	("accuracy_boost")
+	
+	{healthDamage 175}
+	
+	{projectileDamage 5}
+	{projectileDamageClip 5}
+	{projectileDamageTable {22.5 5} {250 0}}
+
+	{range 75 80}
+}

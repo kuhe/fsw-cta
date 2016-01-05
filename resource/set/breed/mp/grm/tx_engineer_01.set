@@ -1,0 +1,27 @@
+{breed
+	{skin "grm_t2_1"}
+	{portrait "grm_engineer"}
+	{nationality grm}
+	{icon "squad11"}
+	{icon_priority 3}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t2")
+		{fortification}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "akm_v1" filled}
+		{item "grenade rdg-m" 1}
+		{item "mine claymore" 2}
+		{item "c4" 1}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

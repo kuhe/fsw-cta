@@ -1,0 +1,6 @@
+;SDL
+{units
+	(include "cp.set")
+	(include "squads.set")
+	(include "vehicles.set")
+}

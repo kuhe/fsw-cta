@@ -1,0 +1,285 @@
+;// CP + Scores + CW
+;// Needs final score + CP balancing once prices are set (split GRM from USA)
+
+(define "t1_grm"
+    {tags   "%side infantry man"}
+    {cp     1.66}
+    {score  0.66}
+    {basic}
+    {breed}
+    {cw 1.0}
+)
+{"mp/grm/t1_01" ("t1_grm" side(grm))}
+{"mp/grm/t1_02" ("t1_grm" side(grm))}
+{"mp/grm/t1_03" ("t1_grm" side(grm))}
+{"mp/grm/t1_sq" ("t1_grm" side(grm))}
+
+
+(define "t2_usa"
+    {tags   "%side infantry man"}
+    {cp     2.50}
+    {score  1.50}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/usa/t2_01" ("t2_usa" side(usa))}
+{"mp/usa/t2_02" ("t2_usa" side(usa))}
+{"mp/usa/t2_03" ("t2_usa" side(usa))}
+{"mp/usa/t2_04" ("t2_usa" side(usa))}
+{"mp/usa/t2_sq" ("t2_usa" side(usa))}
+
+(define "t2_usa2"
+    {tags   "%side infantry man"}
+    {cp     3.50}
+    {score  4.50}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/usa/t2_05" ("t2_usa2" side(usa))}
+
+(define "t2_usa3"
+    {tags   "%side infantry man"}
+    {cp     2.50}
+    {score  2.25}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/usa/t2_06" ("t2_usa3" side(usa))}
+
+(define "t2_grm"
+    {tags   "%side infantry man"}
+    {cp     2.08}
+    {score  1.16}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/grm/t2_01" ("t2_grm" side(grm))}
+{"mp/grm/t2_02" ("t2_grm" side(grm))}
+{"mp/grm/t2_03" ("t2_grm" side(grm))}
+{"mp/grm/t2_05" ("t2_grm" side(grm))}
+{"mp/grm/t2_sq" ("t2_grm" side(grm))}
+
+(define "t2_grm2"
+    {tags   "%side infantry man"}
+    {cp     3.08}
+    {score  3.50}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/grm/t2_04" ("t2_grm2" side(grm))}
+
+(define "t2_grm3"
+    {tags   "%side infantry man"}
+    {cp     2.00}
+    {score  1.00}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/grm/t2_05" ("t2_grm3" side(grm))}
+
+
+(define "t3_usa"
+    {tags   "%side infantry man"}
+    {cp 	3.00}
+    {score  3.00}
+    {basic}
+    {breed}
+    {cw 3.0}
+)
+{"mp/usa/t3_01" ("t3_usa" side(usa))}
+{"mp/usa/t3_02" ("t3_usa" side(usa))}
+{"mp/usa/t3_03" ("t3_usa" side(usa))}
+{"mp/usa/t3_sq" ("t3_usa" side(usa))}
+
+(define "t3_usa2"
+    {tags   "%side infantry man"}
+    {cp 	3.00}
+    {score  2.875}
+    {basic}
+    {breed}
+    {cw 3.0}
+)
+{"mp/usa/t3_04" ("t3_usa2" side(usa))}
+
+
+(define "t3_grm"
+    {tags   "%side infantry man"}
+    {cp 	2.50}
+    {score  2.33}
+    {basic}
+    {breed}
+    {cw 3.0}
+)
+{"mp/grm/t3_01" ("t3_grm" side(grm))}
+{"mp/grm/t3_02" ("t3_grm" side(grm))}
+{"mp/grm/t3_03" ("t3_grm" side(grm))}
+{"mp/grm/t3_sq" ("t3_grm" side(grm))}
+
+(define "t3_grm2"
+    {tags   "%side infantry man"}
+    {cp 	2.50}
+    {score  1.84}
+    {basic}
+    {breed}
+    {cw 3.0}
+)
+{"mp/grm/t3_04" ("t3_grm" side(grm2))}
+
+(define "t4_usa"
+    {tags   "%side infantry man"}
+    {cp     3.50}
+    {score  4.50}
+    {basic}
+    {breed}
+    {cw 4.0}
+)
+{"mp/usa/t4_01" ("t4_usa" side(usa))}
+{"mp/usa/t4_02" ("t4_usa" side(usa))}
+{"mp/usa/t4_03" ("t4_usa" side(usa))}
+{"mp/usa/t4_sq" ("t4_usa" side(usa))}
+
+(define "t4_grm"
+    {tags   "%side infantry man"}
+    {cp     2.91}
+    {score  3.54}
+    {basic}
+    {breed}
+    {cw 4.0}
+)
+{"mp/grm/t4_01" ("t4_grm" side(grm))}
+{"mp/grm/t4_02" ("t4_grm" side(grm))}
+{"mp/grm/t4_03" ("t4_grm" side(grm))}
+{"mp/grm/t4_sq" ("t4_grm" side(grm))}
+
+
+(define "t5_usa"
+    {tags   "%side infantry man"}
+    {cp     3.50}
+    {score  5.50}
+    {basic}
+    {breed}
+    {cw 5.0}
+)
+{"mp/usa/t5_01" ("t5_usa" side(usa))}
+{"mp/usa/t5_02" ("t5_usa" side(usa))}
+{"mp/usa/t5_03" ("t5_usa" side(usa))}
+{"mp/usa/t5_sq" ("t5_usa" side(usa))}
+
+(define "t5_grm"
+    {tags   "%side infantry man"}
+    {cp     2.91}
+    {score  4.33}
+    {basic}
+    {breed}
+    {cw 5.0}
+)
+{"mp/grm/t5_01" ("t5_grm" side(grm))}
+{"mp/grm/t5_02" ("t5_grm" side(grm))}
+{"mp/grm/t5_03" ("t5_grm" side(grm))}
+{"mp/grm/t5_sq" ("t5_grm" side(grm))}
+
+
+
+
+(define "tx_tankman"
+    {tags   "%side crew man"}
+    {cp     2.00}
+    {score  1.25}
+    {basic}
+    {breed}
+    {cw 0.5}
+)
+{"mp/usa/tx_tankman_01" ("tx_tankman" side(usa))}
+
+{"mp/grm/tx_tankman_01" ("tx_tankman" side(grm))}
+
+
+(define "tx_engineer_usa"
+    {tags   "%side infantry man"}
+    {cp     2.50}
+    {score  1.75}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/usa/tx_engineer_01" ("tx_engineer_usa" side(usa))}
+
+(define "tx_engineer_grm"
+    {tags   "%side infantry man"}
+    {cp     2.50}
+    {score  1.50}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/grm/tx_engineer_01" ("tx_engineer_grm" side(grm))}
+
+
+(define "tx_at_usa"
+    {tags   "%side infantry man"}
+    {cp     3.00}
+    {score  4.50}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/usa/tx_at_01" ("tx_at_usa" side(usa))}
+
+(define "tx_at_grm"
+    {tags   "%side infantry man"}
+    {cp     2.84}
+    {score  4.50}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/grm/tx_at_01" ("tx_at_grm" side(grm))}
+
+(define "tx_at_grm2"
+    {tags   "%side infantry man"}
+    {cp     2.84}
+    {score  12.50}
+    {basic}
+    {breed}
+    {cw 2.0}
+)
+{"mp/grm/tx_at_02" ("tx_at_grm2" side(grm))}
+
+
+(define "tx_sniper_usa"
+    {tags   "sniper %side infantry man"}
+    {cp     5.00}
+    {score  10.00}
+    {basic}
+    {breed}
+    {cw 5.0}
+)
+{"mp/usa/tx_sniper_01" ("tx_sniper_usa" side(usa))}
+{"mp/usa/tx_sniper_02" ("tx_sniper_usa" side(usa))}
+
+(define "tx_sniper_usa2"
+    {tags   "sniper %side infantry man"}
+    {cp     5.00}
+    {score  17.50}
+    {basic}
+    {breed}
+    {cw 5.0}
+)
+{"mp/usa/tx_sniper_03" ("tx_sniper_usa2" side(usa))}
+
+(define "tx_sniper_grm"
+    {tags   "sniper %side infantry man"}
+    {cp     5.00}
+    {score  9.375}
+    {basic}
+    {breed}
+    {cw 5.0}
+)
+{"mp/grm/tx_sniper_01" ("tx_sniper_grm" side(grm))}
+{"mp/grm/tx_sniper_02" ("tx_sniper_grm" side(grm))}

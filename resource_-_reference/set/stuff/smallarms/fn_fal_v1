@@ -1,0 +1,34 @@
+;//	FN FAL standard
+
+{from "pattern bullet"
+	{tag "rifle assaultrifle weapon bullet to_hand shoot_walking"}
+	{entity "fn_fal"}
+	{fireSound	"small_arms/fal/"}
+	{reloadSound "mp44"}	
+	
+	{filling "ammo 7x51c" 20 300}
+	{inventory
+		{size 6 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 4}
+	{traceFreq 0.001}
+	{Automatic_ai}
+
+	{rechargeTime 3.0}
+	("recoveryTime" r(650))
+ 	("speed" s(735))
+	("burst_single")
+	("spreading_short")
+	("accuracy_assault")
+	("accuracy_boost")
+	
+	{healthDamage 175}
+	
+	{projectileDamage 5}
+	{projectileDamageClip 5}
+	{projectileDamageTable {22.5 5} {250 0}}
+
+	{range 75 80}
+}

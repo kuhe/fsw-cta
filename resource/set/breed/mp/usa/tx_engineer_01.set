@@ -1,0 +1,27 @@
+{breed
+	{skin "usa_t2_1"}
+	{portrait "usa_engineer"}
+	{nationality usa}
+	{icon "squad11"}
+	{icon_priority 3}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t2")
+		{fortification}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "m16a4_v1" filled}
+		{item "grenade anm8" 1}
+		{item "mine claymore" 2}
+		{item "c4" 1}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

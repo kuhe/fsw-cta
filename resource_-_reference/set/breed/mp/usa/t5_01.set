@@ -1,0 +1,29 @@
+{breed
+	{skin "usa_t5_1"}
+	{portrait "usa_t5"}
+	{nationality usa}
+	{icon "squad6"}
+	{icon_priority 5}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t5")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "mp5_v1b" filled}
+		{item "pistol_v4" filled}
+		{item "grenade m67" 2}
+		{item "grenade anm8" 1}
+		{item "grenade m84" 2}
+		{item "c4" 1}
+		{item "knife_v4" 1}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

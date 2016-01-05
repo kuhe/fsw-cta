@@ -1,0 +1,78 @@
+{game
+	{teammatch}
+	{parameters "evac_capture_time=60;evac_release_time=20;ammo_table=25,30,35,40,45,50,55,60;ammo_capture_time=30;ammo_release_time=10;ammo_capture_factor=0.9;preparation_time=25;wave_time=180"}
+	{settings
+		{options			gameDuration enableSpectators}
+		{optionsAdvanced	friendlyFire fogOfWar showPiercing showDamageReports}
+		{optionsRanked		}
+		{fogOfWar			fog_realistic}
+		{difficulty			multiplayer}
+		{gameDuration		"30 min"}	; min
+		{impregnableTimeout	3}			; sec
+		{floraRespawn		0}
+		{friendlyFire}
+		{showPiercing}
+		{showDamageReports}
+		{useUnitLevelRestrictions}
+		{enableBots}
+	}
+	{presets
+		{"myEvacPreset"
+			{gameMode "standard"}
+			{unitMode "all"}
+			{specMode "all_normal"}
+			{ranked}
+			{teama
+				{unitset {value "all"}}
+				{commandPoints "*=100"}
+				{unitLimits ""}
+				{balancingFactorBonus {cp 1.0} {mp 1.0}}
+				{chargeFactors
+					{value "*=1"}
+				}
+				{budgets
+					{vehicle
+						{mode "fullpayback"}
+						{resource
+							{start		75}
+							{finish		1250}
+							{payback
+								{cp			"0		10		20		30		40		50"}
+								{restore	"0.00	0.00	0.00	0.00	0.00	0.00"}
+							}
+						}
+						{buttons "s1 s2 v1 v2 v3"}
+					}
+				}
+			}
+			{teamb
+				{unitset {value "all"}}
+				{commandPoints "*=200"}
+				{unitLimits ""}
+				{balancingFactorBonus {cp 1.0} {mp 1.0}}
+				{chargeFactors
+					{value "*=1"}
+				}
+				{budgets
+					{vehicle
+						{mode "standard"}
+						{resource
+							{start		100}
+							{finish		2500}
+							{growTime	1500}		; in seconds
+							{growTable	"0.65 0.65 0.65 0.70 0.70 0.70 0.75 0.75 0.75 0.80 0.80 0.80 0.80 0.80 0.80 0.85 0.85 0.85 0.90 0.90 0.90 0.90 0.90 0.90 1.00"}
+							{payback
+								{cp			"0		10 		20		30		40		50"}
+								{restore	"1.00	0.75	0.50	0.40	0.30	0.20"}
+							}
+						}
+						{buttons "s1 s2 v1 v2 v3"}
+					}
+				}
+			}
+			{bots
+				(include "bots_evacuation.inc")
+			}
+		}
+	}
+}

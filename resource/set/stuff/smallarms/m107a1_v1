@@ -1,0 +1,46 @@
+;// M107A1 standard + scope
+
+{from "pattern bullet"
+	{tag "rifle sniper weapon bullet to_hand shoot_walking at_rifle"}
+	{entity "m107a1"}
+	{fireSound	"small_arms/m107/"}
+	{reloadSound "ptrd"}
+	
+	{special
+		{mode aim}
+		{PrepareTime 3.5}	
+		{PrepareCursor "aimed_shot"}
+		{accuracy 2.5}
+		{damage 2.5}
+		{throw_off_always}
+	}
+	
+	{filling "ammo 12x99" 10 60}
+	{inventory
+		{size 6 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 4.5}
+	{traceFreq 0.001}
+;	{Automatic}
+
+	{rechargeTime 5}
+	("recoveryTime" r(30))
+	("speed" s(853))
+	("burst_short")
+	("spreading_short")
+	("accuracy_assault")
+	("accuracy_boost")
+	
+	{healthDamage 600}
+
+	{projectileDamage 50}
+	{projectileDamageClip 30}
+	{projectileDamageTable {22.5 35} {150 0}}
+	
+	{range 120 125}
+	
+	{cursor "carbine_on"}
+	{cursorReloading "carbine_reload"}
+}

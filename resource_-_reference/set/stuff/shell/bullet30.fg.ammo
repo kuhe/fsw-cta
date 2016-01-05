@@ -1,0 +1,21 @@
+{from "pattern fg"
+	{tag "zenite"}
+	{inventory
+		{weight 25}
+		{size 2 2}
+		{block 5}
+	}
+	{mass 1.2}
+	{entity "shell_fg_30"}
+	{trace
+		{view "/texture/fx/trace_zenite2.mtl"
+			{ScaleY 0.25}
+			{Light 2}
+		}
+		{length 5.5}
+	}
+	{damage blastwave    
+		{energy 1.25}
+		{area 1 3}
+	}		
+}

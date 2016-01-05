@@ -1,0 +1,18 @@
+{bullet
+	{tag "bullet small stackable pierce 5x45"}
+	{inventory
+		{weight 1}
+		{block 100}
+		{size 1 1}
+		{fsm "belt"}
+	}
+	{mass 0.015}
+	{entity "5x45b"}
+	{trace
+		{view "/texture/fx/trace_red2.mtl"
+			{ScaleY 0.100}
+			{Light 1}
+		}
+		{length 5.0}
+	}
+}

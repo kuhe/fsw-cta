@@ -1,0 +1,23 @@
+{from "pattern gun"
+	{filling "ammo tow" 1}
+	{fireSound	"gun/tow/"}
+	{reloadSound "tankgun_r02"}
+	{rechargeTime 25}
+	("range_maximum")
+	{fillingVisible "rocket"}
+	("speed2" s(278))
+	("caliber_large")
+	("recoveryTime" r(10))
+	{projectileDamage 1500}
+	("damage_cumulative" a(1500))
+	
+	{gravity 0}
+	
+	("accuracy_maximum")
+	
+	{bullet_view "tow_rocket"
+		{tail "tow_tail" "tail"}
+	}
+	{crosshair "crosshair_tow"}
+	{crosshairReloading "crosshair_tow_reload"}
+}

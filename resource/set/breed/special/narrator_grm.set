@@ -1,0 +1,9 @@
+{breed
+	{behaviour soldier}
+	{hero}
+	{skin "grm_t2"}
+	{portrait "narrator_placeholder"}
+	{icon "officer"}
+	{icon_priority 0}
+	{nationality grm}
+}

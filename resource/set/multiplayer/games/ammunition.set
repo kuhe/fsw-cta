@@ -1,0 +1,26 @@
+{game
+	{teammatch}
+	{parameters	"ammoCount=3:3,5:5,7:7,9:9,11:11,13:13,15:15,17:16;base_capture_time=60;base_release_time=10;base_capture_factor=0.9;ammo_capture_time=300;ammo_release_time=10;ammo_capture_factor=0.9;maximum_ammo_payback=200;enable_time=120"}
+	{settings
+		{options			scoreFinal enableSpectators}
+		{optionsAdvanced	preparationTime friendlyFire fogOfWar showPiercing showDamageReports}
+		{optionsRanked		}
+		{fogOfWar			fog_realistic}
+		{difficulty			multiplayer}
+		{scoreMin			25}
+		{scoreMax			1000}
+		{scoreFinal			75}
+		{preparationTimeMin	0}
+		{preparationTimeMax	60}
+		{preparationTime	15}
+		{impregnableTimeout	10}	; sec
+		{floraRespawn		0}
+		{friendlyFire}
+		{showPiercing}
+		{showDamageReports}
+		{useUnitLevelRestrictions}
+		{enableBots}
+	}
+	{ranked}
+	(include "presets_nopayback.inc")
+}

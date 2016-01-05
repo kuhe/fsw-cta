@@ -1,0 +1,37 @@
+;// Lee-Enfield No. 4 Mk. I standard + scope
+
+{from "pattern bullet"
+	{tag "rifle weapon bullet to_hand shoot_walking"}
+	{entity "lee_enfield_mk1"}
+	{fireSound	"small_arms/enfield/"}
+	{reloadSound "rifle_bolt_five"}
+	
+	{filling "ammo 7x54b" 10 120}
+	{inventory
+		{size 6 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 4.5}
+	{traceFreq 0.001}
+;	{Automatic}
+
+	{rechargeTime 3}
+	("recoveryTime" r(50))
+	("speed" s(800))
+;	("burst_short")
+	("spreading_short")
+	("accuracy_boost")
+	("accuracy_assault_improved")
+	
+	{healthDamage 200}
+
+	{projectileDamage 5}
+	{projectileDamageClip 5}
+	{projectileDamageTable {22.5 5} {250 0}}
+	
+	{range 75 80}
+	
+	{cursor "carbine_on"}
+	{cursorReloading "carbine_reload"}
+}

@@ -1,0 +1,27 @@
+;SDL	
+{main_menu_dark_skin
+	(include "main_menu_dark_skin.inc" fs(18))
+	{checkbox
+		{text_style
+			{normal				"f(myriadpro)s(18)p(0)c(198 198 198)"}
+			{focused_mouse		"f(myriadpro)s(18)p(0)c(255 255 255)"}
+			{focused_keyboard	"f(myriadpro)s(18)p(0)c(255 255 255)"}
+			{pressed			"f(myriadpro)s(18)p(0)c(255 255 255)"}
+			{disabled			"f(myriadpro)s(18)p(0)c(100 100 100)"}
+		}
+		{check "/interface/skin/game/checkbox/checkbox"}
+	}
+}
+{main_menu_dark_skin_small
+	(include "main_menu_dark_skin.inc" fs(15))
+	{checkbox
+		{text_style
+			{normal				"f(myriadpro)s(21)c(171 171 171)"}
+			{focused_mouse		"f(myriadpro)s(21)c(255 255 255)"}
+			{focused_keyboard	"f(myriadpro)s(21)c(255 255 255)"}
+			{pressed			"f(myriadpro)s(21)c(255 255 255)"}
+			{disabled			"f(myriadpro)s(21)c(128 128 128)"}
+		}
+		{check "/interface/skin/game/checkbox/checkbox1"}
+	}
+}

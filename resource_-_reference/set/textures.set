@@ -1,0 +1,10 @@
+{presets_texture
+	{"winter_preset"
+		{"common"
+;			{add "/texture/land/dirt/clay_new2 q1" "ground1"} 
+		}
+		{"special"
+;			{add "/texture/land/town/asfalt_road q1" "road"}
+		}
+	}
+}

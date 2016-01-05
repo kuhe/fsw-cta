@@ -1,0 +1,18 @@
+{bullet
+	{tag "bullet stackable pierce 7x54b"}
+	{inventory
+		{weight 10}
+		{block 10}
+		{size 2 1}
+		{fsm "belt"}
+	}	
+	{mass 0.015}
+	{entity "7x54"}
+	{trace
+		{view "/texture/fx/trace_green1.mtl"
+			{ScaleY 0.075}
+			{Light 1}
+		}
+		{length 15.0}
+	}
+}

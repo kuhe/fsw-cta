@@ -1,0 +1,5 @@
+;//	Shaitan standard
+
+{from "knife_v1"
+	{entity "knife_shaitan"}
+}

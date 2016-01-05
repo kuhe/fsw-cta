@@ -1,0 +1,22 @@
+{breed
+	{skin "grm_t1_2"}
+	{portrait "grm_t1"}
+	{nationality grm}
+	{icon "squad1"}
+	{icon_priority 1}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t1")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "aks74_v1" filled}
+		{in_hands 0}
+	}
+}

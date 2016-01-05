@@ -1,0 +1,5 @@
+;//	OKC-3S Bayonet standard
+
+{from "knife_v1"
+	{entity "knife_okc3s"}
+}

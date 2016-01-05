@@ -1,0 +1,35 @@
+{difficulty
+	(include "difficulty_generic.inc")
+    {enemy
+		{health 2.50}
+		{armor 1.00}
+		{burst 1.00}
+		{accuracy 0.75}
+		{firing_timeout 5.00}
+		{grenade_timeout 5.00}
+	}
+	{ally
+		{health 2.50}
+        {armor 1.00}
+        {burst 1.00}
+        {accuracy 0.75}
+        {firing_timeout 5.00}
+        {grenade_timeout 5.00}
+	}
+	{player
+		{health 2.50}
+        {armor 1.00}
+        {burst 1.00}
+        {accuracy 0.75}
+        {firing_timeout 5.00}
+        {grenade_timeout 5.00}
+	}
+ 	{neutral
+		{health 2.50}
+        {armor 1.00}
+        {burst 1.00}
+        {accuracy 0.75}
+        {firing_timeout 5.00}
+        {grenade_timeout 5.00}
+	}
+}

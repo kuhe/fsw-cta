@@ -1,0 +1,27 @@
+{breed
+	{skin "grm_t3_sq"}
+	{portrait "grm_t3"}
+	{nationality grm}
+	{icon "squad4"}
+	{icon_priority 4}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t3")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "uzi_v1" filled}
+		{item "pistol_v2b" filled}
+		{item "grenade rgd-5" 4}
+		{item "mine claymore" 1}
+		{item "knife_v2b" 1}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

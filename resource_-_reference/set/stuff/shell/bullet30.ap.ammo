@@ -1,0 +1,21 @@
+{from "pattern ap"
+	{tag "shell_minimum pierce zenite"}
+	{inventory
+		{weight 25}
+		{size 2 2}
+		{block 5}
+	}
+	{mass 1.2}
+	{entity "shell_ap_30"}
+	{trace
+		{view "/texture/fx/trace_zenite1.mtl"
+			{ScaleY 0.25}
+			{Light 2}
+		}
+		{length 5.5}
+	}
+	{damage blastwave    
+		{energy 1}
+		{area 0 1}
+	}		
+}

@@ -1,0 +1,159 @@
+; SDL
+; Third Person Control Registry Definitions
+(define "humvee"
+	{linkBone		"basis"	}
+	{offset
+		{x			-110	}
+		{y			0		}
+		{z			65		}
+	}
+	{clipViewMin	-25		}
+	{clipViewMax	45		}
+	{zoomMin		0		}
+	{zoomMax		1000	}
+	{zoomFOV		%zoomFOV}
+)
+(define "technical"
+	{linkBone		"basis"	}
+	{offset
+		{x			-90		}
+		{y			0		}
+		{z			60		}
+	}
+	{clipViewMin	-25		}
+	{clipViewMax	45		}
+	{zoomMin		0		}
+	{zoomMax		1000	}
+	{zoomFOV		"2"		}
+)
+(define "stryker"
+	{linkBone		"basis"	}
+	{offset
+		{x			-110	}
+		{y			0		}
+		{z			75		}
+	}
+	{clipViewMin	-25		}
+	{clipViewMax	45		}
+	{zoomMin		0		}
+	{zoomMax		1000	}
+	{zoomFOV		%zoomFOV}
+)
+(define "btr-80"
+	{linkBone		"basis"	}
+	{offset
+		{x			-115	}
+		{y			0		}
+		{z			70		}
+	}
+	{clipViewMin	-25		}
+	{clipViewMax	45		}
+	{zoomMin		0		}
+	{zoomMax		1000	}
+	{zoomFOV		"2 4"	}
+)
+{control
+	{third_person
+		{vehicle
+			{"default"
+				{linkBone		"basis"	}
+				{offset
+					{x			-100	}
+					{y			0		}
+					{z			75		}
+				}
+				{clipViewMin	-25		}
+				{clipViewMax	45		}
+				{zoomMin		0		}
+				{zoomMax		1000	}
+				{zoomFOV		"2 4 8"	}
+			}
+			{"cannon"
+				{disabled}
+			}
+			{"humvee_m2hb"
+				("humvee" zoomFOV("2"))
+			}
+			{"humvee_m240"
+				("humvee" zoomFOV("2"))
+			}
+			{"humvee_mk19"
+				("humvee" zoomFOV("2"))
+			}
+			{"humvee_tow"
+				("humvee" zoomFOV("2 4"))
+			}
+			{"technical_lmg"
+				("technical")
+			}
+			{"technical_hmg"
+				("technical")
+			}
+			{"technical_spg"
+				("technical")
+			}
+			{"technical_zpu"
+				("technical")
+			}
+			{"stryker_m2hb"
+				("stryker" zoomFOV("2 4"))
+			}
+			{"stryker_mk19"
+				("stryker" zoomFOV("2 4"))
+			}
+			{"stryker_m1128"
+				("stryker" zoomFOV("2 4 8"))
+			}
+			{"btr-80"
+				("btr-80")
+			}
+			{"btr-82a"
+				("btr-80")
+			}
+			{"m2_bradley"
+				{linkBone		"basis"	}
+				{offset
+					{x			-85		}
+					{y			0		}
+					{z			80		}
+				}
+				{clipViewMin	-25		}
+				{clipViewMax	45		}
+				{zoomMin		0		}
+				{zoomMax		1000	}
+				{zoomFOV		"2 4"	}
+			}
+			{"bmp2"
+				{linkBone		"basis"	}
+				{offset
+					{x			-90		}
+					{y			0		}
+					{z			70		}
+				}
+				{clipViewMin	-25		}
+				{clipViewMax	45		}
+				{zoomMin		0		}
+				{zoomMax		1000	}
+				{zoomFOV		"2 4"	}
+			}
+			{"bmp3"
+				{linkBone		"basis"	}
+				{offset
+					{x			-105	}
+					{y			0		}
+					{z			75		}
+				}
+				{clipViewMin	-25		}
+				{clipViewMax	45		}
+				{zoomMin		0		}
+				{zoomMax		1000	}
+				{zoomFOV		"2 4"	}
+			}
+		}
+		{human
+			{"default"
+				{disabled}
+			}
+		}
+	}
+}

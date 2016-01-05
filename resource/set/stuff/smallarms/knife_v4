@@ -1,0 +1,5 @@
+;//	SEAL Knife 2000 standard
+
+{from "knife_v1"
+	{entity "knife_seal"}
+}

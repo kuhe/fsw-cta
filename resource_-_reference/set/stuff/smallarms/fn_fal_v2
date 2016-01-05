@@ -1,0 +1,6 @@
+;//	FN FAL standard + ACOG scope
+
+{from "fn_fal_v1"
+	{entity "fn_fal_a"}
+	{range 95 100}
+}

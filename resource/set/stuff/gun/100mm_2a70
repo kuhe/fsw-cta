@@ -1,0 +1,28 @@
+{from "pattern gun"
+	{filling "bullet100"}
+	{fireSound "gun/cannon_5/"}
+	{reloadSound "new/weapon_tankcannon_reload"}
+	{rechargeTime 8}
+	("range_maximum")
+	
+	("speed" s(1000))
+	("caliber_large")
+	{projectileDamage 800}
+	("damage" a(800) b(600) c(400) d(200) e(100))
+	{parameters "heat"
+		("damage_cumulative" a(400))
+	}
+	{parameters "tow"
+		("damage_cumulative" a(600))
+		{bullet_view "9m117_ammo"
+			{tail "tow_tail" "tail"}
+		}		
+		("speed2" s(278))
+		{gravity 0}
+	}
+	
+	("accuracy_maximum")
+	
+	{crosshair "crosshair2"}
+	{crosshairReloading "crosshair2_reload"}
+}

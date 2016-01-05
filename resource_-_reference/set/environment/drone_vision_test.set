@@ -1,0 +1,75 @@
+{environment
+	{light
+		{direction -0.766 -0.055 -0.641}
+		{ambient 0xff1e1e1e}
+		{diffuse 0xff646464}
+		{specular 0xff646464}
+		{lightsIntensity 0.05}
+		{night}
+		{night_vision 1}
+		{color_correction
+			{tone 0xff002300}
+			{tone_strength 1}
+			{color_shading
+				{enable}
+				{shade_tone 0xffffffff}
+			}
+		}
+		{light_scattering
+			{sample_count 20}
+			{sun_radius 1}
+			{ray_intensity 0.3}
+			{ray_length 0.9}
+			{lum_worldToSun_ratio 0.5}
+			{darken 0.4}
+			{intensity 1}
+		}
+	}
+	{wind
+		{speed 0.5 0.5 0}
+		{amplitude 2}
+	}
+	{haze
+		{enable}
+		{color 0xff152211}
+		{start 1000}
+		{end 3000}
+	}
+	{sky
+		{enable}
+		{texture "/texture/common/environment/sky_v4"}
+		{size 1 1}
+		{globalEnvironment "/texture/common/environment/night_04"}
+	}
+	{thunder
+		{color 0xff686c73}
+	}
+	{video_overlay
+		{color 0xffffffff}
+	}
+	{grain
+		{enable}
+		{colorAmount 0}
+		{grainAmount 0.03}
+		{grainParticleSize 3}
+		{lumAmount 1}
+	}
+	{dof
+		{enable}
+		{near_scale 2.5}
+		{far_scale 0.75}
+		{near_start 50}
+		{near_end 150}
+		{far_start 1750}
+		{far_end 3500}
+		{"3rd_Person"
+			{focus_to_near 400}
+			{focus_to_far 600}
+		}
+		{blur_strength 5}
+	}
+	{glow
+		{enable}
+		{amount 10}
+	}
+}

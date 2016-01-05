@@ -1,0 +1,8 @@
+{from "15mm_kpvt"
+	{filling "bullet15 ap" 100}
+	{rechargeTime 20.0}
+	
+	("recoveryTime" r(1200))
+	
+	("accuracy_zenite_low")
+}
