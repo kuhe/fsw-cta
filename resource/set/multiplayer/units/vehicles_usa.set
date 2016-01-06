@@ -1,25 +1,25 @@
 ;----- USA -----
 
 
-;°°°Button 1°°°
+;ï¿½ï¿½ï¿½Button 1ï¿½ï¿½ï¿½
 
 {"m252_mortar"			("vs" c(0) t(all) 		s(usa) n1(2) g(av1) sc(25.00) b(v1) cw(2) cp(10)) {level 1} {cost 500} {fore 1}}
-{"humvee_tow"      		("vs" c(300) t(all) 	s(usa) n1(3) g(av2) sc(25.00) b(v1) cw(0) cp(10)) {level 1} {cost 500} {fore 1}}	
+{"humvee_tow"      		("vs" c(300) t(all) 	s(usa) n1(3) g(av2) sc(25.00) b(v1) cw(0) cp(10)) {level 1} {cost 250} {fore 1}}
 
 
-;°°°Button 2°°°
+;ï¿½ï¿½ï¿½Button 2ï¿½ï¿½ï¿½
 
-{"humvee_m240"      	("vs" c(300) t(all) 	s(usa) n1(3) g(bv1) sc(10.00) b(v2) cw(0) cp(5)) {level 1} {cost 200} {fore 1}}
-{"humvee_m2hb"			("vs" c(300) t(all) 	s(usa) n1(3) g(bv1) sc(15.00) b(v2) cw(0) cp(5)) {level 1} {cost 300} {fore 1}}
-{"humvee_mk19"      	("vs" c(300) t(all) 	s(usa) n1(3) g(bv1) sc(27.50) b(v2) cw(0) cp(5)) {level 3} {cost 550} {fore 1}}	
+{"humvee_m240"      	("vs" c(300) t(all) 	s(usa) n1(3) g(bv1) sc(10.00) b(v2) cw(0) cp(5)) {level 1} {cost 350} {fore 1}}
+{"humvee_m2hb"			("vs" c(300) t(all) 	s(usa) n1(3) g(bv1) sc(15.00) b(v2) cw(0) cp(5)) {level 1} {cost 500} {fore 1}}
+{"humvee_mk19"      	("vs" c(300) t(all) 	s(usa) n1(3) g(bv1) sc(27.50) b(v2) cw(0) cp(5)) {level 1} {cost 500} {fore 1}}
 
-{"stryker_m2hb"			("v" c(0) t(all) 		s(usa) n1(2) g(bv4) sc(25.00) b(v2) cw(0) cp(10)) {level 1} {cost 500} {fore 1}}
-{"stryker_mk19"			("v" c(0) t(all) 		s(usa) n1(2) g(bv5) sc(35.00) b(v2) cw(0) cp(10)) {level 5} {cost 700} {fore 1}}
-{"m2_bradley"			("v" c(0) t(all) 		s(usa) n1(4) g(bv6) sc(47.50) b(v2) cw(0) cp(10)) {level 9} {cost 950} {fore 1}}
+{"stryker_m2hb"			("v" c(0) t(all) 		s(usa) n1(2) g(bv4) sc(25.00) b(v2) cw(0) cp(15)) {level 1} {cost 600} {fore 1}}
+{"stryker_mk19"			("v" c(0) t(all) 		s(usa) n1(2) g(bv5) sc(35.00) b(v2) cw(0) cp(15)) {level 1} {cost 700} {fore 1}}
+{"m2_bradley"			("v" c(0) t(all) 		s(usa) n1(4) g(bv6) sc(47.50) b(v2) cw(0) cp(15)) {level 1} {cost 800} {fore 1}}
 
 
-;°°°Button 3°°°
+;ï¿½ï¿½ï¿½Button 3ï¿½ï¿½ï¿½
 
-{"stryker_m1128"		("v" c(0) t(all) 		s(usa) n1(4) g(cv1) sc(45.00) b(v3) cw(0) cp(10)) {level 1} {cost 900} {fore 1}}
-{"m1a2_abrams"			("v" c(0) t(all) 		s(usa) n1(5) g(cv2) sc(65.00) b(v3) cw(0) cp(15)) {level 11} {cost 1300} {fore 1}}
-{"m1a2_abrams_tusk"		("v" c(0) t(all) 		s(usa) n1(5) g(cv3) sc(80.00) b(v3) cw(0) cp(15)) {level 15} {cost 1600} {fore 1}}
+{"stryker_m1128"		("v" c(0) t(all) 		s(usa) n1(4) g(cv1) sc(45.00) b(v3) cw(0) cp(22)) {level 1} {cost 600} {fore 1}}
+{"m1a2_abrams"			("v" c(0) t(all) 		s(usa) n1(5) g(cv2) sc(65.00) b(v3) cw(0) cp(22)) {level 1} {cost 800} {fore 1}}
+{"m1a2_abrams_tusk"		("v" c(0) t(all) 		s(usa) n1(5) g(cv3) sc(80.00) b(v3) cw(0) cp(22)) {level 1} {cost 900} {fore 1}}

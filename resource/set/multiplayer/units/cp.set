@@ -17,7 +17,7 @@
 
 (define "t2_usa"
     {tags   "%side infantry man"}
-    {cp     2.50}
+    {cp     2.00}
     {score  1.50}
     {basic}
     {breed}
@@ -31,7 +31,7 @@
 
 (define "t2_usa2"
     {tags   "%side infantry man"}
-    {cp     3.50}
+    {cp     2.25}
     {score  4.50}
     {basic}
     {breed}
@@ -41,7 +41,7 @@
 
 (define "t2_usa3"
     {tags   "%side infantry man"}
-    {cp     2.50}
+    {cp     2.00}
     {score  2.25}
     {basic}
     {breed}
@@ -51,7 +51,7 @@
 
 (define "t2_grm"
     {tags   "%side infantry man"}
-    {cp     1.00}
+    {cp     1.50}
     {score  1.16}
     {basic}
     {breed}
@@ -65,7 +65,7 @@
 
 (define "t2_grm2"
     {tags   "%side infantry man"}
-    {cp     1.00}
+    {cp     2.00}
     {score  3.50}
     {basic}
     {breed}
@@ -75,7 +75,7 @@
 
 (define "t2_grm3"
     {tags   "%side infantry man"}
-    {cp     1.00}
+    {cp     1.50}
     {score  1.00}
     {basic}
     {breed}
@@ -86,7 +86,7 @@
 
 (define "t3_usa"
     {tags   "%side infantry man"}
-    {cp 	3.00}
+    {cp 	2.00}
     {score  3.00}
     {basic}
     {breed}
@@ -99,7 +99,7 @@
 
 (define "t3_usa2"
     {tags   "%side infantry man"}
-    {cp 	3.00}
+    {cp 	2.00}
     {score  2.875}
     {basic}
     {breed}
@@ -110,7 +110,7 @@
 
 (define "t3_grm"
     {tags   "%side infantry man"}
-    {cp 	1.50}
+    {cp 	2.00}
     {score  2.33}
     {basic}
     {breed}
@@ -123,7 +123,7 @@
 
 (define "t3_grm2"
     {tags   "%side infantry man"}
-    {cp 	2.50}
+    {cp 	2.00}
     {score  1.84}
     {basic}
     {breed}
@@ -146,7 +146,7 @@
 
 (define "t4_grm"
     {tags   "%side infantry man"}
-    {cp     1.91}
+    {cp     2.00}
     {score  3.54}
     {basic}
     {breed}
@@ -160,7 +160,7 @@
 
 (define "t5_usa"
     {tags   "%side infantry man"}
-    {cp     3.50}
+    {cp     2.50}
     {score  5.50}
     {basic}
     {breed}
@@ -173,7 +173,7 @@
 
 (define "t5_grm"
     {tags   "%side infantry man"}
-    {cp     1.91}
+    {cp     2.50}
     {score  4.33}
     {basic}
     {breed}
@@ -189,7 +189,7 @@
 
 (define "tx_tankman"
     {tags   "%side crew man"}
-    {cp     2.00}
+    {cp     1.50}
     {score  1.25}
     {basic}
     {breed}
@@ -202,7 +202,7 @@
 
 (define "tx_engineer_usa"
     {tags   "%side infantry man"}
-    {cp     2.50}
+    {cp     2.00}
     {score  1.75}
     {basic}
     {breed}
@@ -212,7 +212,7 @@
 
 (define "tx_engineer_grm"
     {tags   "%side infantry man"}
-    {cp     1.50}
+    {cp     2.00}
     {score  1.50}
     {basic}
     {breed}
@@ -223,7 +223,7 @@
 
 (define "tx_at_usa"
     {tags   "%side infantry man"}
-    {cp     3.00}
+    {cp     2.00}
     {score  4.50}
     {basic}
     {breed}
@@ -233,7 +233,7 @@
 
 (define "tx_at_grm"
     {tags   "%side infantry man"}
-    {cp     1.84}
+    {cp     2.00}
     {score  4.50}
     {basic}
     {breed}
@@ -243,7 +243,7 @@
 
 (define "tx_at_grm2"
     {tags   "%side infantry man"}
-    {cp     2.84}
+    {cp     2.00}
     {score  12.50}
     {basic}
     {breed}
@@ -254,7 +254,7 @@
 
 (define "tx_sniper_usa"
     {tags   "sniper %side infantry man"}
-    {cp     5.00}
+    {cp     3.00}
     {score  10.00}
     {basic}
     {breed}
@@ -265,7 +265,7 @@
 
 (define "tx_sniper_usa2"
     {tags   "sniper %side infantry man"}
-    {cp     5.00}
+    {cp     3.00}
     {score  17.50}
     {basic}
     {breed}
@@ -275,7 +275,7 @@
 
 (define "tx_sniper_grm"
     {tags   "sniper %side infantry man"}
-    {cp     5.00}
+    {cp     3.00}
     {score  9.375}
     {basic}
     {breed}
