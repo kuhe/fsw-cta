@@ -1,0 +1,9 @@
+{from "pattern grenade_smoke"
+	{tag "-missile" "decoy"}
+	{inventory {size 2 2}}
+	{entity "smoke_66mm"}
+	{mass 0.3}
+	{throw
+		{range 25}
+	}
+}

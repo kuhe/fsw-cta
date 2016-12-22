@@ -1,0 +1,20 @@
+;// 4.6x30mm
+
+{bullet
+	{tag "bullet small stackable pierce"}
+	{inventory
+		{weight 3.3}
+		{block 30}
+		{size 1 1}
+		{fsm "belt"}
+	}	
+	{mass 0.015}
+	{entity "5x39"}
+	{trace
+		{view "/texture/fx/trace_red1.mtl"
+			{ScaleY 0.07}
+			{Light 1}
+		}
+		{length 4}
+	}
+}

@@ -1,0 +1,48 @@
+;//	DShK standard
+
+{from "pattern bullet"
+	{tag "mgun weapon bullet to_hand"}
+	{entity "dshk"}
+	{fireSound	"small_arms/50cal/"}
+	{reloadSound "small_arms/mgun_heavy/"}
+	
+	{filling "ammo 12x108" 100}
+	{inventory
+		{size 6 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 34}
+	{traceFreq 4}
+	{Automatic}
+	
+	{rechargeTime 8.0}
+	{reloadAnimBonus 3}
+	("recoveryTime" r(600))
+	("speed" s(850))
+	("burst_long")
+	("spreading_short_mgun")
+	("accuracy_heavy_mgun")
+;	("accuracy_boost")
+
+	("health_damage_12x108" d(850))
+
+	{projectileDamage 15}
+	{projectileDamageTable {25 30} {50 25} {75 15} {100 5}}
+	{projectileDamageThreshold 1.1}
+
+	{range 135 140}
+	{aimingTolerance 1}
+	
+	{cursor "zenite_on"}
+	{cursorReloading "zenite_reload"}
+	
+	{crosshair "crosshair_mgun2"}
+	{crosshairReloading "crosshair_mgun2_reload"}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
+}

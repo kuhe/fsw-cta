@@ -1,0 +1,20 @@
+;// 7.62x67mm
+
+{bullet
+	{tag "bullet stackable pierce"}
+	{inventory
+		{weight 10}
+		{block 10}
+		{size 2 1}
+		{fsm "belt"}
+	}	
+	{mass 0.015}
+	{entity "7x54"}
+	{trace
+		{view "/texture/fx/trace_green1.mtl"
+			{ScaleY 0.1}
+			{Light 1}
+		}
+		{length 5.0}
+	}
+}

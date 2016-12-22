@@ -1,0 +1,22 @@
+{breed
+	{skin "civilian_female1"}
+	{portrait "grm_t1"}
+	{nationality grm}
+	{icon "squad1"}
+	{icon_priority 1}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t1")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "enfield_v1" filled}
+		{in_hands 0}
+	}
+}

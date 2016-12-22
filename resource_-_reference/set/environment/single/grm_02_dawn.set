@@ -1,0 +1,97 @@
+{environment
+	{light
+		{direction 0.891 -0.102 -0.443}
+		{ambient 0xff001920}
+		{diffuse 0xff282832}
+		{specular 0xffffffff}
+		{lightsIntensity 0.2}
+		{night}
+		{draw_sun_moon}
+		{sun_moon_radius 1}
+		{night_vision 0.9}
+		{color_correction
+			{contrast 1.05}
+			{tone 0xff000032}
+			{tone_strength 0.25}
+			{color_shading
+				{shade_tone 0xff4b4b4b}
+			}
+		}
+		{camera_lens_effetcs
+			{vision_mode
+				{enable}
+				{mode none}
+			}
+			{light_scattering
+				{enable}
+				{intensity 0.5}
+				{ray_length 0.5}
+				{color_tone 0xff505a8b}
+			}
+			{lens_dirt
+				{enable}
+				{texture "/texture/common/environment/lens_effects/dirty_lens_05"}
+			}
+			{screen_brightening
+				{enable}
+				{intensity 0.25}
+			}
+		}
+	}
+	{wind
+		{direction -0.999 0.039 0}
+		{main_strength 0.16}
+		{detail_strength 10}
+		{height_amplification 2}
+	}
+	{haze
+		{enable}
+		{color 0xff212a42}
+		{start 1000}
+		{end 3000}
+	}
+	{sky
+		{enable}
+		{texture "/texture/common/environment/environment_sunset_02"}
+		{globalEnvironment "/texture/common/environment/envmap_night_01"}
+		{intensity 1}
+	}
+	{weather
+		{enable}
+		{sound "world/wind/qp01 0005 wind howling"}
+		{"sound 2" "world/desert"}
+		{"volume 2" 20}
+	}
+	{thunder
+		{interval 40 15}
+		{color 0xff929292}
+		{sound "world/thunder"}
+	}
+	{video_overlay
+		{color 0xffffffff}
+	}
+	{grain
+		{enable}
+		{colorAmount 0}
+		{grainAmount 0.03}
+		{grainParticleSize 3}
+		{lumAmount 1}
+	}
+	{dof
+		{enable}
+		{near_scale 0}
+		{far_scale 1}
+		{near_start 50}
+		{near_end 75}
+		{far_start 2000}
+		{far_end 6000}
+		{"3rd_Person"
+			{"3rdP_blurscale" 1}
+		}
+		{blur_strength 3}
+	}
+	{glow
+		{enable}
+		{amount 2}
+	}
+}

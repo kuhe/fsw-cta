@@ -1,0 +1,7 @@
+;//	SCAR standard + holographic sight + hand grip + laser + silencer
+
+{from "fn_scar_v1"
+	{tag "silenced"}
+	{entity "fn_scar_hgfs"}
+	{fireSound	"small_arms/silenced_scar/"}
+}

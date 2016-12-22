@@ -1,0 +1,20 @@
+{from "pattern gun"
+	{filling "bullet115"}
+	{fireSound "gun/cannon_5/"}
+	{reloadSound "gun/"}
+	{rechargeTime 8}
+	("range_short")
+	
+	("speed" s(1600))
+	("caliber_large")
+	{projectileDamage 1000}
+	("damage" a(1000) b(800) c(600) d(400) e(200))
+	{parameters "heat"
+		("damage_cumulative" a(600))
+	}
+	
+	("accuracy_medium")
+	
+	{crosshair "crosshair2"}
+	{crosshairReloading "crosshair2_reload"}
+}

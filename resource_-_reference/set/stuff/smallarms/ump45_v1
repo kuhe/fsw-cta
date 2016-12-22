@@ -1,0 +1,40 @@
+;//	UMP-45 standard + holographic sight + hand grip + laser
+
+{from "pattern bullet"
+	{tag "smg weapon bullet to_hand shoot_walking"}
+	{entity "ump45_hgfs"}
+	{fireSound	"small_arms/mp5/"}
+	{reloadSound "small_arms/mp5/"}
+	
+	{filling "ammo 11x23b" 25 450}
+	{inventory
+		{size 5 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 3}
+	{traceFreq 0}
+	{Automatic}
+
+	{rechargeTime 2.5}
+	("recoveryTime" r(600))
+ 	("speed" s(285))
+	("burst_medium")
+	("spreading_medium")
+	("accuracy_smg_improved")
+;	("accuracy_boost")
+	
+	("health_damage_11x23" d(285))
+	
+	{projectileDamage 2}
+	{projectileDamageClip 2}
+	{projectileDamageTable {12.5 3} {250 0}}
+
+	{range 75 80}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
+}
