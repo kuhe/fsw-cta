@@ -4,4 +4,10 @@
 	{entity "m4a1_hg"}
 	("accuracy_assault_improved")
 	("spreading_medium")
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
 }

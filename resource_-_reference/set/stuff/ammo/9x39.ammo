@@ -1,3 +1,5 @@
+;// 9x39mm
+
 {bullet
 	{tag "bullet small stackable pierce"}
 	{inventory
@@ -10,9 +12,9 @@
 	{entity "9x39"}
 	{trace
 		{view "/texture/fx/trace_green1.mtl"
-			{ScaleY 0.075}
+			{ScaleY 0.05}
 			{Light 1}
 		}
-		{length 0.5}
+		{length 2.5}
 	}
 }

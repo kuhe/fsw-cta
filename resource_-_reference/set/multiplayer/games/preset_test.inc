@@ -2,7 +2,7 @@
 (define "test_all"
 	{common
 		{unitset
-			{value "all"}
+			{value "all|combined_arms"}
 		}
 		{commandPoints "*=%cp"}
 		{unitLimits ""}
@@ -23,7 +23,7 @@
 						{restore	"1.50	1.25	0.75	0.50	0.40	0.30	0.20"}
 					}
 				}
-				{buttons "squad1 squad2 v1 v2 v3 v4 v5"}
+				{buttons "s1 s2 v1 v2 v3 v4 v5"}
 			}
 			{hero
 				{resource

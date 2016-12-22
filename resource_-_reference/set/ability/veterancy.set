@@ -8,6 +8,7 @@
 	{"cannon" 				0.05}	;+%
 	{"weapon_reload"		0.10}	;+%
 	{"weapon_skill"			0}		;+lvl
+	{"medic"				0.10}	;+%
 }
 
 {"lvl_2" from veterancy
@@ -20,6 +21,7 @@
 	{"cannon" 				0.10}
 	{"weapon_reload"		0.15}
 	{"weapon_skill"			0}
+	{"medic"				0.20}
 }
 
 {"lvl_3" from veterancy
@@ -32,6 +34,7 @@
 	{"cannon" 				0.15}
 	{"weapon_reload"		0.20}
 	{"weapon_skill"			1}
+	{"medic"				0.30}
 }
 
 {"lvl_4" from veterancy
@@ -44,6 +47,7 @@
 	{"cannon" 				0.20}
 	{"weapon_reload"		0.25}
 	{"weapon_skill"			1}
+	{"medic"				0.40}
 }
 
 {"lvl_5" from veterancy
@@ -56,4 +60,5 @@
 	{"cannon" 				0.25}
 	{"weapon_reload"		0.30}
 	{"weapon_skill"			2}
+	{"medic"				0.50}
 }

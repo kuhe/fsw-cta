@@ -1,4 +1,4 @@
 {from "152mm_bgm-71"
-	{filling "ammo tow" 2}
+	{filling "bullet152 atgm" 2}
 	{rechargeTime 50}
 }

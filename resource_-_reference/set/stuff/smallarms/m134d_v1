@@ -4,16 +4,16 @@
 	{tag "mgun weapon bullet to_hand"}
 	{entity "m134d"}
 	{fireSound	"small_arms/m240/"}
-	{reloadSound "mg1"}
+	{reloadSound "small_arms/mgun_tank/"}
 
-	{filling "ammo 7x51b" 500 2000}
+	{filling "ammo 7x51" 500 2000}
 	{inventory
 		{size 6 2 }
 		{link_bone "gun_back"}
 		{weight 100 }
 	}
 	{mass 11}
-	{traceFreq 0.25}
+	{traceFreq 4}
 	{Automatic}
 
 	{rechargeTime 6.5}
@@ -24,11 +24,17 @@
 	("accuracy_mgun")
 ;	("accuracy_boost")
 	
-	{healthDamage 100}
+	("health_damage_7x51" d(853))
 
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {50 5} {250 0}}
 	
-	{range 95 100}
+	{range 115 120}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

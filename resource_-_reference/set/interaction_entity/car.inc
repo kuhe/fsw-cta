@@ -30,14 +30,27 @@
 		{add_view	"exhaust_dark_small"	"exhaust"			"FXsmoke2"}
 	}
 
-	{on "add_movement_sound"
-		{link_sound "move"			"vehicle/wheels/car"}
-		{link_sound "move_end"		"vehicle/wheels/car_end"}
-		{link_sound "engine"		"vehicle/engine/car"}
-		{link_sound "engine_end"	"vehicle/engine/car_end"}
-		{link_sound "exhaust"		"vehicle/engine/car_up"}
-	}
+;	{on "add_movement_sound"
+;		{link_sound "move"			"vehicle/wheels/car"}
+;		{link_sound "move_end"		"vehicle/wheels/car_end"}
+;		{link_sound "engine"		"vehicle/engine/car"}
+;		{link_sound "engine_end"	"vehicle/engine/car_end"}
+;		{link_sound "exhaust"		"vehicle/engine/car_up"}
+;	}
 	{on pierce
+		{if stuff "rocketlauncher"
+			{if volume "cabin"	
+				{call "blast_body"}
+			 else volume "body"	
+				{call "blast_body"}
+			 else volume "engine"
+				{call "blast_body"}
+			 else volume "turret"
+				{call "blast_body"}
+			 else volume "glass"
+				{call "blast_body"}
+			}
+		}
 		{if volume "engine"
 			{if rand 0.15
 				{components "engine" break}
@@ -92,39 +105,6 @@
 		}
 	}
 	{on bullet_hit
-		{if stuff "rocketlauncher"
-			{if volume "cabin"
-				;{if rand 0.5	 	
-					{call "blast_body"}
-				;else			
-				;	{components "body" break}
-				;}
-			 else volume "body"	
-			 	;{if rand 0.5	 	
-					{call "blast_body"}
-				;else			
-				;	{components "body" break}
-				;}
-			 else volume "engine"
-			 	;{if rand 0.5
-				;	{call "burn"}
-				;else
-					{call "blast_body"}
-				;}
-			 else volume "turret"
-			 	;{if rand 0.5
-				;	{call "burn"}
-				;else
-					{call "blast_body"}
-				;}
-			 else volume "glass"
-			 	;{if rand 0.5
-				;	{call "burn"}
-				;else
-					{call "blast_body"}
-				;}
-			}
-		}
 		{if volume "glass"
 		 	{call "break_glass"}
 		 else volume "cabin"
@@ -162,25 +142,17 @@
 				else effector "railway"
 					{call "crush"}
 				}
-			;else effector_velocity 3
-			;	{if effector "big part"
-			;		{component break}
-			;	}
 			}
 		}
 	}
 	{on break
-		{if component "cabin"
+		{if component "body"
 			{spawn "car_die_particle"}
-			{volumes "cabin" disable bullet}
-			{volumes "glass" disable bullet contact}
-			{crew_enable group "crew" 0}
-			{view start "smoke3"}
-    		{delay 10 {view stop "smoke3"}}
-    	else component "body"
-			{spawn "car_die_particle"}
+			{crew_enable group "gunner" 0}
+			{weapon_work "gun" 0}
+			{weapon_work "mgun" 0}
 		else component "engine"
-                        {spawn "car_die_particle"}
+			{spawn "car_die_particle"}
 			{view start "smoke2"}
 			{delay 40 {view stop "smoke2"}}
 			{view start "steam"}
@@ -188,9 +160,10 @@
 		}
 	}
 	{on repair
-		{if component "cabin"
-			{crew_enable group "crew" 1}
-			{view stop "smoke2"}
+		{if component "body"
+			{crew_enable group "gunner" 1}
+			{weapon_work "gun" 1}
+			{weapon_work "mgun" 1}
 		}
 	}
 
@@ -514,184 +487,79 @@
 	}
 }
 
-
-{"mittlever car"
+(define "truck_sound"
 	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/tracks/sdkfz250"	}
-		{link_sound "engine"			"vehicle/engine/sdkfz250"		}
-		{link_sound "engine_end"		"vehicle/engine/sdkfz250_end"	}
-		{link_sound "rotate_turret" 	"vehicle/turret/light1"	}
-		{link_sound "exhaust"			"vehicle/engine/sdkfz250_up"	}
-	}
-}
-
-{"sdkfz251"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/tracks/sdkfz250"	}
-		{link_sound "engine"			"vehicle/engine/sdkfz250"		}
-		{link_sound "engine_end"		"vehicle/engine/sdkfz250_end"	}
-		{link_sound "exhaust"			"vehicle/engine/sdkfz250_up"	}
-	}
-}
-
-{"zis5 car"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/blitz"	}
-		{link_sound "engine"			"vehicle/engine/zis"   	}
-		{link_sound "engine_end"		"vehicle/engine/zis_end"	}
-		{link_sound "exhaust"			"vehicle/engine/zis_up"	}
-	}
-}
-{"bm13 car"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/blitz"	}
-		{link_sound "engine"			"vehicle/engine/zis"   	}
-		{link_sound "engine_end"		"vehicle/engine/zis_end"	}
-		{link_sound "rotate_turret" 	"vehicle/turret/light"	}
-		{link_sound "exhaust"			"vehicle/engine/zis_up"	}
-	}
-}
-{"zis5eng car"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/blitz"	}
-		{link_sound "engine"			"vehicle/engine/zis"   	}
-		{link_sound "engine_end"		"vehicle/engine/zis_end"	}
-		{link_sound "exhaust"			"vehicle/engine/zis_up"	}
-	}
-}
-{"zis42 car"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/tracks/t34"	}
-		{link_sound "engine"			"vehicle/engine/zis"   	}
-		{link_sound "engine_end"		"vehicle/engine/zis_end"	}
-		{link_sound "exhaust"			"vehicle/engine/zis_up"	}
-	}
-}
-{"dodgewc56 car"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/dodge"		}
-		{link_sound "engine"			"vehicle/engine/dodge" 		}
-		{link_sound "engine_end"		"vehicle/engine/dodge_end" 	}
-		{link_sound "exhaust"			"vehicle/engine/dodge_up"	}
-	}
-}
-(define "kubel_sound"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/kubel"	}
-		{link_sound "engine"			"vehicle/engine/kubel"   	}
-		{link_sound "engine_end"		"vehicle/engine/kubel_end"	}
-		{link_sound "exhaust"			"vehicle/engine/kubel_up"	}
+		{link_sound "move"				"vehicle/engine/ve_small_drive"	}
+		{link_sound "engine"			"vehicle/engine/ve_large_accelerate"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_large_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_large_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
 )
-{"kubel car"
-	("kubel_sound")
+{"fmtv car"
+	("truck_sound")
 }
-{"willysmb car"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/MB"	}
-		{link_sound "engine"			"vehicle/engine/MB" 		}
-		{link_sound "engine_end"		"vehicle/engine/MB_end" 	}
-		{link_sound "exhaust"			"vehicle/engine/MB_up"		}
-	}
+{"fmtv_ammo car"
+	("truck_sound")
 }
-(define "horch_sound"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/horch"	}
-		{link_sound "engine"			"vehicle/engine/horch" 		}
-		{link_sound "engine_end"		"vehicle/engine/horch_end" 	}
-		{link_sound "exhaust"			"vehicle/engine/horch_up"	}
-	}
-)
-{"horch car"
-	("horch_sound")
+{"ural car"
+	("truck_sound")
 }
-(define "gmc_sound"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/gmc"		}
-		{link_sound "move_end"			"vehicle/wheels/gmc_end"	}
-		{link_sound "engine"			"vehicle/engine/m3a1" 		}
-		{link_sound "engine_end"		"vehicle/engine/m3a1_end" 	}
-		{link_sound "exhaust"			"vehicle/engine/m3a1_up"	}
-	}
-)
-{"gmc_cckw car"
-	("gmc_sound")
-}
-{"gmc_inf car"
-	("gmc_sound")
-}
-{"gmc_art car"
-	("gmc_sound")
-}
-{"gmc car"
-	("gmc_sound")
-}
-{"gmc_eng car"
-	("gmc_sound")
-}
-(define "opel_sound"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/wheels/blitz"	}
-		{link_sound "engine"			"vehicle/engine/Blitz"   	}
-		{link_sound "engine_end"		"vehicle/engine/Blitz_end"	}
-		{link_sound "exhaust"			"vehicle/engine/Blitz_up"	}
-	}
-)
-{"blitz3_6"
-	("opel_sound")
-}
-{"blitz3_6inf"
-	("opel_sound")
-}
-{"blitz3_6art"
-	("opel_sound")
-}
-{"blitz3_6eng"
-	("opel_sound")
-}
-{"blitz3_6f"
-	("opel_sound")
-}
-{"blitz3_6m"
-	("opel_sound")
-}
-{"isuzutx40"
-	("opel_sound")
-}
-{"sdkfz10_5 car"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/tracks/sdkfz10"	 }
-		{link_sound "engine"			"vehicle/engine/sdkfz10"	 }
-		{link_sound "engine_end"		"vehicle/engine/sdkfz234_end" }
-		{link_sound "rotate_turret" 	"vehicle/turret/light1"		 }
-		{link_sound "exhaust"			"vehicle/engine/sdkfz234_up" }
-	}
+{"ural_ammo car"
+	("truck_sound")
 }
 
-{"car_with_dust"
-	{on spawn
-		{add_view	"dustrun_small"			"on_ground"			"FXtraceR1"}
-		{add_view	"dustrun_small"			"on_ground"			"FXtraceL1"}
+
+(define "humvee_sound"
+	{on "add_movement_sound" overload
+		{link_sound "move"				"vehicle/engine/ve_small_drive"	}
+		{link_sound "engine"			"vehicle/engine/ve_small_accelerate"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_small_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_large_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
-	{on "start_fx_ground"
-		{view start "on_ground"}
-	}
-	{on "stop_fx_ground"
-		{view pause "on_ground"}
-	}
+)
+{"humvee_m2hb car"
+	("humvee_sound")
+}
+{"humvee_m240 car"
+	("humvee_sound")
+}
+{"humvee_mk19 car"
+	("humvee_sound")
+}
+{"humvee_tow car"
+	("humvee_sound")
 }
 
-{"soldier_us_afr_palmer_dodge"
-	{on "lights_on"
-		{add_view 	"headlight"		"light"		"headlightL"}
-		{add_view 	"headlight"		"light"		"headlightR"}
-		{add_view 	"light_vehicle"	"light"		"fxlight"}
-		{view start "light"}
-		{view show "light"}
-	}
+{"humvee_nvst car"
+	("humvee_sound")
 }
-{"truck_mortar"
-	{on fire "gun"
-		{spawn "startsmoke" inv_normal}
+{"humvee_pkm car"
+	("humvee_sound")
+}
+{"humvee_ags30 car"
+	("humvee_sound")
+}
+
+(define "technical_sound"
+	{on "add_movement_sound" overload
+		{link_sound "move"				"vehicle/engine/ve_small_drive"	}
+		{link_sound "engine"			"vehicle/engine/A0626_MSC_pickup_engine_01"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_small_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_large_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
+)
+{"technical_hmg car"
+	("technical_sound")
+}
+{"technical_lmg car"
+	("technical_sound")
+}
+{"technical_spg car"
+	("technical_sound")
+}
+{"technical_zpu car"
+	("technical_sound")
 }

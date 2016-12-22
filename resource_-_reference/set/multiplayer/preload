@@ -45,6 +45,7 @@ entity	"marker_ammo_refill"
 entity	"marker_fuel_out"
 entity	"marker_healing"
 entity	"marker_personage"
+entity	"marker_personage_acute"
 entity	"marker_repair"
 entity	"marker_veterancy"
 entity	"marker_blinded"
@@ -57,6 +58,8 @@ entity  "claymore_vis"
 entity  "mined_view"
 
 entity	"selection_circle"
+
+entity	"bandage"
 
 sound	"vehicle/tracks/tank"
 sound	"vehicle/turret/heavy2"

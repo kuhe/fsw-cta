@@ -1,19 +1,19 @@
-;//	M240L standard + holographic sight + bipod
+;//	M240L standard + bipod + ACOG scope
 
 {from "pattern bullet"
 	{tag "mgun weapon bullet to_hand shoot_walking"}
 	{entity "m240_l"}
 	{fireSound	"small_arms/m240/"}
-	{reloadSound "mg1"}
+	{reloadSound "small_arms/mgun/"}
 	
-	{filling "ammo 7x51b" 100 1000}
+	{filling "ammo 7x51" 100 1000}
 	{inventory
 		{size 6 2 }
 		{link_bone "gun_back"}
 		{weight 100 }
 	}
 	{mass 8}
-	{traceFreq 0.25}
+	{traceFreq 4}
 	{Automatic}
 
 	{rechargeTime 6.5}
@@ -24,11 +24,17 @@
 	("accuracy_mgun_improved")
 ;	("accuracy_boost")
 	
-	{healthDamage 125}
+	("health_damage_7x51" d(853))
 
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {50 5} {250 0}}
 	
-	{range 95 100}
+	{range 135 140}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 4"}
+		}
+	}
 }

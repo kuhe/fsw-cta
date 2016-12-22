@@ -1,8 +1,8 @@
 {game
-	{teammatch}
-	{parameters	"flagCount=3:3,5:5,7:7,9:9,11:11,13:13,15:15,17:16;points_table=0/0.000,0.05/0.0834,0.25/0.0916,0.45/0.1084,0.65/0.1334,0.85/0.1666,1.00/0.4166;flag_capture_time=50;flag_release_time=10;flag_capture_factor=0.9"}
+	{order 0}
+	{parameters	"flag_count=3:3,5:5,7:7,9:9,11:11,13:13,15:15,17:16;points_table=0/0.000,0.05/0.0834,0.25/0.0916,0.45/0.1084,0.65/0.1334,0.85/0.1666,1.00/0.4166;flag_capture_time=50;flag_release_time=10;flag_capture_factor=0.9"}
 	{settings
-		{options			scoreFinal enableSpectators}
+		{options			scoreFinal enableSpectators randomSpawnPoints}
 		{optionsAdvanced	preparationTime friendlyFire fogOfWar showPiercing showDamageReports}
 		{optionsRanked		}
 		{fogOfWar			fog_realistic}
@@ -21,6 +21,19 @@
 		{useUnitLevelRestrictions}
 		{enableBots}
 	}
-	{ranked}
+	{teamSettings
+		{teamsMode normal}
+		{armySelectionMode alliance}
+		{teams
+			{"a"}
+			{"b"}
+		}
+		{alliances
+			(include "preset_alliances.inc")
+		}
+	}
+	{ranked
+		{enabled}
+	}
 	(include "presets_basic.inc")
 }

@@ -1,8 +1,8 @@
 {game
-	{deathmatch}
-	{parameters	"freezeTime=30;hill_capture_time=300;hill_release_time=30;hill_capture_factor=0.2;hill_capture_bonus=0.5"}
+	{order 80}
+	{parameters	"freezeTime=30;flag_capture_time=300;flag_release_time=30;flag_capture_factor=0.2;hill_capture_bonus=0.5"}
 	{settings
-		{options			enableSpectators}
+		{options			enableSpectators randomSpawnPoints}
 		{optionsAdvanced 	preparationTime friendlyFire fogOfWar showPiercing showDamageReports}
 		{optionsRanked		}
 		{fogOfWar			fog_realistic}
@@ -21,6 +21,17 @@
 		{useUnitLevelRestrictions}
 		{enableBots}
 	}
-	{ranked}
+	{teamSettings
+		{teamsMode normal}
+		{teams
+			{"a" {minTeamPlayers 1} {maxTeamPlayers 2}}
+			{"b" {minTeamPlayers 1} {maxTeamPlayers 2}}
+			{"c" {minTeamPlayers 1} {maxTeamPlayers 2}}
+			{"d" {minTeamPlayers 1} {maxTeamPlayers 2}}
+		}
+	}
+	{ranked
+		{enabled}
+	}
 	(include "presets_nopayback.inc")
 }

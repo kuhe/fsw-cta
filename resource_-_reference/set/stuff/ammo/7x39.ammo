@@ -1,5 +1,7 @@
+;// 7.62x39mm
+
 {bullet
-	{tag "bullet stackable pierce 7x39b"}
+	{tag "bullet stackable pierce"}
 	{inventory
 		{weight 3.3}
 		{block 30}
@@ -10,9 +12,9 @@
 	{entity "7x39"}
 	{trace
 		{view "/texture/fx/trace_green1.mtl"
-			{ScaleY 0.075}
+			{ScaleY 0.1}
 			{Light 1}
 		}
-		{length 1.5}
+		{length 5}
 	}
 }

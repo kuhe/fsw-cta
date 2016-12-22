@@ -21,10 +21,10 @@
 	{gc_cp_leave_unit
 		{position 2 1}
 		{condition "vehicle single disabled"}
-	}	
-	{fortification
+	}
+	{gc_cp_state_smoke_decoy
 		{position 0 2}
-		{condition "disabled"}
+		{condition "vehicle tank disabled"}
 	}
 	{gc_cp_browse_back
 		{position 2 2}

@@ -35,9 +35,9 @@
 	}
 	{sky
 		{enable}
-		{texture "/texture/common/environment/sky_v4"}
-		{size 1 1}
-		{globalEnvironment "/texture/common/environment/day_crete"}
+		{texture "/texture/common/environment/environment_day_04"}
+		{globalEnvironment "/texture/common/environment/default"}
+		{intensity 1.2}
 	}
 	{thunder
 		{color 0xff686c73}
@@ -60,6 +60,9 @@
 		{near_end 75}
 		{far_start 1000}
 		{far_end 3500}
+		{"3rd_Person"
+			{"3rdP_blurscale" 1}
+		}
 		{blur_strength 3}
 	}
 	{glow

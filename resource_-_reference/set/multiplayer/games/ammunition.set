@@ -1,15 +1,15 @@
 {game
-	{teammatch}
-	{parameters	"ammoCount=3:3,5:5,7:7,9:9,11:11,13:13,15:15,17:16;base_capture_time=60;base_release_time=10;base_capture_factor=0.9;ammo_capture_time=300;ammo_release_time=10;ammo_capture_factor=0.9;maximum_ammo_payback=200;enable_time=120"}
+	{order 10}
+	{parameters	"flag_count=3:1:3,5:1:5,7:3:7,9:3:9,11:5:11,13:5:13,15:7:15,17:7:16;base_capture_time=60;base_release_time=10;base_capture_factor=0.9;flag_capture_time=300;flag_release_time=10;flag_capture_factor=0.9;maximum_ammo_payback=200;enable_time=120"}
 	{settings
-		{options			scoreFinal enableSpectators}
+		{options			scoreFinal enableSpectators randomSpawnPoints}
 		{optionsAdvanced	preparationTime friendlyFire fogOfWar showPiercing showDamageReports}
 		{optionsRanked		}
 		{fogOfWar			fog_realistic}
 		{difficulty			multiplayer}
 		{scoreMin			25}
 		{scoreMax			1000}
-		{scoreFinal			75}
+		{scoreFinal			100}
 		{preparationTimeMin	0}
 		{preparationTimeMax	60}
 		{preparationTime	15}
@@ -21,6 +21,19 @@
 		{useUnitLevelRestrictions}
 		{enableBots}
 	}
-	{ranked}
-	(include "presets_nopayback.inc")
+	{teamSettings
+		{teamsMode normal}
+		{armySelectionMode alliance}
+		{teams
+			{"a"}
+			{"b"}
+		}
+		{alliances
+			(include "preset_alliances.inc")
+		}
+	}
+	{ranked
+		{enabled}
+	}
+	(include "presets_lowpayback.inc")
 }

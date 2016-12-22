@@ -3,5 +3,5 @@
 {from "mk19_v1"
 	{entity "mk19_v2"}
 	("accuracy_grenade_launcher_improved")
-	{range 95 100}
+	{range 115 120}
 }

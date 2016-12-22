@@ -697,24 +697,30 @@
 
 (define "abrams_sound"
 	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/engine_new/ve_tankjet_drive"	}
-		{link_sound "engine"			"vehicle/engine_new/ve_tankjet_idle"		}
-		{link_sound "engine_end"		"vehicle/engine_new/ve_tankjet_shutdown"	}
-		{link_sound "exhaust"			"vehicle/engine_new/ve_tankjet_start"	}
-		{link_sound "rotate_turret" 	"vehicle/turret_new/ve_small_accelerate"	}
+		{link_sound "move"				"vehicle/engine/ve_tankjet_drive"	}
+		{link_sound "engine"			"vehicle/engine/ve_tankjet_idle"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_tankjet_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_tankjet_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
 )
 {"m1a2_abrams tank"
 	("abrams_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
 {"m1a2_abrams_tusk tank"
 	("abrams_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open3" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open3" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
@@ -722,17 +728,20 @@
 
 (define "bradley_sound"
 	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/engine_new/ve_tankdiesel1_drive"	}
-		{link_sound "engine"			"vehicle/engine_new/ve_tankdiesel2_accelerate"		}
-		{link_sound "engine_end"		"vehicle/engine_new/ve_large_shutdown"	}
-		{link_sound "exhaust"			"vehicle/engine_new/ve_tankjet_start"	}
-		{link_sound "rotate_turret" 	"vehicle/turret_new/ve_small_accelerate"	}
+		{link_sound "move"				"vehicle/engine/ve_tankdiesel1_drive"	}
+		{link_sound "engine"			"vehicle/engine/ve_tankdiesel2_accelerate"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_large_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_tankjet_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
 )
 {"m2_bradley tank"
 	("bradley_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
@@ -740,70 +749,50 @@
 
 (define "stryker_sound"
 	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/engine_new/ve_large_drive_wheel"	}
-		{link_sound "engine"			"vehicle/engine_new/ve_large_accelerate"		}
-		{link_sound "engine_end"		"vehicle/engine_new/ve_large_shutdown"	}
-		{link_sound "exhaust"			"vehicle/engine_new/ve_large_start"	}
-		{link_sound "rotate_turret" 	"vehicle/turret_new/ve_small_accelerate"	}
+		{link_sound "move"				"vehicle/engine/ve_large_drive_wheel"	}
+		{link_sound "engine"			"vehicle/engine/ve_large_accelerate"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_large_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_large_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
 )
 {"stryker_m2hb tank"
 	("stryker_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
 {"stryker_m1128 tank"
 	("stryker_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
 {"stryker_mk19 tank"
 	("stryker_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
-
-
-(define "humvee_sound"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/engine_new/ve_small_drive"	}
-		{link_sound "engine"			"vehicle/engine_new/ve_small_accelerate"		}
-		{link_sound "engine_end"		"vehicle/engine_new/ve_small_shutdown"	}
-		{link_sound "exhaust"			"vehicle/engine_new/ve_large_start"	}
-		{link_sound "rotate_turret" 	"vehicle/turret_new/ve_small_accelerate"	}
-	}
-)
-{"humvee_m2hb tank"
-	("humvee_sound")
+{"lav25a2 tank"
+	("stryker_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
 	}
-	("burn_by_engine" args 0.3)
-}
-{"humvee_m240 tank"
-	("humvee_sound")
-	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
-	}
-	("burn_by_engine" args 0.3)
-}
-{"humvee_mk19 tank"
-	("humvee_sound")
-	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
-	}
-	("burn_by_engine" args 0.3)
-}
-{"humvee_tow tank"
-	("humvee_sound")
-	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
@@ -811,24 +800,40 @@
 
 (define "t-80_sound"
 	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/engine_new/ve_tankdiesel1_drive"	}
-		{link_sound "engine"			"vehicle/engine_new/ve_tankdiesel1_accelerate"		}
-		{link_sound "engine_end"		"vehicle/engine_new/ve_tankdiesel2_shutdown"	}
-		{link_sound "exhaust"			"vehicle/engine_new/ve_tankdiesel1_start"	}
-		{link_sound "rotate_turret" 	"vehicle/turret_new/ve_small_accelerate"	}
+		{link_sound "move"				"vehicle/engine/ve_tankdiesel1_drive"	}
+		{link_sound "engine"			"vehicle/engine/ve_tankdiesel1_accelerate"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_tankdiesel2_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_tankdiesel1_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
 )
 {"t-80bv tank"
 	("t-80_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
 {"t-80u tank"
 	("t-80_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
+	}
+	("burn_by_engine" args 0.3)
+}
+{"t-62 tank"
+	("t-80_sound")
+	{on "gunner_hatch_open" overload
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
@@ -836,24 +841,30 @@
 
 (define "bmp_sound"
 	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/engine_new/ve_tankdiesel2_drive"	}
-		{link_sound "engine"			"vehicle/engine_new/ve_tankdiesel2_accelerate"		}
-		{link_sound "engine_end"		"vehicle/engine_new/ve_tankdiesel2_shutdown"	}
-		{link_sound "exhaust"			"vehicle/engine_new/ve_tankdiesel2_start"	}
-		{link_sound "rotate_turret" 	"vehicle/turret_new/ve_small_accelerate"	}
+		{link_sound "move"				"vehicle/engine/ve_tankdiesel2_drive"	}
+		{link_sound "engine"			"vehicle/engine/ve_tankdiesel2_accelerate"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_tankdiesel2_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_tankdiesel2_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
 )
 {"bmp2 tank"
 	("bmp_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
 {"bmp3 tank"
 	("bmp_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
@@ -861,63 +872,30 @@
 
 (define "btr_sound"
 	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/engine_new/ve_large_drive_wheel"	}
-		{link_sound "engine"			"vehicle/engine_new/ve_tankdiesel1_accelerate"		}
-		{link_sound "engine_end"		"vehicle/engine_new/ve_large_shutdown"	}
-		{link_sound "exhaust"			"vehicle/engine_new/ve_large_start"	}
-		{link_sound "rotate_turret" 	"vehicle/turret_new/ve_small_accelerate"	}
+		{link_sound "move"				"vehicle/engine/ve_large_drive_wheel"	}
+		{link_sound "engine"			"vehicle/engine/ve_tankdiesel1_accelerate"		}
+		{link_sound "engine_end"		"vehicle/engine/ve_large_shutdown"	}
+		{link_sound "exhaust"			"vehicle/engine/ve_large_start"	}
+		{link_sound "rotate_turret" 	"vehicle/turret/ve_small_accelerate"	}
 	}
 )
 {"btr-80 tank"
 	("btr_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
+	}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }
 {"btr-82a tank"
 	("btr_sound")
 	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+		{ani_play "open2" resume}
 	}
-	("burn_by_engine" args 0.3)
-}
-
-
-(define "technical_sound"
-	{on "add_movement_sound" overload
-		{link_sound "move"				"vehicle/engine_new/ve_small_drive"	}
-		{link_sound "engine"			"vehicle/engine_new/A0626_MSC_pickup_engine_01"		}
-		{link_sound "engine_end"		"vehicle/engine_new/ve_small_shutdown"	}
-		{link_sound "exhaust"			"vehicle/engine_new/ve_large_start"	}
-		{link_sound "rotate_turret" 	"vehicle/turret_new/ve_small_accelerate"	}
-	}
-)
-{"technical_hmg tank"
-	("technical_sound")
-	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
-	}
-	("burn_by_engine" args 0.3)
-}
-{"technical_lmg tank"
-	("technical_sound")
-	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
-	}
-	("burn_by_engine" args 0.3)
-}
-{"technical_spg tank"
-	("technical_sound")
-	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
-	}
-	("burn_by_engine" args 0.3)
-}
-{"technical_zpu tank"
-	("technical_sound")
-	{on "gunner_hatch_open" overload
-		{ani_play "open2"}
+	{on "gunner_hatch_close" overload
+		{ani_play "open2" -1 resume}
 	}
 	("burn_by_engine" args 0.3)
 }

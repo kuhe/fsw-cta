@@ -128,13 +128,13 @@
 	{text_style "f(myriadpro)s(28)c(255 255 255)"}
 }
 {objectives
-	{text_style "f(myriadpro)s(%fs)p(0)"}
+	{text_style "f(myriadpro)s(%fs)p(0)c(255 255 255)"}
 }
 {message_history
 	{text_style "f(myriadpro)s(%fs)p(0)c(255 255 255)"}
 }
 {event_history
-	{text_style "<f(myriadpro)s(8)>p(0)"}
+	{text_style "<f(myriadpro)s(8)>p(0)c(255 255 255)"}
 }
 {talk
 	{text_style "f(myriadpro)s(%fs)p(0)c(255 255 255)"}

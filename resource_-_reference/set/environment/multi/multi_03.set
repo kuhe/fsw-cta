@@ -1,43 +1,63 @@
 {environment
 	{light
-		{direction -0.742 0.508 -0.437}
-		{ambient 0xff373741}
+		{direction -0.772 0.528 -0.355}
+		{ambient 0xff323241}
 		{diffuse 0xffc3967d}
-		{specular 0xff646464}
+		{specular 0xff7f7f7f}
 		{lightsIntensity 0.05}
+		{draw_sun_moon}
+		{sun_moon_radius 1}
 		{night_vision 1}
 		{color_correction
-			{tone 0xff000032}
-			{tone_strength 0.2}
+			{contrast 1.05}
+			{tone 0xff320019}
+			{tone_strength 0.25}
 			{color_shading
 				{shade_tone 0xff4b4b4b}
 			}
 		}
-		{light_scattering
-			{sample_count 20}
-			{sun_radius 1}
-			{ray_intensity 0.3}
-			{ray_length 0.9}
-			{lum_worldToSun_ratio 0.5}
-			{darken 0.4}
-			{intensity 1}
+		{camera_lens_effetcs
+			{vision_mode
+				{mode none}
+			}
+			{light_scattering
+				{enable}
+				{intensity 0.5}
+				{ray_length 2}
+				{color_tone 0xff7d1900}
+			}
+			{lens_dirt
+				{enable}
+				{texture "/texture/common/environment/lens_effects/dirty_lens"}
+			}
+			{screen_brightening
+				{enable}
+				{intensity 0.25}
+			}
 		}
 	}
 	{wind
-		{speed 0.5 0 0}
-		{amplitude 2}
+		{direction -0.638 -0.402 0}
+		{main_strength 0.12}
+		{detail_strength 10}
+		{height_amplification 0}
 	}
 	{haze
 		{enable}
-		{color 0xfff5ffff}
-		{start 3000}
+		{color 0xffe6d2d2}
+		{start 5000}
 		{end 8000}
 	}
 	{sky
 		{enable}
-		{texture "/texture/common/environment/clouds.ebm"}
-		{size 1 1}
-		{globalEnvironment "/texture/common/environment/day_dubovka"}
+		{texture "/texture/common/environment/environment_sunset_03"}
+		{globalEnvironment "/texture/common/environment/envmap_sunset_01"}
+		{intensity 1.25}
+		{azimuth 235}
+	}
+	{weather
+		{enable}
+		{sound "world/wind/qp01 0001 wind soft"}
 	}
 	{thunder
 		{color 0xff686c73}
@@ -54,15 +74,14 @@
 	}
 	{dof
 		{enable}
-		{near_scale 2.5}
+		{near_scale 0}
 		{far_scale 1}
 		{near_start 50}
 		{near_end 75}
 		{far_start 2000}
 		{far_end 6000}
 		{"3rd_Person"
-			{focus_to_near 1500}
-			{focus_to_far 2000}
+			{"3rdP_blurscale" 1}
 		}
 		{blur_strength 3}
 	}

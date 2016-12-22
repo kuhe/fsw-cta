@@ -1,19 +1,19 @@
 ;//	M39 EMR standard + ACOG scope
 
 {from "pattern bullet"
-	{tag "rifle weapon bullet to_hand shoot_walking"}
+	{tag "rifle autorifle weapon bullet to_hand shoot_walking"}
 	{entity "m39_emr"}
 	{fireSound	"small_arms/m39/"}
-	{reloadSound "mp44"}	
+	{reloadSound "small_arms/m16/"}
 	
-	{filling "ammo 7x51b" 20 300}
+	{filling "ammo 7x51" 20 300}
 	{inventory
 		{size 6 2 }
 		{link_bone "gun_back"}
 		{weight 100 }
 	}
 	{mass 3}
-	{traceFreq 0.001}
+	{traceFreq 0}
 	{Automatic}
 
 	{rechargeTime 3.0}
@@ -24,11 +24,17 @@
 	("accuracy_assault_improved")
 	("accuracy_boost")
 	
-	{healthDamage 350}
+	("health_damage_7x51" d(865))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 
-	{range 95 100}
+	{range 125 130}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 4"}
+		}
+	}
 }

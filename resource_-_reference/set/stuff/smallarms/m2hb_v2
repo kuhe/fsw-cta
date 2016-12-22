@@ -2,6 +2,6 @@
 
 {from "m2hb_v1"
 	{entity "browning_m2_v2"}
-	("accuracy_mgun_improved")
-	{range 115 120}
+	("accuracy_heavy_mgun_improved")
+	{range 145 150}
 }

@@ -10,6 +10,7 @@
 	{perks
 		(include "perks_generic.inc")
 		("perk_t2")
+		{mechanic "-body" factor 0.75}
 	}
 	{veterancy
 		(include "veterancy_generic.inc")

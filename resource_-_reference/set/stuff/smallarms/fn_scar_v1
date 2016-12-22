@@ -1,34 +1,40 @@
-;//	FN SCAR standard + holographic sight + hand grip
+;//	SCAR standard + holographic sight + hand grip
 
 {from "pattern bullet"
 	{tag "smg assaultrifle weapon bullet to_hand shoot_walking"}
-	{entity "fn_scar"}
+	{entity "fn_scar_hg"}
 	{fireSound	"small_arms/scar/"}
-	{reloadSound "mp44"}	
+	{reloadSound "small_arms/m16/"}
 	
-	{filling "ammo 5x45" 30 450}
+	{filling "ammo 7x51" 20 450}
 	{inventory
 		{size 6 2 }
 		{link_bone "gun_back"}
 		{weight 100 }
 	}
 	{mass 3}
-	{traceFreq 0.001}
+	{traceFreq 0}
 	{Automatic}
 
 	{rechargeTime 3.0}
 	("recoveryTime" r(625))
- 	("speed" s(870))
-	("burst_short")
+ 	("speed" s(714))
+	("burst_very_short")
 	("spreading_medium")
 	("accuracy_assault_improved")
 ;	("accuracy_boost")
 	
-	{healthDamage 125}
+	("health_damage_7x51" d(714))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 
-	{range 75 80}
+	{range 95 100}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
 }

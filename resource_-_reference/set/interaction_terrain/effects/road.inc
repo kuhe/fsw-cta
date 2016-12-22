@@ -115,7 +115,7 @@
   }
 }
 
-{"country_road" ;willage road
+{"country_road" ;village road
   {on hit
     {if min_mass 100
       {if effector "tree"
@@ -133,8 +133,11 @@
       {spawn "fire_molot_ground"}
       {spawn "fire_shellhole"}
     else stuff "big smoke"
-	{spawn "ex_arm_big"}
-	{spawn "smoke_shell"}
+    	{spawn "ex_arm_big"}
+    	{spawn "smoke_shell"}
+    else stuff "dynamite"
+      {spawn "ex_bomb_big"}
+      {spawn "shellhole_big"}
     else stuff "grenade flashbang"
       {spawn "ex_grenade_flash"}
       {spawn "fire_shellhole"}
@@ -145,22 +148,22 @@
       {spawn "ex_grenade_sm"}
       {spawn "grenade_shellhole" terrain_texmod}
     else stuff "small bullet"
-		{if rand 0.5
-			{spawn "ex_bul_sm"}
-		else
-			{spawn "ex_bul_sm2"}
-		}
+  		{if rand 0.5
+  			{spawn "ex_bul_sm"}
+  		else
+  			{spawn "ex_bul_sm2"}
+  		}
     else stuff "big bullet"
       {spawn "ex_bul_big_50"}
     else stuff "zenite"
       {spawn "ex_bul_zenit"}
       {spawn "shellhole_small"}
     else stuff "bullet"
-		{if rand 0.5
-			{spawn "ex_bul_big"}
-		else
-			{spawn "ex_bul_big2"}
-		}
+  		{if rand 0.5
+  			{spawn "ex_bul_big"}
+  		else
+  			{spawn "ex_bul_big2"}
+  		}
     else stuff "big mortar"
       {spawn "ex_mort_big"}
       {spawn "shellhole_big"}
@@ -213,14 +216,11 @@
       {spawn "ex_grenade_big"}
       {spawn "shellhole_medium"}
     else stuff "mine antitank"
-	  {spawn "ex_arm_big"}
+      {spawn "ex_arm_big"}
       {spawn "shellhole_big"}
-	else stuff "mine clockwork"
-		{spawn "ex_anti_big"}
-		{spawn "shellhole_big"}
-    else stuff "dynamite"
-      {spawn "ex_bomb_big"}
-      {spawn "shellhole_big"}
+  	else stuff "mine clockwork"
+  		{spawn "ex_anti_big"}
+  		{spawn "shellhole_big"}
     else stuff "dynamite_clockwork"
       {spawn "ex_bomb_big"}
       {spawn "shellhole_big"}
@@ -228,7 +228,7 @@
       {spawn "ex_bomb_big"}
       {spawn "shellhole_big"}
     else stuff "flaerammo"
-	  {spawn "artillery_explosion_flaer"}
+      {spawn "artillery_explosion_flaer"}
     }
   }
 }

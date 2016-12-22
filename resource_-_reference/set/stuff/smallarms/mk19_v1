@@ -3,8 +3,8 @@
 {from "pattern bullet"
 	{tag "mgun weapon bullet to_hand"}
 	{entity "mk19"}
-	{fireSound	"mgun/browning_burst/"}
-	{reloadSound "ptrd"}
+	{fireSound	"small_arms/nsvt/"}
+	{reloadSound "small_arms/mgun_heavy/"}
 	
 	{filling "ammo mk19" 32}
 	{inventory
@@ -13,10 +13,11 @@
 		{weight 100 }
 	}
 	{mass 31}
-	{traceFreq 1.0}
+	{traceFreq 1}
 	{Automatic}
 	
 	{rechargeTime 15.0}
+	{reloadAnimBonus 10}
 	("recoveryTime" r(325))
 	("speed2" s(240))
 	("burst_very_short")
@@ -30,9 +31,18 @@
 	{projectileDamageTable {25 30} {50 25} {75 15} {100 5}}
 	{projectileDamageThreshold 1.1}
 
-	{range 75 80}
+	{range 115 120}
 	{aimingTolerance 1}
 	
 	{cursor "cannon_on_fg"}
 	{cursorReloading "cannon_reload_fg"}
+	
+	{crosshair "crosshair6"}
+	{crosshairReloading "crosshair6_reload"}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

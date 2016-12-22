@@ -30,6 +30,40 @@
 			{destroyed "80 80 80"}
 		}
 	}
+	{compass
+		{show}
+		{spacing 60}
+		{offset 0 -5}
+	}
+	{vehicle_view
+		{show}
+		{offset 150 -150}
+	}
+	{human_view
+		{show}
+		{offset 150 -150}
+	}
+	{crew_view
+		{show}
+		{offset -250 -50}
+		{colors
+			{crewed "193 255 193"}
+			{empty "128 128 128"}
+		}
+		{spacing 40}
+	}
+	{squad_view
+		{show}
+		{offset -250 -50}
+		{spacing 40}
+	}
+	{weapon_view
+		{show}
+		{offset 0 -200}
+		{size 180 90}
+		{view 30 40}
+		{spacing 15}
+	}
 	{manual_targetting
 		{range
 			{show}
@@ -40,7 +74,7 @@
 			{satisfy yellow}
 			{optimal "220 220 220"}
 
-			{background}
+			;{background}
 			{bkg_invalid "46 46 46 153"}
 			{bkg_satisfy "46 46 46 153"}
 			{bkg_optimal "46 46 46 153"}
@@ -75,6 +109,9 @@
 		{trajectory
 			{show}
 		}
+		{zoom_factor
+			{show}
+		}
 		{ammo
 			{desc
 				{show}
@@ -82,7 +119,7 @@
 				{color "193 255 193"}
 			}
 			{amount
-				{show}
+				;{show}
 				{offset 0 0}
 				{color gray}
 			}
@@ -91,9 +128,17 @@
 				{offset 0 0}
 			}
 			{shell
+				;{show}
+				{offset 0 0}
+			}
+			{grenade
 				{show}
 				{offset 0 0}
 			}
+		}
+		{hitmarker
+			{show}
+			{time 0.5} ; seconds
 		}
 	}
 }

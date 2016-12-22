@@ -15,7 +15,7 @@
 		{ro_face_color "93 93 93 192"}
 		{ro_text_color "67 67 67"}
 	}
-	{text_style "f(myriadpro)s(17)p(0)c(198 198 198)y."}
+	{text_style "f(myriadpro)s(%fs)p(0)c(198 198 198)y."}
 	{ro_text_color "67 67 67"}
 	{disabled_text_color "179 179 179"}
 	{modal_frame_color "255 255 255"}
@@ -53,7 +53,7 @@
 }
 {dda_editor
 	{item
-		{ro_text_color "67 67 67"}
+		{ro_text_color "128 128 128"}
 		{face_color
 			{selected	"150 150 150"}
 		}
@@ -178,14 +178,32 @@
 	{cursor_char "_"}
 	{blink_period "0.7"}
 }
+{inputline_clan_tag
+	{frame_size 0}
+	{face_color	"20 20 20 200"}
+	{frame_color "50 50 50"}
+	
+	{selection
+		{face_color "93 93 93"}
+		{text_color "0 0 0"}
+		{ro_face_color "93 93 93 192"}
+		{ro_text_color "67 67 67"}
+	}
+	{text_style "f(myriadpro)e(shadow)s(30)p(0)c(198 198 198)y."}
+	{ro_text_color "255 255 255"}
+	{disabled_text_color "179 179 179"}
+	{modal_frame_color "255 255 255"}
+	{cursor_char "_"}
+	{blink_period "0.7"}
+}
 {dialogbox
-	{text_style "f(myriadpro)s(%fs)p(0)c(0 0 0)"}
+	{text_style "f(myriadpro)s(%fs)p(0)c(255 255 255)"}
 }
 {frame
 	{text_style "f(myriadpro)s(28)c(255 255 255)"}
 }
 {objectives
-	{text_style "f(myriadpro)s(%fs)p(0)"}
+	{text_style "f(myriadpro)s(%fs)p(0)c(255 255 255)"}
 }
 {message_history
 	{text_style "f(myriadpro)s(%fs)p(0)c(255 255 255)"}

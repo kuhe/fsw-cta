@@ -4,7 +4,7 @@
 	{tag "smg assaultrifle weapon bullet to_hand shoot_walking"}
 	{entity "akm"}
 	{fireSound	"small_arms/ak47/"}
-	{reloadSound "mp44"}	
+	{reloadSound "small_arms/ak47/"}
 	
 	{filling "ammo 7x39" 30 450}
 	{inventory
@@ -13,22 +13,28 @@
 		{weight 100 }
 	}
 	{mass 3}
-	{traceFreq 0.001}
+	{traceFreq 0}
 	{Automatic}
 
 	{rechargeTime 3.0}
 	("recoveryTime" r(600))
  	("speed" s(715))
-	("burst_short")
+	("burst_very_short")
 	("spreading_short")
 	("accuracy_assault")
 ;	("accuracy_boost")
 	
-	{healthDamage 100}
+	("health_damage_7x39" d(715))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 
-	{range 75 80}
+	{range 95 100}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

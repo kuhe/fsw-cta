@@ -812,6 +812,7 @@
 {"turn_over"}
 {"no_plant"}
 {"flag_slave"}
+{"crater"}
 
 {"vision_cannon_minimum"}
 {"vision_cannon_low"}

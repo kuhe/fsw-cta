@@ -1,35 +1,23 @@
 {textures
-	{"sand/*;*/sand*" 
-		"ground" "sand"
+	{"dirt/*"
+		"ground" "ground"
 	}
-	{"town/*"
+	{"floor/*" 
 		"ground" "road"
 	}
-	{"*/.winter/*"
-		"undef" "snow"
-	}
-	{"*/ice*"
-		"ground" "ice"
-	}	
-	{"winter/*"
-		"undef" "snow"
-	}
-	{"*/snow*"
-		"undef" "snow"
+	{"grass/*"
+		"ground" "grass"
 	}
 	{"rock/*"
 		"ground" "rock"
 	}
-	{"grass/*;*/grass*;leaves/*"
-		"undef" "grass"
+	{"sand/*" 
+		"ground" "sand"
 	}
-	{"dirt/*"
-		"ground" "ground"
+	{"town/*"
+		"road" "road"
 	}
-	{"*/soil*;*/clay*;*/ground*"
-		"ground" "ground"
-	}
-	{"*/brick*;*/asfalt*"
-		"ground" "road"
+	{"winter/*"
+		"snow" "snow"
 	}
 }

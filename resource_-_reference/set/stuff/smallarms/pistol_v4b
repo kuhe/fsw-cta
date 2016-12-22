@@ -1,13 +1,15 @@
 ;//	MP-444 Bagira standard + laser + silencer
 
 {from "pistol_v1b"
+	{tag "silenced"}
 	{entity "mp444"}
-	{fireSound	"pistol/silent/welrod"}
+	{fireSound	"small_arms/silenced_pistol2/"}
 	{filling "ammo 9x18" 12 60}
 	{inventory
 		{size 3 1}
 	}
  	("speed" s(325))
 	("accuracy_pistol_improved")
-	{healthDamage 225}
+
+	("health_damage_9x18" d(325))
 }

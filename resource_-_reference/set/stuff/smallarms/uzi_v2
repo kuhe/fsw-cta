@@ -2,6 +2,6 @@
 
 {from "uzi_v1"
 	{entity "mini_uzi_hgf"}
-	("accuracy_assault_improved")
-	("spreading_long")
+	("spreading_medium")
+	("accuracy_smg_improved")
 }

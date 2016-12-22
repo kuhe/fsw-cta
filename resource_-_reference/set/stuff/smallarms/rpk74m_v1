@@ -1,19 +1,19 @@
-;//	RPK-74 M standard + holographic sight
+;//	RPK-74 M standard + bipod + holographic sight
 
 {from "pattern bullet"
 	{tag "mgun weapon bullet to_hand shoot_walking"}
 	{entity "rpk_74m"}
 	{fireSound	"small_arms/rpk/"}
-	{reloadSound "mp44"}	
+	{reloadSound "small_arms/mgun_clip/"}
 	
-	{filling "ammo 5x39b" 40 1000}
+	{filling "ammo 5x39" 40 1000}
 	{inventory
 		{size 6 2 }
 		{link_bone "gun_back"}
 		{weight 100 }
 	}
 	{mass 5}
-	{traceFreq 0.25}
+	{traceFreq 4}
 	{Automatic}
 
 	{rechargeTime 3.0}
@@ -21,14 +21,20 @@
  	("speed" s(960))
 	("burst_long")
 	("spreading_medium_mgun")
-	("accuracy_mgun")
+	("accuracy_mgun_improved")
 ;	("accuracy_boost")
 	
-	{healthDamage 125}
+	("health_damage_5x39" d(960))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 
-	{range 95 100}
+	{range 115 120}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
 }

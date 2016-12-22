@@ -1,7 +1,7 @@
 {"mortar smoke"
 	{on spawn
 		{call "add_smoke"}
-		{link_sound "smoke" "detonation/grenade_smoke/grenade_smoke"}
+		{link_sound "smoke" "detonation/grenade_smoke/"}
 	}
 	{on "add_smoke"
 		{add_view "smoke_cover-up_small"	"smoke1" "root"}

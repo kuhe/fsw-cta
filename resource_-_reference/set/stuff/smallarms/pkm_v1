@@ -1,19 +1,19 @@
-;//	PKM standard + holographic sight + bipod
+;//	PKM standard + bipod
 
 {from "pattern bullet"
 	{tag "mgun weapon bullet to_hand shoot_walking"}
 	{entity "pkm"}
 	{fireSound	"small_arms/rpk/"}
-	{reloadSound "mp44"}	
+	{reloadSound "small_arms/mgun/"}
 	
-	{filling "ammo 7x54b" 100 1000}
+	{filling "ammo 7x54" 100 1000}
 	{inventory
 		{size 6 2 }
 		{link_bone "gun_back"}
 		{weight 100 }
 	}
 	{mass 5}
-	{traceFreq 0.25}
+	{traceFreq 4}
 	{Automatic}
 
 	{rechargeTime 6.5}
@@ -24,11 +24,17 @@
 	("accuracy_mgun")
 ;	("accuracy_boost")
 	
-	{healthDamage 125}
+	("health_damage_7x54" d(825))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 
-	{range 95 100}
+	{range 115 120}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

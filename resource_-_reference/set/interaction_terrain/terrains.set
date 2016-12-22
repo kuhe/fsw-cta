@@ -2,42 +2,42 @@
 	{"ground"
 		{effect "ground"} 		
 		{physics "ground"}
-		{pp "ground no_pass"}
+		{pp "ground no_pass no_pass_human"}
 	}
 	{"road"
 		{effect "road"} 		
 		{physics "rock"}
-		{pp "ground road no_pass"}
+		{pp "ground road no_pass no_pass_human"}
 	}
 	{"country_road"
 		{effect "country_road"} 
 		{physics "rock"}
-		{pp "ground road no_pass"}
+		{pp "ground road no_pass no_pass_human"}
 	}
 	{"rock"
 		{effect "rock"} 		
 		{physics "rock"}
-		{pp "ground no_pass"}
+		{pp "ground no_pass no_pass_human"}
 	}
 	{"ice" 
 		{effect "ice"}
 		{physics "rock"}
-		{pp "ground no_pass"}
+		{pp "snow no_pass no_pass_human"}
 	}
 	{"swamp"
 		{effect "swamp"} 		
 		{physics "sand"}
-		{pp "swamp no_pass"}
+		{pp "swamp no_pass no_pass_human"}
 	}
 	{"sand"
 		{effect "sand"} 		
 		{physics "sand"}
-		{pp "ground no_pass"}
+		{pp "ground no_pass no_pass_human"}
 	}
 	{"shallow_water"
 		{effect "shallow_water"} 		
 		{physics "water"}
-		{pp "ground swamp shallow_water no_pass"}
+		{pp "ground swamp shallow_water no_pass no_pass_human"}
 	}
 	{"water"
 		{effect "water"} 		
@@ -59,31 +59,31 @@
 	{"puddle"
 		{effect "puddle"} 		
 		{physics "ground"}
-		{pp "ground swamp no_pass"}
+		{pp "ground swamp no_pass no_pass_human"}
 	}
 	{"mud"
 		{effect "mud"} 		
 		{physics "ground"}
-		{pp "ground swamp no_pass"}
+		{pp "ground swamp no_pass no_pass_human"}
 	}
 	{"bridge"
 		{effect "bridge"}
 		{physics "rock"}
-		{pp "ground road no_pass"}
+		{pp "ground road no_pass no_pass_human"}
 	}
 	{"bridge_wood"
 		{effect "bridge_wood"}
 		{physics "rock"}
-		{pp "ground road no_pass"}
+		{pp "ground road no_pass no_pass_human"}
 	}
 	{"snow"
 		{effect "snow"} 		
 		{physics "sand"}
-		{pp "ground no_pass"}
+		{pp "snow no_pass no_pass_human"}
 	}
 	{"grass"
 		{effect "grass"} 		
 		{physics "ground"}
-		{pp "ground no_pass"}
+		{pp "ground no_pass no_pass_human"}
 	}
 }

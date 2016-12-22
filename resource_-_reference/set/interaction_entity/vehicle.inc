@@ -128,6 +128,7 @@
 	{on repair
 		{call "update_moveable"}
 		{call "repair_light"}
+		{tags remove "burned"}
 	}
 
 	{on "break_light"
@@ -186,30 +187,45 @@
 
 	{on "link_weapon"
 		{if name "mgun"
-			{add_view "flash_gun_big_vehicle"	"flashbarrel3"	"Foresight3"}
-			{add_view "shell_mgun"		"shell"			"fxshell"}
+			{add_view "flash_gun_big_vehicle" "flashbarrel3" "Foresight3"}
+			{add_view "shell_mgun" "shell" "fxshell"}
+		else name "mgun1"
+			{add_view "flash_gun_big_vehicle" "flashbarrel4" "Foresight3" "mgun_rot2"}
+			{add_view "shell_mgun" "shell1" "fxshell" "mgun_rot2"}
 		else
 			{view hide	"flashbarrel3"}
-			{view pause	"flashbarrel3"}
-			{view pause "shell"}
+			{## view pause	"flashbarrel3"}
+			{## view pause "shell"}
 		}
 	}
 	{on fire "mgun"
 		{view start "flashbarrel3"}
-		{ani_play "fire_mgun"}
 		{view start "shell"}
-		{delay 0.1 "shell"
+		{## delay 0.1 "flashbarrel3"
+			{view pause "flashbarrel3"}
 			{view pause "shell"}
 		}
+		;{ani_play "fire_mgun"}
 	}
 	{on fire "mgun1"
 		{view start "flashbarrel4"}
+		{view start "shell1"}
+		{## delay 0.1 "flashbarrel4"
+			{view pause "flashbarrel4"}
+			{view pause "shell1"}
+		}
 	}
 	{on fire "mgun2"
 		{view start "flashbarrel5"}
+		{## delay 0.1 "flashbarrel5"
+			{view pause "flashbarrel5"}
+		}
 	}
 	{on fire "mgun3"
 		{view start "flashbarrel6"}
+		{## delay 0.1 "flashbarrel6"
+			{view pause "flashbarrel6"}
+		}
 	}
 	{on contact
 		{if volume "sticky"
@@ -396,6 +412,9 @@
 				{log "burn_engine"}
 				{call "_burn"}
 			else volume "engine1"
+				{log "burn_engine"}				
+				{call "_burn"}
+			else volume "engine2"
 				{log "burn_engine"}				
 				{call "_burn"}
 			else

@@ -5,6 +5,8 @@
 		{diffuse 0xffaf967d}
 		{specular 0xff646464}
 		{lightsIntensity 0.05}
+		{draw_sun_moon}
+		{sun_moon_radius 1}
 		{night_vision 1}
 		{color_correction
 			{tone 0xff000032}
@@ -13,14 +15,18 @@
 				{shade_tone 0xff4b4b4b}
 			}
 		}
-		{light_scattering
-			{sample_count 20}
-			{sun_radius 1}
-			{ray_intensity 0.3}
-			{ray_length 0.9}
-			{lum_worldToSun_ratio 0.5}
-			{darken 0.4}
-			{intensity 1}
+		{camera_lens_effetcs
+			{vision_mode
+				{mode none}
+			}
+			{light_scattering
+				{intensity 0.5}
+				{ray_length 0.5}
+				{color_tone 0x1010101}
+			}
+			{screen_brightening
+				{intensity 0.3}
+			}
 		}
 	}
 	{wind
@@ -35,9 +41,9 @@
 	}
 	{sky
 		{enable}
-		{texture "/texture/common/environment/sky_v4"}
-		{size 1 1}
-		{globalEnvironment "/texture/common/environment/day_crete"}
+		{texture "/texture/common/environment/environment_day_06"}
+		{globalEnvironment "/texture/common/environment/default"}
+		{intensity 1.2}
 	}
 	{thunder
 		{color 0xff686c73}
@@ -54,12 +60,15 @@
 	}
 	{dof
 		{enable}
-		{near_scale 2.5}
-		{far_scale 0.75}
+		{near_scale 0}
+		{far_scale 1}
 		{near_start 50}
 		{near_end 150}
 		{far_start 1000}
 		{far_end 3500}
+		{"3rd_Person"
+			{"3rdP_blurscale" 1}
+		}
 		{blur_strength 3}
 	}
 	{glow

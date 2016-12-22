@@ -12,4 +12,19 @@
 	{aimRange 30}					; m
 	{gravity  1}
 	{filling "throwable"}
+	{ThirdPersonParams
+		{position
+			{offset
+				{x			-50	}
+				{y			0	}
+				{z			50	}
+			}
+		}
+		{zoom
+			{disabled}
+		}
+	}
+	
+	{crosshair "crosshair6"}
+	{crosshairReloading "crosshair6_reload"}
 }

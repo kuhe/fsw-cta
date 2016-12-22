@@ -4,5 +4,6 @@
 	{entity "m45_meusoc"}
 	{filling "ammo 11x23" 7 56}
  	("speed" s(244))
-	{healthDamage 200}
+	
+	("health_damage_11x23" d(244))
 }

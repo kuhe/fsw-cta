@@ -3,4 +3,10 @@
 {from "akm_v1"
 	{entity "akm_h"}
 	("accuracy_assault_improved")
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
 }

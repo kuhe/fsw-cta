@@ -1,6 +1,6 @@
 {selector
 	{type "cannon_rocket"}
-
+	
 	{group
 		{ignore {class airborne}}
 		{sort {class tank}}
@@ -10,7 +10,7 @@
 		{sort {weapon}}
 		{sort distance}
 	}
-
+	
 	{group
 		{sort {attacking}}
 		{sort distance}

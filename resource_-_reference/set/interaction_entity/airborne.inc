@@ -1,18 +1,18 @@
 {"airborne"
-;	{friction 0.2}
-;	{restitution 0.01}
 	{on spawn
-		{link_sound "fall"				"vehicle/airborne/fw_deep"			}
+		{link_sound	"fall"				"vehicle/airborne/fw_deep"			}
 
 		{add_view	"exhaust_dark_big"	"engine_exhaust"		"FXsmoke1"	}
-		{add_view	"exhaust_dark_big"	"engine_exhaust" 		"FXsmoke2"	}
+		{add_view	"exhaust_dark_big"	"engine_exhaust"		"FXsmoke2"	}
 		{add_view	"exhaust_dark_big"	"engine_exhaust"		"FXsmoke3"	}
-		{add_view	"exhaust_dark_big"	"engine_exhaust" 		"FXsmoke4"	}
+		{add_view	"exhaust_dark_big"	"engine_exhaust"		"FXsmoke4"	}
 		{add_view	"exhaust_dark_big"	"engine_exhaust"		"FXsmoke5"	}
-		{add_view	"exhaust_dark_big"	"engine_exhaust" 		"FXsmoke6"	}
+		{add_view	"exhaust_dark_big"	"engine_exhaust"		"FXsmoke6"	}
 		{add_view	"exhaust_dark_big"	"engine_exhaust"		"FXsmoke7"	}
-		{add_view	"exhaust_dark_big"	"engine_exhaust" 		"FXsmoke8"	}
+		{add_view	"exhaust_dark_big"	"engine_exhaust"		"FXsmoke8"	}
 		{call "init_gun"}
+		
+		{ani_play "wings"}
 	}
 	{on "add_movement_sound"
 		{link_sound "fly"				"vehicle/airborne/fw_move"			}
@@ -75,10 +75,12 @@
 	{on break_armor
 		{if name "pierce"
 			{if stuff "shell"
-				{call "pierce"}
+				{impulse up 1 0.5 dir 0.3 0.2}
+				{call "explosion"}
 			else stuff "zenite"
 				{if rand 0.3
-					{call "pierce"}
+					{impulse up 1 0.5 dir 0.3 0.2}
+					{call "explosion"}
 				}
 			}
 		else name "blast"
@@ -94,9 +96,13 @@
 			{spawn "aero_die_particle"}
 			{if volume "engine"
 				{burn fx "smoke_aero_big" fake}
+			else volume "engine1"
+				{burn fx "smoke_aero_big" fake}
+			else volume "engine2"
+				{burn fx "smoke_aero_big" fake}
 			else volume "body"
 				{burn fx "smoke_aero_big" fake}
-			else;volume "inflammable"
+			else
 				{burn fx "smoke_aero_small" fake}
 			}
 		}
@@ -106,6 +112,10 @@
 			{if component "body"
 				{call "fall"}
 			else component "engine"
+				{call "fall"}
+			else component "engine1"
+				{call "fall"}
+			else component "engine2"
 				{call "fall"}
 			}
 		}
@@ -128,11 +138,13 @@
 			}
 			{burn volume "body" fx "smoke_aero_big" time 10 fake}
 			{burn volume "engine" fx "smoke_aero_big" time 10 fake}
+			{burn volume "engine1" fx "smoke_aero_big" time 10 fake}
+			{burn volume "engine2" fx "smoke_aero_big" time 10 fake}
 			{delay 10.1
 				{burn volume "body" fx "smoke_black" time 40 10 fake}
 			}
-;			{burn volume "wingr1" fx "smoke_aero_big" time 5 fake}
-;			{burn volume "wingl1" fx "smoke_aero_big" time 5 fake}
+			;{burn volume "wingr1" fx "smoke_aero_big" time 5 fake}
+			;{burn volume "wingl1" fx "smoke_aero_big" time 5 fake}
 		}
 	}
 	{on ground_hit
@@ -142,15 +154,17 @@
 		}
 	}
 	{on contact overload
-		{if effector "vehicle"
-			{call "collide"}
-		else effector "construction"
-			{call "collide"}
-		else effector "tree"
-			{call "collide"}
-		else effector "fence"
-			{if volume "part"
-				{call "tear_part"}
+		{if not impregnable
+			{if effector "vehicle"
+				{call "collide"}
+			else effector "construction"
+				{call "collide"}
+			else effector "tree"
+				{call "collide"}
+			else effector "fence"
+				{if volume "part"
+					{call "tear_part"}
+				}
 			}
 		}
 	}
@@ -165,6 +179,8 @@
 		{spawn "spheredust_big_short"}
 		{component destroy}
 		{components "engine" destroy}
+		{components "engine1" destroy}
+		{components "engine2" destroy}
 		{volume disable contact contact_ground}
 		{chassis_work 0}
 		{tear "piece_big_airborne_wing" bone from_volume
@@ -230,7 +246,15 @@
 			("cut_part" args "wingr2"		0.5)
 			("cut_part" args "wingl2"		0.5)
 			("cut_part" args "body_back"	0.5)
-			("cut_part" args "propeller"	1.0)
+			("cut_part" args "propeller"	0.5)
+			("cut_part" args "propeller1"	0.5)
+			("cut_part" args "propeller2"	0.5)
+			("cut_part" args "propeller3"	0.5)
+			("cut_part" args "propeller4"	0.5)
+			("cut_part" args "propeller_b"	0.3)
+			("cut_part" args "propeller_b1"	0.3)
+			("cut_part" args "propeller_b2"	0.3)
+			("cut_part" args "propeller_b3"	0.3)
 			{volumes disable obstacle}
 			{volumes "body" enable obstacle}
 			{volumes "body_back" disable obstacle}
@@ -270,19 +294,19 @@
 				}
 		)
 		
-		{if    ("fire_barrel" args 00)
-		  else ("fire_barrel" args 01)
-		  else ("fire_barrel" args 02)
-		  else ("fire_barrel" args 03)
-		  else ("fire_barrel" args 04)
+		{	if		("fire_barrel" args 00)
+			else	("fire_barrel" args 01)
+			else	("fire_barrel" args 02)
+			else	("fire_barrel" args 03)
+			else	("fire_barrel" args 04)
 		}
 	}
 }
 
 {"airborne no_explosion"
 	{on contact
-;		{components "wingleft" destroy}
-;		{components "wingright" destroy}
+		;{components "wingleft" destroy}
+		;{components "wingright" destroy}
 	}
 	{on ground_hit
 		{call "die"}
@@ -291,8 +315,8 @@
 	{on "_explosion" overload
 		{call "die"}
 		{impulse up 0.1 com}
-		("cut_part" args "wingr2"		0.5)
-		("cut_part" args "wingl2"		0.5)
+		("cut_part" args "wingr2" 0.5)
+		("cut_part" args "wingl2" 0.5)
 	}
 	{on "fall_fx" overload
 	}
@@ -334,103 +358,15 @@
 
 {"airborne P-51Mustang"
 	{on "add_movement_sound" overload
-		{link_sound "fly"				"vehicle/airborne/p51_move"			}
-		{link_sound "engine_start"		"vehicle/airborne/p51_start"		}
-		{link_sound "engine_work"		"vehicle/airborne/p51_work"			}
-		{link_sound "engine_stop"		"vehicle/airborne/fw_stop"			}
+		{link_sound "fly"				"vehicle/airborne/p51_move"		}
+		{link_sound "engine_start"		"vehicle/airborne/p51_start"	}
+		{link_sound "engine_work"		"vehicle/airborne/p51_work"		}
+		{link_sound "engine_stop"		"vehicle/airborne/fw_stop"		}
 	}
-	{on "update_lights" overload}
+	;{on "update_lights" overload}
 }
 
-{"airborne cg-4a"
-	{on spawn
-		{add_view	"smoke_plane"	"smoke01"		"fx_smoke01"}
-		{add_view	"smoke_plane"	"smoke02"		"fx_smoke02"}
-		{add_view	"smoke_plane"	"smoke03"		"fx_smoke03"}
-		{add_view	"smoke_plane"	"smoke04"		"fx_smoke04"}
-		{add_view	"smoke_plane"	"smoke05"		"fx_smoke05"}
-		{add_view	"smoke_plane"	"smoke06"		"fx_smoke06"}
-		{add_view	"smoke_plane"	"smoke07"		"fx_smoke07"}
-		{add_view	"smoke_plane"	"smoke08"		"fx_smoke08"}
-		{add_view	"smoke_plane"	"smoke09"		"fx_smoke09"}
-		{add_view	"smoke_plane"	"smoke10"		"fx_smoke10"}
-		{add_view	"smoke_plane"	"smoke11"		"fx_smoke11"}
-		{add_view	"smoke_plane"	"smoke12"		"fx_smoke12"}
-	}
-	{on "tear_part"
-		{view start "smoke01"}
-		{view start "smoke02"}
-		{view start "smoke03"}
-		{view start "smoke04"}
-		{view start "smoke05"}
-		{view start "smoke06"}
-		{view start "smoke07"}
-		{view start "smoke08"}
-		{view start "smoke09"}
-		{view start "smoke10"}
-		{view start "smoke11"}
-		{view start "smoke12"}
-	}
-	{on "add_movement_sound" overload
-;		{link_sound "fly"				"vehicle/airborne/cg_move"			}
-		{link_sound "engine_start"		"vehicle/airborne/cg_start"			}
-		{link_sound "engine_work"		"vehicle/airborne/cg"			}
-;		{link_sound "engine_stop"		"vehicle/airborne/cg_stop"			}
-	}
-}
-
-{"hamilcar"
-	{on spawn
-		{add_view	"smoke_plane"	"smoke01"		"fx_smoke01"}
-		{add_view	"smoke_plane"	"smoke02"		"fx_smoke02"}
-		{add_view	"smoke_plane"	"smoke03"		"fx_smoke03"}
-		{add_view	"smoke_plane"	"smoke04"		"fx_smoke04"}
-		{add_view	"smoke_plane"	"smoke05"		"fx_smoke05"}
-		{add_view	"smoke_plane"	"smoke06"		"fx_smoke06"}
-		{add_view	"smoke_plane"	"smoke07"		"fx_smoke07"}
-		{add_view	"smoke_plane"	"smoke08"		"fx_smoke08"}
-		{add_view	"smoke_plane"	"smoke09"		"fx_smoke09"}
-		{add_view	"smoke_plane"	"smoke10"		"fx_smoke10"}
-		{add_view	"smoke_plane"	"smoke11"		"fx_smoke11"}
-		{add_view	"smoke_plane"	"smoke12"		"fx_smoke12"}
-	}
-	{on "tear_part"
-		{view start "smoke01"}
-		{view start "smoke02"}
-		{view start "smoke03"}
-		{view start "smoke04"}
-		{view start "smoke05"}
-		{view start "smoke06"}
-		{view start "smoke07"}
-		{view start "smoke08"}
-		{view start "smoke09"}
-		{view start "smoke10"}
-		{view start "smoke11"}
-		{view start "smoke12"}
-	}
-	{on "add_movement_sound" overload
-;		{link_sound "fly"				"vehicle/airborne/cg_move"			}
-		{link_sound "engine_start"		"vehicle/airborne/cg_start"			}
-		{link_sound "engine_work"		"vehicle/airborne/cg"			}
-;		{link_sound "engine_stop"		"vehicle/airborne/cg_stop"			}
-	}
-	{on "cut_wheels"
-		{ani_play "drift"}
-		("cut_part" args "wheell"		1.0)
-		("cut_part" args "wheelr"		1.0)
-		("cut_part" args "wheel_back"	1.0)
-;		("cut_part" args "part2"		0.7)
-		("cut_part" args "part3"		1.0)
-		{add_view "spheredust_big" "ground_dust" "support1"}
-		{add_view "spheredust_big" "ground_dust" "support2"}
-		{view start "ground_dust"}
-		{delay 4
-			{view stop "ground_dust"}
-		}
-	}
-}
-
-{"il-2"
+{"a10-warthog"
 	{on "die"
 		{bone hide "rocket00"}
 		{bone hide "rocket01"}
@@ -442,29 +378,153 @@
 		{bone hide "rocket07"}
 		{bone hide "bomb00"}
 		{bone hide "bomb01"}
+		{bone hide "bomb02"}
+		{bone hide "bomb03"}
+		{bone hide "bomb04"}
+		
+		{bone hide "wheelflapf"}
+		
+		("cut_part" args "rudder1" 1.0)
+		("cut_part" args "rudder2" 1.0)
+		("cut_part" args "elevator1" 1.0)
+		("cut_part" args "elevator2" 1.0)
+		
+		("cut_part" args "wingl2" 1.0)
+		("cut_part" args "wingr2" 1.0)
+		("cut_part" args "aileron1" 1.0)
+		("cut_part" args "aileron2" 1.0)
+		
+		("cut_part" args "flap1" 1.0)
+		("cut_part" args "flap2" 1.0)
+		("cut_part" args "flap3" 1.0)
+
+		("cut_part" args "retract_wheelL" 1.0)
+		("cut_part" args "retract_wheelR" 1.0)
+		("cut_part" args "retract_wheelF" 1.0)
 	}
 }
 
-{"ju-87"
+{"tornado_ids"
 	{on "die"
+		{bone hide "rocket00"}
+		{bone hide "rocket01"}
+		{bone hide "rocket02"}
+		{bone hide "rocket03"}
 		{bone hide "bomb00"}
 		{bone hide "bomb01"}
 		{bone hide "bomb02"}
-		{bone hide "bomb03"}
-	}
-}
 
-{"ju-52"
-	{on "wheels_fx"
-		{add_view "spheredust_big" "ground_dust" "support1"}
-		{add_view "spheredust_big" "ground_dust" "support2"}
-		{view start "ground_dust"}
-		{delay 4
-			{view stop "ground_dust"}
+		{bone hide "wingl1_part_big"}
+		{bone hide "wingr1_part_big"}
+		
+		{bone hide "wingl2_part_small"}
+		{bone hide "wingr2_part_small"}
+		
+		{bone hide "wingl_part3"}
+		{bone hide "wingr_part3"}
+		{bone hide "wingl_part2"}
+		{bone hide "wingr_part2"}
+		
+		{bone hide "wheelflapf1"}
+		{bone hide "wheelflapf2"}
+		{bone hide "wheelflapf3"}
+		{bone hide "wheelflapl"}
+		{bone hide "wheelflapf"}
+		
+		("cut_part" args "wingl2" 1.0)
+		("cut_part" args "wingr2" 1.0)
+		
+		("cut_part" args "aileron1" 1.0)
+		("cut_part" args "aileron2" 1.0)
+		("cut_part" args "aileron3" 1.0)
+		
+		("cut_part" args "retract_wheelf" 0.7)
+		("cut_part" args "retract_wheell" 0.7)
+		("cut_part" args "retract_wheelr" 0.7)
+	}
+	
+	{on spawn		
+		{ani_play "wings"}
+	}
+	
+	{on crew in
+		{if crew_in_place "driver"
+			{if not crew_in_place "commander"
+				{ani_play "wings" -1.0}
+			}
+		}
+	}
+	
+	{on crew out
+		{if not crew_in_place "driver"
+			{ani_play "wings"}
 		}
 	}
 }
 
+{"mil_mi35"
+	{on "die"
+		{bone hide "rocket00"}
+		{bone hide "rocket01"}
+		{bone hide "rocket02"}
+		{bone hide "rocket03"}
+		{bone hide "rocket04"}
+		{bone hide "rocket05"}
+	}
+}
+
+{"ah-64_apache"
+	{on "die"
+		{bone hide "rocket00"}
+		{bone hide "rocket01"}
+		{bone hide "rocket02"}
+		{bone hide "rocket03"}
+		{bone hide "radar"}
+	}
+}
+
+{"tiger"
+	{on "die"
+		{bone hide "radar"}
+	}
+}
+
+{"su-25k"
+	{on "die"
+		{bone hide "rocket00"}
+		{bone hide "rocket01"}
+		{bone hide "rocket02"}
+		{bone hide "rocket03"}
+		{bone hide "rocket04"}
+		{bone hide "rocket05"}
+		
+		{bone hide "bomb00"}
+		{bone hide "bomb01"}
+		{bone hide "bomb02"}
+		{bone hide "bomb03"}
+		
+		("cut_part" args "retract_wheelL" 1.0)
+		("cut_part" args "retract_wheelR" 1.0)
+		("cut_part" args "retract_wheelF" 1.0)
+		
+		("cut_part" args "wheelflapl" 1.0)
+		("cut_part" args "wheelflapr" 1.0)
+		("cut_part" args "wheelflapf1" 1.0)
+		("cut_part" args "wheelflapf2" 1.0)
+		
+		("cut_part" args "wingl2" 1.0)
+		("cut_part" args "wingr1" 1.0)
+		("cut_part" args "wingr2" 1.0)
+		("cut_part" args "aileron1" 1.0)
+		("cut_part" args "aileron2" 1.0)
+		("cut_part" args "flap1" 1.0)
+		("cut_part" args "flap2" 1.0)
+		
+		("cut_part" args "rudder" 1.0)
+		("cut_part" args "elevator1" 1.0)
+		("cut_part" args "elevator2" 1.0)
+	}
+}
 
 {"bomber"
 	{on "init_gun" overload
@@ -527,6 +587,22 @@
 					{delay_effect 20 5 "stop"}
 				}
 			}
+			{if volume "engine1"
+				{tear "piece_medium_steel" bone from_volume
+					{impulse up 1 0.5 dir 5 2 rnd_dir 3 no_position}
+					{add_view "smoke_dead_wheel" "smoke" "basis"}
+					{view start "smoke"}
+					{delay_effect 20 5 "stop"}
+				}
+			}
+			{if volume "engine2"
+				{tear "piece_medium_steel" bone from_volume
+					{impulse up 1 0.5 dir 5 2 rnd_dir 3 no_position}
+					{add_view "smoke_dead_wheel" "smoke" "basis"}
+					{view start "smoke"}
+					{delay_effect 20 5 "stop"}
+				}
+			}
 		else destroyed
 			{spawn "aero_die_particle"}
 		}
@@ -534,6 +610,10 @@
 
 	{on "pierce" overload
 		{if volume "engine"
+			{call "break_part"}
+		else volume "engine1"
+			{call "break_part"}
+		else volume "engine2"
 			{call "break_part"}
 		else volume "wing"
 			{call "break_part"}

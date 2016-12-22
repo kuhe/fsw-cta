@@ -1,7 +1,7 @@
 {camera
 	{perspective
-		{viewAngle		23}
-		{distance		1600}
+		{viewAngle		25}
+		{distance		1500}
 		{fov			65}
 	}
     {parallel

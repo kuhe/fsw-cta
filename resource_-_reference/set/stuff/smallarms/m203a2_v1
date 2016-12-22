@@ -26,8 +26,9 @@
 
 	{DisableRicochet}
 	{foresight "Foresight3"}
-	{gravity 2}
+	{gravity 1.5}
 	{rechargeTime 10}
+	{reloadAnimBonus 6}
 	{curve "cumulative"}
     {projectileDamage 12}
 	{projectileDamageThreshold 1}
@@ -35,17 +36,30 @@
 
 	{aimtype curved}
 
-	{spreading 10.5
+	{spreading 10
 		{SpreadXYRatio	1}
 		{radiusFunction
 			0.0		0
 			1.0		1.0
-			1.2		2.5
-			2.5		5.0
+			1.5		1.5
+			2.5		2.0
 		}
 	}
-	{range 45 50}
+	{range 55 60}
 
-	("speed" s(75))
+	("speed" s(122))
 	("accuracy_boost")
+	
+	{ThirdPersonParams
+		{position
+			{offset
+				{x			-50	}
+				{y			0	}
+				{z			50	}
+			}
+		}
+		{zoom
+			{disabled}
+		}
+	}
 }

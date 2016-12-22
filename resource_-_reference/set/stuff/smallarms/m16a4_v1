@@ -1,10 +1,10 @@
 ;//	M16A4 standard
 
 {from "pattern bullet"
-	{tag "rifle assaultrifle weapon bullet to_hand shoot_walking"}
+	{tag "smg assaultrifle weapon bullet to_hand shoot_walking"}
 	{entity "m16a4"}
 	{fireSound	"small_arms/m16/"}
-	{reloadSound "mp44"}	
+	{reloadSound "small_arms/m16/"}
 	
 	{filling "ammo 5x45" 30 300}
 	{inventory
@@ -13,7 +13,7 @@
 		{weight 100 }
 	}
 	{mass 3}
-	{traceFreq 0.001}
+	{traceFreq 0}
 	{Automatic_ai}
 
 	{rechargeTime 3.0}
@@ -24,11 +24,17 @@
 	("accuracy_assault")
 	("accuracy_boost")
 	
-	{healthDamage 125}
+	("health_damage_5x45" d(948))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 
-	{range 75 80}
+	{range 95 100}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

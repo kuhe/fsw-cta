@@ -91,6 +91,18 @@
 			("try_break_window" args 18)	("try_break_window" args 19)
 			("try_break_window" args 20)	("try_break_window" args 21)
 			("try_break_window" args 22)	("try_break_window" args 23)
+			("try_break_window" args 24)	("try_break_window" args 25)
+			("try_break_window" args 26)	("try_break_window" args 27)
+			("try_break_window" args 28)	("try_break_window" args 29)
+			("try_break_window" args 30)	("try_break_window" args 31)
+			("try_break_window" args 32)	("try_break_window" args 33)
+			("try_break_window" args 34)	("try_break_window" args 35)
+			("try_break_window" args 36)	("try_break_window" args 37)
+			("try_break_window" args 38)	("try_break_window" args 39)
+			("try_break_window" args 40)	("try_break_window" args 41)
+			("try_break_window" args 42)	("try_break_window" args 43)
+			("try_break_window" args 44)	("try_break_window" args 45)
+
 		}
 	}
 	{on "break_windows"
@@ -108,6 +120,17 @@
 			("break_window" args 18)	("break_window" args 19)
 			("break_window" args 20)	("break_window" args 21)
 			("break_window" args 22)	("break_window" args 23)
+			("break_window" args 24)	("break_window" args 25)
+			("break_window" args 26)	("break_window" args 27)
+			("break_window" args 28)	("break_window" args 29)
+			("break_window" args 30)	("break_window" args 31)
+			("break_window" args 32)	("break_window" args 33)
+			("break_window" args 34)	("break_window" args 35)
+			("break_window" args 36)	("break_window" args 37)
+			("break_window" args 38)	("break_window" args 39)
+			("break_window" args 40)	("break_window" args 41)
+			("break_window" args 42)	("break_window" args 43)
+			("break_window" args 44)	("break_window" args 45)
 		}
 	}
 	{on "next_stage"

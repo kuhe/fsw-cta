@@ -19,12 +19,12 @@
 		{throw_off_always}
 	}
 	{mass 5}
-	{reloadSound "shotgun"}
 	{fireSound "small_arms/saiga/"}
-	{traceFreq 1.0}
+	{reloadSound "small_arms/ak47/"}
+	{traceFreq 1}
 	{Automatic}
 	
-	{range 35 40}
+	{range 45 50}
 	{spreading 0.1}
 
     {RelaxationTime 0.1}
@@ -37,8 +37,15 @@
 	{ProjectileDamage 8}
 	{ProjectileDamageClip 8}
 	{projectileDamageTable {22.5 5} {250 0}}
-	{healthDamage 600}
-	{HealthDamageClip 600}
-	{calibre 9.72}
+	
+	("health_damage_12gauge" d(500))
+	
 	("accuracy_smg")
+	;("accuracy_boost")
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

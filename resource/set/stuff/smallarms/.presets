@@ -29,7 +29,7 @@
 (define "burst_pistol"
 	{burst
 		{short 1 0}
-		{long 8 0}
+		{long 2 0}
 		{rangeKoef 0.5}
 	}
 )
@@ -37,7 +37,7 @@
 (define "burst_very_short"
 	{burst
 		{short 1 0}
-		{long 3 1}
+		{long 2 1}
 		{rangeKoef 0.4}
 	}
 )

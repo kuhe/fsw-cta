@@ -31,7 +31,7 @@
 	{curve "cumulative"}
 	{projectileDamageThreshold 1}
     {projectileDamage 250}
-	{range 35 40}
+	{range 40 45}
 	{AimingTolerance 3}
 	{cursor "cannon_on"}
 	{spreading 1.5
@@ -39,4 +39,10 @@
 	}
 	("accuracy_boost")
 	{ammoLocked}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

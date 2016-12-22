@@ -4,5 +4,6 @@
 	{entity "gsh18"}
 	{filling "ammo 9x18" 15 60}
  	("speed" s(325))
-	{healthDamage 175}
+
+	("health_damage_9x18" d(325))
 }

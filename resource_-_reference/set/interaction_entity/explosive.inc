@@ -52,7 +52,7 @@
 
 {"dynamite"
 	{on "undermine"
-		{tags add "fuse"}
+		{tags add "fuse dynamite_planted"}
 		{add_view "flash_fuse_small" "fire" "fire"}
 		{view start "fire"}
 		{ani_play "fire" 0.06}
@@ -80,6 +80,15 @@
 	}
 	{on "explosion"
 		{stuff_detonate}
+	}
+}
+
+{"c4"
+	{on "undermine"
+		{tags add "c4_planted"}
+	}
+	{on "onThrow"
+		{tags add "c4_planted"}
 	}
 }
 

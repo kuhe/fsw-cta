@@ -1,7 +1,7 @@
 	{on spawn
 		{link_sound "flame"			"fire/big"}
-		{link_sound "move"			"vehicle/tracks/trackclank"}
-		{link_sound "heavy_move"	"vehicle/tracks/heavy"}
+;		{link_sound "move"			"vehicle/tracks/trackclank"}
+;		{link_sound "heavy_move"	"vehicle/tracks/heavy"}
 
 		{if not rain
 			{add_view	"dustrun_big"			"on_ground"				"FXtraceR1"}
@@ -56,15 +56,17 @@
 		{call "update_hatch_on_spawn"}
 	}
 
-	{on "add_movement_sound"
-		{link_sound "engine"		"vehicle/engine/tank"}
-		{link_sound "engine_end"	"vehicle/engine/tank_end"}
-		{link_sound "exhaust"		"vehicle/engine/tank_up"}
-
-	}
+;	{on "add_movement_sound"
+;		{link_sound "engine"		"vehicle/engine/tank"}
+;		{link_sound "engine_end"	"vehicle/engine/tank_end"}
+;		{link_sound "exhaust"		"vehicle/engine/tank_up"}
+;	}
 
 	{on "gunner_hatch_open"
 		{ani_wind "open" end}
+	}
+	{on "gunner_hatch_close"
+		{ani_wind "open" begin}
 	}
 	(define "update_hatch"
 		{if not operatable
@@ -74,16 +76,18 @@
 				{ani_play "open" +1.0 resume}
 			}
 		else
-			{if crew_in_place "gunner2"
-				{call "gunner_hatch_open"}
-			else
-				{if %wind
-					{ani_wind "open" begin}
+			{if has_place "gunner2"
+				{if crew_in_place "gunner2"
+					{call "gunner_hatch_open"}
 				else
-					{ani_play "open" -1.0 resume}
+					{call "gunner_hatch_close"}
 				}
 			}
-
+			{if %wind
+				{ani_wind "open" begin}
+			else
+				{ani_play "open" -1.0 resume}
+			}
 		}
 	)
 	{on "update_hatch_on_spawn"
@@ -319,16 +323,16 @@
         {view start "flashbarrel1"}
 		{view start "flashbarrel1s"}
 		{ani_play "fire"}
-		{delay 0.8
+		{## delay 0.8
 			{view pause "flashbarrel1"}
 		}
-		{delay 0.2
+		{## delay 0.2
 			{view pause "flashbarrel1s"}
 		}
 	}
 	{on fire "gun2"                     
 		{view start "flashbarrel2s"}
-		{delay 0.2
+		{## delay 0.2
 			{view pause "flashbarrel2s"}
 		}
 	}

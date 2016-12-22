@@ -10,6 +10,8 @@
 	{perks
 		(include "perks_generic.inc")
 		("perk_t2")
+		{"rocketlauncher" lvl_3
+		}
 	}
 	{veterancy
 		(include "veterancy_generic.inc")

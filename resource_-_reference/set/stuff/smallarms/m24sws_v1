@@ -4,14 +4,14 @@
 	{tag "rifle sniper weapon bullet to_hand shoot_walking"}
 	{entity "m24_sws"}
 	{fireSound	"small_arms/m24/"}
-	{reloadSound "rifle_bolt_five"}
+	{reloadSound "small_arms/rifle_5/"}
 	
 	{special
 		{mode aim}
-		{PrepareTime 3.5}	
+		{PrepareTime 3.0}	
 		{PrepareCursor "aimed_shot"}
 		{accuracy 2.5}
-		{damage 2.5}
+		{damage 7.5}
 		{throw_off}
 	}
 	
@@ -22,7 +22,7 @@
 		{weight 100 }
 	}
 	{mass 4.5}
-	{traceFreq 0.001}
+	{traceFreq 0}
 ;	{Automatic}
 
 	{rechargeTime 3}
@@ -33,14 +33,21 @@
 	("accuracy_sniper_rifle")
 	("accuracy_boost")
 	
-	{healthDamage 350}
+	("health_damage_7x51" d(884))
 
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 	
-	{range 95 100}
+	{range 125 130}
 	
 	{cursor "carbine_on"}
 	{cursorReloading "carbine_reload"}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "8"}
+			{vignette "/texture/common/environment/lens_effects/zoom_vignette_infantry03"}
+		}
+	}
 }

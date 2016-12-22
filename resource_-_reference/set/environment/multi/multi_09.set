@@ -1,48 +1,64 @@
 {environment
 	{light
-		{direction -0.32 -0.328 -0.889}
+		{direction -0.512 -0.528 -0.678}
 		{ambient 0xff191928}
 		{diffuse 0xff282832}
-		{specular 0xff646464}
+		{specular 0xff7f7f9b}
 		{lightsIntensity 0.05}
 		{night}
+		{draw_sun_moon}
+		{sun_moon_radius 1}
 		{night_vision 1}
 		{color_correction
-			{tone 0xff000032}
-			{tone_strength 0.2}
+			{contrast 1.05}
+			{tone 0xff190096}
+			{tone_strength 0.25}
 			{color_shading
 				{shade_tone 0xff4b4b4b}
 			}
 		}
-		{light_scattering
-			{sample_count 20}
-			{sun_radius 1}
-			{ray_intensity 0.3}
-			{ray_length 0.9}
-			{lum_worldToSun_ratio 0.5}
-			{darken 0.4}
-			{intensity 1}
+		{camera_lens_effetcs
+			{vision_mode
+				{mode none}
+			}
+			{light_scattering
+				{enable}
+				{intensity 0.5}
+				{ray_length 0.5}
+				{color_tone 0xff4b5569}
+			}
+			{lens_dirt
+				{enable}
+				{texture "/texture/common/environment/lens_effects/dirty_lens"}
+			}
+			{screen_brightening
+				{enable}
+				{intensity 0.25}
+			}
 		}
 	}
 	{wind
-		{speed 0.5 0 0}
-		{amplitude 2}
+		{direction -0.614 0.236 0}
+		{main_strength 0.37}
+		{detail_strength 6.7}
+		{height_amplification 1.1}
 	}
 	{haze
 		{enable}
-		{color 0xff4d4a62}
-		{start 3000}
+		{color 0xffaf9687}
+		{start 0}
 		{end 6000}
 	}
 	{sky
 		{enable}
-		{texture "/texture/common/environment/evn_factory"}
-		{size 1 1}
-		{globalEnvironment "/texture/common/environment/night_05"}
+		{texture "/texture/common/environment/environment_night_01"}
+		{globalEnvironment "/texture/common/environment/envmap_night_01"}
+		{intensity 1}
+		{azimuth 315}
 	}
 	{weather
-		{density 5}
-		{fx "rain"}
+		{enable}
+		{sound "world/wind/qp01 0005 wind howling"}
 	}
 	{thunder
 		{interval 40 15}
@@ -61,15 +77,14 @@
 	}
 	{dof
 		{enable}
-		{near_scale 2.5}
+		{near_scale 0}
 		{far_scale 1}
 		{near_start 50}
 		{near_end 75}
 		{far_start 2000}
 		{far_end 6000}
 		{"3rd_Person"
-			{focus_to_near 1500}
-			{focus_to_far 2000}
+			{"3rdP_blurscale" 1}
 		}
 		{blur_strength 3}
 	}

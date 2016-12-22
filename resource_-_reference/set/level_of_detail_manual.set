@@ -4,5 +4,8 @@
 	(define "off"
 		{off}
 	)
+	(define "off_small"
+		{off}
+	)
 	(include "level_of_detail.inc")
 }

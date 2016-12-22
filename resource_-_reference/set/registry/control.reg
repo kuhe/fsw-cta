@@ -1,108 +1,335 @@
 ; SDL
 ; Third Person Control Registry Definitions
 (define "humvee"
-	{linkBone		"basis"	}
-	{offset
-		{x			-110	}
-		{y			0		}
-		{z			65		}
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-110	}
+			{y			0		}
+			{z			65		}
+		}
 	}
-	{clipViewMin	-25		}
-	{clipViewMax	45		}
-	{zoomMin		0		}
-	{zoomMax		1000	}
-	{zoomFOV		%zoomFOV}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-225	}
+			{y			0		}
+			{z			55		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			0		}
+		{max			400	}
+		{fov			%zoomfov}
+		{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry02"}
+	}
 )
 (define "technical"
-	{linkBone		"basis"	}
-	{offset
-		{x			-90		}
-		{y			0		}
-		{z			60		}
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-90		}
+			{y			0		}
+			{z			60		}
+		}
 	}
-	{clipViewMin	-25		}
-	{clipViewMax	45		}
-	{zoomMin		0		}
-	{zoomMax		1000	}
-	{zoomFOV		"2"		}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-225	}
+			{y			0		}
+			{z			50		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			0		}
+		{max			400		}
+		{fov			%zoomfov}
+		{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry01"}
+	}
 )
 (define "stryker"
-	{linkBone		"basis"	}
-	{offset
-		{x			-110	}
-		{y			0		}
-		{z			75		}
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-110	}
+			{y			0		}
+			{z			75		}
+		}
 	}
-	{clipViewMin	-25		}
-	{clipViewMax	45		}
-	{zoomMin		0		}
-	{zoomMax		1000	}
-	{zoomFOV		%zoomFOV}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-250	}
+			{y			0		}
+			{z			60		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			0		}
+		{max			400	}
+		{fov			%zoomfov}
+	}
+)
+(define "fmtv"
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-100	}
+			{y			0		}
+			{z			75		}
+		}
+	}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-250	}
+			{y			0		}
+			{z			60		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			250		}
+		{max			400	}
+	}
 )
 (define "btr-80"
-	{linkBone		"basis"	}
-	{offset
-		{x			-115	}
-		{y			0		}
-		{z			70		}
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-115	}
+			{y			0		}
+			{z			70		}
+		}
 	}
-	{clipViewMin	-25		}
-	{clipViewMax	45		}
-	{zoomMin		0		}
-	{zoomMax		1000	}
-	{zoomFOV		"2 4"	}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-250	}
+			{y			0		}
+			{z			55		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			0		}
+		{max			400	}
+		{fov			"2 4 6"	}
+	}
+)
+(define "m1a2_abrams"
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-100	}
+			{y			0		}
+			{z			75		}
+		}
+	}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-250	}
+			{y			0		}
+			{z			60		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			0		}
+		{max			400	}
+		{fov			"2 4 8 10"	}
+	}
+)
+(define "t-80"
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-100	}
+			{y			0		}
+			{z			75		}
+		}
+	}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-250	}
+			{y			0		}
+			{z			60		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			0		}
+		{max			400	}
+		{fov			"2 4 8 10"	}
+	}
+)
+(define "mortar"
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-75		}
+			{y			0		}
+			{z			50		}
+		}
+	}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-250	}
+			{y			0		}
+			{z			500		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			0		}
+		{max			300		}
+		{fov			"4 8"	}
+	}
+)
+(define "heavy_mg"
+	{position
+		{linkBone		"basis"	}
+		{offset
+			{x			-75		}
+			{y			0		}
+			{z			35		}
+		}
+	}
+	{positionZoom
+		{linkBone		"basis"	}
+		{offset
+			{x			-225	}
+			{y			0		}
+			{z			35		}
+		}
+	}
+	{clip
+		{viewMin		-45		}
+		{viewMax		30		}
+	}
+	{zoom
+		{min			0		}
+		{max			300		}
+		{fov			"1 2"	}
+	}
 )
 {control
 	{third_person
+		;{disabled}
 		{vehicle
+			;{disabled}
 			{"default"
-				{linkBone		"basis"	}
-				{offset
-					{x			-100	}
-					{y			0		}
-					{z			75		}
+				{position
+					{linkBone		"basis"	}
+					{offset
+						{x			-100	}
+						{y			0		}
+						{z			75		}
+					}
 				}
-				{clipViewMin	-25		}
-				{clipViewMax	45		}
-				{zoomMin		0		}
-				{zoomMax		1000	}
-				{zoomFOV		"2 4 8"	}
-			}
-			{"cannon"
-				{disabled}
+				{positionZoom
+					{linkBone		"basis"	}
+					{offset
+						{x			-250	}
+						{y			0		}
+						{z			60		}
+					}
+				}
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
+				{zoom
+					{min			0		}
+					{max			400	}
+					{fov			"2 4 8"	}
+					;{vignette    "path with resources as root, like /texture/common/vignette"}
+				}
 			}
 			{"humvee_m2hb"
-				("humvee" zoomFOV("2"))
+				("humvee" zoomfov("2"))
 			}
 			{"humvee_m240"
-				("humvee" zoomFOV("2"))
+				("humvee" zoomfov("2"))
 			}
 			{"humvee_mk19"
-				("humvee" zoomFOV("2"))
+				("humvee" zoomfov("2"))
+			}
+			{"humvee_nvst"
+				("humvee" zoomfov("2"))
+			}
+			{"humvee_pkm"
+				("humvee" zoomfov("2"))
+			}
+			{"humvee_ags30"
+				("humvee" zoomfov("2"))
 			}
 			{"humvee_tow"
-				("humvee" zoomFOV("2 4"))
+				("humvee" zoomfov("2 4 6"))
+				{zoom
+					{vignette		"/texture/common/environment/lens_effects/zoom_vignette"}
+				}
 			}
 			{"technical_lmg"
-				("technical")
+				("technical" zoomfov("2"))
 			}
 			{"technical_hmg"
-				("technical")
+				("technical" zoomfov("2"))
 			}
 			{"technical_spg"
-				("technical")
+				("technical" zoomfov("2 4"))
 			}
 			{"technical_zpu"
-				("technical")
+				("technical" zoomfov("2"))
 			}
 			{"stryker_m2hb"
-				("stryker" zoomFOV("2 4"))
+				("stryker" zoomfov("2 4"))
 			}
 			{"stryker_mk19"
-				("stryker" zoomFOV("2 4"))
+				("stryker" zoomfov("2 4"))
 			}
 			{"stryker_m1128"
-				("stryker" zoomFOV("2 4 8"))
+				("stryker" zoomfov("2 4 8 10"))
+			}
+			{"lav25a2"
+				("stryker" zoomfov("2 4"))
+			}
+			{"fmtv"
+				("fmtv")
+			}
+			{"fmtv_ammo"
+				("fmtv")
 			}
 			{"btr-80"
 				("btr-80")
@@ -110,49 +337,151 @@
 			{"btr-82a"
 				("btr-80")
 			}
+			{"m1a2_abrams"
+				("m1a2_abrams")
+			}
+			{"m1a2_abrams_tusk"
+				("m1a2_abrams")
+			}
+			{"t-80bv"
+				("t-80")
+			}
+			{"t-80u"
+				("t-80")
+			}
+			{"t-62"
+				("t-80")
+			}
 			{"m2_bradley"
-				{linkBone		"basis"	}
-				{offset
-					{x			-85		}
-					{y			0		}
-					{z			80		}
+				{position
+					{linkBone		"basis"	}
+					{offset
+						{x			-85		}
+						{y			0		}
+						{z			80		}
+					}
 				}
-				{clipViewMin	-25		}
-				{clipViewMax	45		}
-				{zoomMin		0		}
-				{zoomMax		1000	}
-				{zoomFOV		"2 4"	}
+				{positionZoom
+					{linkBone		"basis"	}
+					{offset
+						{x			-250	}
+						{y			0		}
+						{z			60		}
+					}
+				}
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
+				{zoom
+					{min			0		}
+					{max			400	}
+					{fov			"2 4 6"	}
+				}
 			}
 			{"bmp2"
-				{linkBone		"basis"	}
-				{offset
-					{x			-90		}
-					{y			0		}
-					{z			70		}
+				{position
+					{linkBone		"basis"	}
+					{offset
+						{x			-90		}
+						{y			0		}
+						{z			70		}
+					}
 				}
-				{clipViewMin	-25		}
-				{clipViewMax	45		}
-				{zoomMin		0		}
-				{zoomMax		1000	}
-				{zoomFOV		"2 4"	}
+				{positionZoom
+					{linkBone		"basis"	}
+					{offset
+						{x			-250	}
+						{y			0		}
+						{z			50		}
+					}
+				}			
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
+				{zoom
+					{min			0		}
+					{max			400	}
+					{fov			"2 4 6"	}
+				}
 			}
 			{"bmp3"
-				{linkBone		"basis"	}
-				{offset
-					{x			-105	}
-					{y			0		}
-					{z			75		}
+				{position
+					{linkBone		"basis"	}
+					{offset
+						{x			-105	}
+						{y			0		}
+						{z			75		}
+					}
 				}
-				{clipViewMin	-25		}
-				{clipViewMax	45		}
-				{zoomMin		0		}
-				{zoomMax		1000	}
-				{zoomFOV		"2 4"	}
+				{positionZoom
+					{linkBone		"basis"	}
+					{offset
+						{x			-250	}
+						{y			0		}
+						{z			55		}
+					}
+				}		
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
+				{zoom
+					{min			0		}
+					{max			400	}
+					{fov			"2 4 6"	}
+				}
+			}
+			{"ural"
+				("fmtv")
+			}
+			{"ural_ammo"
+				("fmtv")
+			}
+			{"m252_mortar"
+				("mortar")
+			}
+			{"2b14_mortar"
+				("mortar")
+			}
+			{"heavy_mg_m2"
+				("heavy_mg")
+			}
+			{"heavy_mg_kord"
+				("heavy_mg")
 			}
 		}
 		{human
+			;{disabled}
 			{"default"
-				{disabled}
+				{position
+					{linkBone		"body"	}
+					{offset
+						{x			-180	}
+						{y			-12		}
+						{z			15		}
+					}
+				}
+				{positionZoom
+					{linkBone		"head"	}
+					{offset
+						{x			-201	}
+						{y			-0.5	}
+						{z			1.5	}
+					}
+				}
+				{clip
+					{viewMin		-45		}
+					{viewMax		35		}
+				}
+				{zoom
+					{viewoff 		"head"	}
+					{min			0		}
+					{max			300		}
+					{fov			"1 1.5 2 4"	}
+					{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry02"}
+				}
 			}
 		}
 	}

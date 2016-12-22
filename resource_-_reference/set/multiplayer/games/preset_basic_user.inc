@@ -3,7 +3,7 @@
 	{common
 		{unitset
 			{value "all"}
-			{available "all artillery heavyart cannon mediumcan heavycan arcade light medium heavy sheavy hero inf_only sniper_only supply"}
+			{available "all infantry sniper armor light medium heavy artillery airborne mechanized"}
 		}
 		{commandPoints "*=%cp"}
 		{unitLimits ""}
@@ -22,17 +22,10 @@
 					{growTable	"0.65 0.65 0.65 0.70 0.70 0.70 0.75 0.75 0.75 0.80 0.80 0.80 0.80 0.80 0.80 0.85 0.85 0.85 0.90 0.90 0.90 0.90 0.90 0.90 1.00"}
 					{payback
 						{cp			"0		10		20		30		40		50"}
-						{restore	"1.00	0.75	0.50	0.40	0.30	0.20"}
+						{restore	"1.50	1.00	0.75 	0.50	0.25	0.00"}
 					}
 				}
-				{buttons "squad1 squad2 v1 v2 v3 v4 v5"}
-			}
-			{hero
-				{resource
-					{start		10}
-				}
-				{buttons "hero"}
-				{tag "special"}
+				{buttons "s1 s2 v1 v2 v3"}
 			}
 		}
 	}
@@ -46,7 +39,7 @@
 	{common
 		{unitset
 			{value "all"}
-			{available "all artillery heavyart cannon mediumcan heavycan arcade light medium heavy sheavy hero inf_only sniper_only supply"}
+			{available "all infantry sniper armor light medium heavy artillery airborne mechanized"}
 		}
 		{commandPoints "*=%cp"}
 		{unitLimits ""}
@@ -65,20 +58,13 @@
 					{growTable	"0.65 0.65 0.65 0.70 0.70 0.70 0.75 0.75 0.75 0.80 0.80 0.80 0.80 0.80 0.80 0.85 0.85 0.85 0.90 0.90 0.90 0.90 0.90 0.90 1.00"}
 					{payback
 						{cp			"0		10		20		30		40		50"}
-						{restore	"1.00	0.75	0.50	0.40	0.30	0.20"}
+						{restore	"1.50	1.00	0.75 	0.50	0.25	0.00"}
 					}
 					{limitmin	1000}
 					{limitmax	50000}
 					{speedset	"2500 3000 3500 4000 4500 5000 8000 10000 20000 50000"}
 				}
-				{buttons "squad1 squad2 v1 v2 v3 v4 v5"}
-			}
-			{hero
-				{resource
-					{start		10}
-				}
-				{buttons "hero"}
-				{tag "special"}
+				{buttons "s1 s2 v1 v2 v3"}
 			}
 		}
 	}
@@ -93,7 +79,7 @@
 		{gameMode "standard"}
 		{unitMode "user"}
 		{specMode "all_normal"}
-		("standard_user"		start(160) finish(2500) cp(50))
+		("standard_user"		start(160) finish(2500) cp(0:25,90:30,180:35,270:40,360:45,450:50))
 	}
 ;------------------------------------------------------------------------------------------------------------	
 	{"c:custom_50_user"

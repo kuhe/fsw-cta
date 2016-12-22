@@ -1,5 +1,6 @@
 {selector
  	{type "cannon_shell"}
+	
 	{group
 		{sort {class tank}}
 		{sort {class armoredcar}}
@@ -8,7 +9,7 @@
 		{sort {weapon}}
 		{sort distance}
 	}
-
+	
 	{group
 		{sort {attacking}}
 		{sort distance}

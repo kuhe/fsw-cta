@@ -2,7 +2,7 @@
 	{behaviour soldier}
 	{hero}
 	{skin "usa_t2_1"}
-	{portrait "narrator_placeholder"}
+	{portrait "narrator_usa_t3"}
 	{icon "officer"}
 	{icon_priority 0}
 	{nationality usa}

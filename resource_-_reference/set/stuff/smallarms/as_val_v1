@@ -1,10 +1,10 @@
 ;//	AS VAL standard + ACOG scope + silencer
 
 {from "pattern bullet"
-	{tag "smg assaultrifle weapon bullet to_hand shoot_walking"}
+	{tag "smg weapon bullet to_hand shoot_walking silenced"}
 	{entity "as_val"}
-	{fireSound	"small_arms/silenced/"}
-	{reloadSound "mp44"}	
+	{fireSound	"small_arms/silenced_val/"}
+	{reloadSound "small_arms/ak47/"}
 	
 	{filling "ammo 9x39" 20 300}
 	{inventory
@@ -13,7 +13,7 @@
 		{weight 100 }
 	}
 	{mass 3}
-	{traceFreq 0.001}
+	{traceFreq 0}
 	{Automatic}
 
 	{rechargeTime 3.0}
@@ -24,11 +24,17 @@
 	("accuracy_smg_improved")
 ;	("accuracy_boost")
 	
-	{healthDamage 200}
+	("health_damage_9x39" d(295))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 
-	{range 65 70}
+	{range 95 100}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 4"}
+		}
+	}
 }

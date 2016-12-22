@@ -1,13 +1,12 @@
 ;//	M4A1 CQBR standard + holographic sight + hand grip + laser + silencer
 
 {from "m4a1cqbr_v1"
+	{tag "silenced"}
 	{entity "m4a1_cqbr_hgfs"}
-	{fireSound	"small_arms/silenced/"}
+	{fireSound	"small_arms/silenced_m4/"}
 	{inventory
 		{size 6 2 }
 	}
 	("accuracy_assault_improved")
 	("spreading_long")
-	
-	{healthDamage 200}
 }

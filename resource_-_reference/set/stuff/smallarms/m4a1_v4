@@ -1,10 +1,15 @@
 ;//	M4A1 standard + holographic sight + hand grip + silencer
 
 {from "m4a1_v1"
+	{tag "silenced"}
 	{entity "m4a1_hgs"}
-	{fireSound	"small_arms/silenced/"}
+	{fireSound	"small_arms/silenced_m4/"}
 	("accuracy_assault_improved")
 	("spreading_medium")
 	
-	{healthDamage 150}
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
 }

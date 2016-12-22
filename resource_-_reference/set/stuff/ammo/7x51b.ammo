@@ -1,18 +1,20 @@
+;// 7.62x51mm
+
 {bullet
-	{tag "bullet stackable pierce 7x51 7x51c"}
+	{tag "bullet stackable pierce 7x51"}
 	{inventory
-		{weight 1}
-		{block 100}
+		{weight 5}
+		{block 20}
 		{size 2 1}
 		{fsm "belt"}
 	}
 	{mass 0.015}
 	{entity "7x51b"}
 	{trace
-		{view "/texture/fx/trace_red2.mtl"
-			{ScaleY 0.100}
+		{view "/texture/fx/trace_green1.mtl"
+			{ScaleY 0.1}
 			{Light 1}
 		}
-		{length 5.0}
+		{length 5}
 	}
 }

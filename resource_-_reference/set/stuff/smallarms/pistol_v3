@@ -5,5 +5,4 @@
 	{fireSound	"small_arms/colt/"}
 	{filling "ammo 9x19" 10 60}
 	("accuracy_pistol_improved")
-	{healthDamage 225}
 }

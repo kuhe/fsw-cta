@@ -1,6 +1,6 @@
 {selector
 	{type "searchlight"}
-
+	
 	{group
 		{sort {class tank}}
 		{sort {class armoredcar}}

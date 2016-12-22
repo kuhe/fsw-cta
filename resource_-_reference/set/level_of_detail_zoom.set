@@ -4,5 +4,10 @@
 	(define "off"
 		;{off}
 	)
+	(define "off_small"
+		{off}
+	)
+	{ZoomFactor 0.5}
+	{GrassZoomFactor 0.25}
 	(include "level_of_detail.inc")
 }

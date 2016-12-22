@@ -1,11 +1,11 @@
 (define "perk_t1"
-		{"health" "125%"
+		{"health" "150%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "75%"
 		}
 		{"stamina" "75%"
 		}
-		{"stamina_regeneration" "100%"
+		{"stamina_regeneration" "75%"
 		}
 		{"vision" "mp_soldier"
 		}
@@ -26,7 +26,7 @@
 		}
 )
 (define "perk_t2"
-		{"health" "175%"
+		{"health" "200%"
 		}
 		{"health_regeneration" "100%"
 		}
@@ -51,15 +51,18 @@
 		}
 		{"melee" lvl_2
 		}
+		
+		{"personage" 1
+		}
 )
 (define "perk_t3"
-		{"health" "275%"
+		{"health" "250%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "125%"
 		}
 		{"stamina" "125%"
 		}
-		{"stamina_regeneration" "100%"
+		{"stamina_regeneration" "125%"
 		}
 		{"vision" "mp_soldier"
 		}
@@ -78,15 +81,18 @@
 		}
 		{"melee" lvl_3
 		}
+		
+		{"personage" 1
+		}
 )
 (define "perk_t4"
-		{"health" "375%"
+		{"health" "350%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "150%"
 		}
 		{"stamina" "150%"
 		}
-		{"stamina_regeneration" "100%"
+		{"stamina_regeneration" "150%"
 		}
 		{"vision" "mp_soldier"
 		}
@@ -105,15 +111,20 @@
 		}
 		{"melee" lvl_4
 		}
+		
+		{"personage" 1
+		}
+		{"medic" 10.0
+		}
 )
 (define "perk_t5"
-		{"health" "475%"
+		{"health" "450%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "175%"
 		}
 		{"stamina" "175%"
 		}
-		{"stamina_regeneration" "100%"
+		{"stamina_regeneration" "175%"
 		}
 		{"vision" "mp_soldier"
 		}
@@ -133,5 +144,10 @@
 		{"rocketlauncher" lvl_5
 		}
 		{"melee" lvl_5
+		}
+		
+		{"personage" 1
+		}		
+		{"medic" 10.0
 		}
 )

@@ -12,6 +12,7 @@
 		{sort {class human}}
 		{sort distance}
 	}
+	
 	{group
 		{sort distance}
 	}

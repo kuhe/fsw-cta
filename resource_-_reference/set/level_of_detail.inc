@@ -21,7 +21,6 @@
 			(* 0.70 %d)
 		)
 	)
-	
 	{"human"
 		{distance ("scale" d(300))
 			; LOD1
@@ -37,6 +36,22 @@
 			{NoFog}
 			{NoCastShadow}
 		}
+		{distance ("scale" d(4000))
+			("off")
+		}
+	}
+	{"vehicle_civilian"
+		{distance ("scale" d(1500))
+			; LOD1
+		}
+		{distance ("scale" d(2500))
+			{NoGetShadow}
+			{NoFog}
+			{NoCastShadow}
+		}
+		{distance ("scale" d(4000))
+			("off")
+		}
 	}
 	{"vehicle_small"
 		{distance ("scale" d(1500))
@@ -47,6 +62,9 @@
 			{NoFog}
 			{NoCastShadow}
 		}
+		{distance ("scale" d(5000))
+			("off")
+		}
 	}
 	{"vehicle_big"
 		{distance ("scale" d(2000))
@@ -56,6 +74,9 @@
 			{NoGetShadow}
 			{NoFog}
 			{NoCastShadow}
+		}
+		{distance ("scale" d(6000))
+			("off")
 		}
 	}
 	{"stuff_small"
@@ -71,7 +92,7 @@
 			{NoCastShadow}
 		}
 		{distance ("scale" d(1500))
-			("off")
+			("off_small")
 		}
 	}
 	{"part_small"
@@ -87,7 +108,7 @@
 			{NoCastShadow}
 		}
 		{distance ("scale" d(2000))
-			("off")
+			("off_small")
 		}
 	}
 	{"part_big"
@@ -119,7 +140,7 @@
 			{NoCastShadow}
 		}
 		{distance ("scale" d(1500))
-			("off")
+			("off_small")
 		}
 	}
 	{"decor_small"
@@ -135,7 +156,7 @@
 			{NoCastShadow}
 		}
 		{distance ("scale" d(3000))
-			("off")
+			("off_small")
 		}
 	}
 	{"decor_medium"
@@ -186,4 +207,7 @@
 			; LOD5
 		}
 	}
+	{GrassDistance 5000}
+	{GrassFadeDepth 500}
+	{MinZoom 1}
 ;}

@@ -6,5 +6,6 @@
 	{filling "ammo 9x18" 18 54}
  	("speed" s(325))
 	("accuracy_pistol_improved")
-	{healthDamage 200}
+
+	("health_damage_9x18" d(325))
 }

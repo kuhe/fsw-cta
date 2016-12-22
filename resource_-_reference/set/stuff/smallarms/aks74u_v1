@@ -4,7 +4,7 @@
 	{tag "smg weapon bullet to_hand shoot_walking"}
 	{entity "aks_74u"}
 	{fireSound	"small_arms/aks74u/"}
-	{reloadSound "mp44"}	
+	{reloadSound "small_arms/ak47/"}
 	
 	{filling "ammo 5x39" 30 450}
 	{inventory
@@ -13,7 +13,7 @@
 		{weight 100 }
 	}
 	{mass 3}
-	{traceFreq 0.001}
+	{traceFreq 0}
 	{Automatic}
 
 	{rechargeTime 3.0}
@@ -24,11 +24,17 @@
 	("accuracy_smg")
 ;	("accuracy_boost")
 	
-	{healthDamage 100}
+	("health_damage_5x39" d(735))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {12.5 3} {250 0}}
 
-	{range 55 60}
+	{range 75 80}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

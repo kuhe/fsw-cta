@@ -1,6 +1,7 @@
 ;//	Mini standard + holographic sight + hand grip + laser + silencer
 
 {from "uzi_v1"
+	{tag "silenced"}
 	{entity "mini_uzi_hgfs"}
 	{fireSound	"small_arms/silenced/"}
 	{inventory
@@ -13,7 +14,5 @@
 		{link_bone "gun_back"}
 		{weight 100 }
 	}
-	
-	{healthDamage 150}
 }
 

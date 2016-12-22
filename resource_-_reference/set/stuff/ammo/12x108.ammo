@@ -1,3 +1,5 @@
+;// 12.7x108mm
+
 {bullet
 	{tag "bullet big stackable pierce"}
 	{inventory
@@ -10,9 +12,9 @@
 	{entity "12x108"}
 	{trace
 		{view "/texture/fx/trace_green2.mtl"
-			{ScaleY 0.150}
-			{Light 2}
+			{ScaleY 0.12}
+			{Light 1}
 		}
-		{length 5.0}
+		{length 7.0}
 	}
 }

@@ -1,6 +1,6 @@
 {from "15mm_kpvt"
 	{filling "bullet15 ap" 100}
-	{rechargeTime 20.0}
+	{rechargeTime 20}
 	
 	("recoveryTime" r(1200))
 	

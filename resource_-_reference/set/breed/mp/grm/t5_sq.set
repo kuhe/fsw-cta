@@ -5,8 +5,8 @@
 	{icon "squad6"}
 	{icon_priority 6}
 	{armors
-		
-	}
+	
+	}	
 	{perks
 		(include "perks_generic.inc")
 		("perk_t5")

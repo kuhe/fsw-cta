@@ -1,9 +1,9 @@
 {from "pattern gun"
-	{filling "ammo tow_9m" 4}
+	{filling "bullet135 atgm" 4}
 	{fireSound	"gun/tow/"}
 	{reloadSound "tankgun_r02"}
 	{rechargeTime 100}
-	("range_maximum")
+	("range_long")
 	
 	("speed2" s(278))
 	("caliber_large")
@@ -13,11 +13,11 @@
 	
 	{gravity 0}
 	
-	("accuracy_maximum")
+	("accuracy_high")
 	
 	{bullet_view "tow_9m_ammo"
 		{tail "tow_tail" "tail"}
 	}
-	{crosshair "crosshair_tow"}
-	{crosshairReloading "crosshair_tow_reload"}
+	{crosshair "crosshair7"}
+	{crosshairReloading "crosshair7_reload"}
 }

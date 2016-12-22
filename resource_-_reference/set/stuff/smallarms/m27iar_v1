@@ -4,7 +4,7 @@
 	{tag "mgun weapon bullet to_hand shoot_walking"}
 	{entity "m27_iar"}
 	{fireSound	"small_arms/m27/"}
-	{reloadSound "mp44"}	
+	{reloadSound "small_arms/m16/"}
 	
 	{filling "ammo 5x45" 30 900}
 	{inventory
@@ -13,22 +13,28 @@
 		{weight 100 }
 	}
 	{mass 3}
-	{traceFreq 0.25}
+	{traceFreq 4}
 	{Automatic}
 
 	{rechargeTime 3.0}
 	("recoveryTime" r(560))
  	("speed" s(884))
-	("burst_medium")
+	("burst_long")
 	("spreading_short")
 	("accuracy_assault_improved")
 ;	("accuracy_boost")
 	
-	{healthDamage 150}
+	("health_damage_5x45" d(884))
 	
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 
-	{range 75 80}
+	{range 115 120}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
 }

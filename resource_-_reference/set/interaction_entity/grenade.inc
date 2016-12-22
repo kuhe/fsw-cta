@@ -132,6 +132,32 @@
 	}
 }
 
+{"smoke_66mm"
+	{on spawn
+		{add_view 	"dust_shot_big"			"smoke_init" "root"}
+		{add_view 	"smoke_cover-up_big"	"smoke_long" "root"}
+		{link_sound "smoke_sound"			"detonation/grenade_smoke/grenade_smoke"}
+		{link_sound "smoke_detonation"		"weapon/shot/gun/smoke/"}
+		{volumes disable touch select}
+	}
+	{on "activate"
+		{play_sound "smoke_detonation"}
+		{play_sound "smoke_sound" 1}
+		{tags add 	"smoke"}
+		{view start "smoke_init"}
+		{view start "smoke_long"}
+		{volumes "smoke1" enable visible}
+		{update_visibility_patch}
+		{delay 60
+			{view stop "smoke_long"}
+			{stop_sound "smoke_sound"}
+		}
+		{delay 62
+			{hide 1}
+		}
+	}
+}
+
 {"smoke_shell"
 	{on spawn
 		{call "add_smoke"}

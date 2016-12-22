@@ -13,7 +13,7 @@
 	
 	{damage blastwave
 		{energy 1.0}
-		{area 1.5 8.0}
+		{area 1.5 10.0}
 	}
-	{possibleDamageRadius 8}
+	{possibleDamageRadius 10}
 }

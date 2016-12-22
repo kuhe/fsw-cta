@@ -19,6 +19,7 @@
 		{item "m1014_v1" filled}
 		{item "grenade m67" 1}
 		{item "grenade anm8" 1}
+		{item "grenade m84" 1}
 		{item "knife_v1" 1}
 		{item "bandage" 5}
 		{in_hands 0}

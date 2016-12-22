@@ -3,8 +3,8 @@
 {from "pattern bullet"
 	{tag "mgun weapon bullet to_hand"}
 	{entity "kord"}
-	{fireSound	"mgun/browning_burst/"}
-	{reloadSound "ptrd"}
+	{fireSound	"small_arms/nsvt/"}
+	{reloadSound "small_arms/mgun_heavy/"}
 	
 	{filling "ammo 12x108" 50}
 	{inventory
@@ -13,26 +13,36 @@
 		{weight 100 }
 	}
 	{mass 34}
-	{traceFreq 0.25}
+	{traceFreq 4}
 	{Automatic}
 	
 	{rechargeTime 8.0}
+	{reloadAnimBonus 3}
 	("recoveryTime" r(650))
 	("speed" s(860))
 	("burst_long")
 	("spreading_short_mgun")
-	("accuracy_mgun")
+	("accuracy_heavy_mgun")
 ;	("accuracy_boost")
 
-	{healthDamage 250}
+	("health_damage_12x108" d(860))
 	
 	{projectileDamage 15}
 	{projectileDamageTable {25 30} {50 25} {75 15} {100 5}}
 	{projectileDamageThreshold 1.1}
 
-	{range 95 100}
+	{range 135 140}
 	{aimingTolerance 1}
 	
 	{cursor "zenite_on"}
 	{cursorReloading "zenite_reload"}
+	
+	{crosshair "crosshair_mgun2"}
+	{crosshairReloading "crosshair_mgun2_reload"}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

@@ -1,61 +1,84 @@
 ;SDL
+
 (define "distance_1" 
 	{spreading 
-		{radiusTable {0 0} {10 %r1} {50 %r2} {100 %r3}}
+		{radiusTable {10 0} {25 %r1} {50 %r2} {75 %r3} {100 %r4} {500 (* 5.00 %r4)}}
 	}		
 )
-
 (define "distance_2" 
 	{spreading 
-		{radiusTable {0 0} {10 %r1} {50 %r2} {100 %r3} {250 %r4}}
+		{radiusTable {10 0} {25 %r1} {50 %r2} {75 %r3} {100 %r4} {500 (* 2.50 %r4)}}
+	}		
+)
+(define "distance_3" 
+	{spreading 
+		{radiusTable {10 0} {25 %r1} {50 %r2} {75 %r3} {100 %r4} {500 (* 2.25 %r4)}}
+	}		
+)
+(define "distance_4" 
+	{spreading 
+		{radiusTable {10 0} {25 %r1} {50 %r2} {75 %r3} {100 %r4} {500 (* 2.00 %r4)}}
+	}		
+)
+(define "distance_5" 
+	{spreading 
+		{radiusTable {10 0} {50 %r1} {100 %r2} {150 %r3} {200 %r4} {500 (* 2.50 %r4)}}
 	}		
 )
 
 
 (define "accuracy_assault"
-	("distance_1" r1(0.50) r2(1.25) r3(2.75))
+	("distance_2" r1(0.50) r2(1.50) r3(2.75) r4(3.25))
 )
 
 (define "accuracy_assault_improved"
-	("distance_1" r1(0.45) r2(1.15) r3(2.60))
+	("distance_2" r1(0.45) r2(1.40) r3(2.60) r4(3.05))
 )
 
 
 (define "accuracy_pistol"
-	("distance_1" r1(0.60) r2(1.35) r3(2.85))
+	("distance_1" r1(0.60) r2(1.60) r3(2.85) r4(3.35))
 )
 (define "accuracy_pistol_improved"
-	("distance_1" r1(0.55) r2(1.25) r3(2.70))
-)
-
-
-(define "accuracy_smg"
-	("distance_1" r1(0.75) r2(1.50) r3(3.00))
-)
-
-(define "accuracy_smg_improved"
-	("distance_1" r1(0.70) r2(1.40) r3(2.85))
+	("distance_1" r1(0.55) r2(1.50) r3(2.70) r4(3.15))
 )
 
 
 (define "accuracy_mgun"
-	("distance_2" r1(0.75) r2(1.50) r3(3.00) r4(5.00))
+	("distance_3" r1(0.70) r2(1.70) r3(2.95) r4(3.45))
 )
 
 (define "accuracy_mgun_improved"
-	("distance_2" r1(0.55) r2(1.40) r3(2.85) r4(4.80))
+	("distance_3" r1(0.65) r2(1.60) r3(2.80) r4(3.25))
+)
+
+(define "accuracy_heavy_mgun"
+	("distance_4" r1(0.80) r2(1.80) r3(3.05) r4(3.55))
+)
+
+(define "accuracy_heavy_mgun_improved"
+	("distance_4" r1(0.75) r2(1.70) r3(2.90) r4(3.35))
+)
+
+
+(define "accuracy_smg"
+	("distance_1" r1(0.80) r2(1.80) r3(3.05) r4(3.55))
+)
+
+(define "accuracy_smg_improved"
+	("distance_1" r1(0.75) r2(1.70) r3(2.90) r4(3.35))
 )
 
 
 (define "accuracy_grenade_launcher"
-	("distance_2" r1(0.75) r2(1.50) r3(3.00) r4(7.50))
+	("distance_3" r1(0.90) r2(1.90) r3(3.15) r4(7.50))
 )
 
 (define "accuracy_grenade_launcher_improved"
-	("distance_2" r1(0.75) r2(1.40) r3(2.85) r4(7.30))
+	("distance_3" r1(0.85) r2(1.80) r3(3.00) r4(7.30))
 )
 
 
 (define "accuracy_sniper_rifle"
-	("distance_1" r1(0.50) r2(1.00) r3(2.00))
+	("distance_5" r1(0.50) r2(1.00) r3(2.00) r4(2.50))
 )

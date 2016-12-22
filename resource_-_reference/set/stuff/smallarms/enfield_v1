@@ -4,16 +4,16 @@
 	{tag "rifle weapon bullet to_hand shoot_walking"}
 	{entity "lee_enfield_mk1"}
 	{fireSound	"small_arms/enfield/"}
-	{reloadSound "rifle_bolt_five"}
+	{reloadSound "small_arms/rifle_10/"}
 	
-	{filling "ammo 7x54b" 10 120}
+	{filling "ammo 7x54" 10 120}
 	{inventory
 		{size 6 2 }
 		{link_bone "gun_back"}
 		{weight 100 }
 	}
 	{mass 4.5}
-	{traceFreq 0.001}
+	{traceFreq 0}
 ;	{Automatic}
 
 	{rechargeTime 3}
@@ -24,14 +24,20 @@
 	("accuracy_boost")
 	("accuracy_assault_improved")
 	
-	{healthDamage 200}
+	("health_damage_7x54" d(800))
 
 	{projectileDamage 5}
 	{projectileDamageClip 5}
 	{projectileDamageTable {22.5 5} {250 0}}
 	
-	{range 75 80}
+	{range 95 100}
 	
 	{cursor "carbine_on"}
 	{cursorReloading "carbine_reload"}
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

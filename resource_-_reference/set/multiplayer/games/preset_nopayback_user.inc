@@ -3,7 +3,7 @@
 	{common
 		{unitset
 			{value "all"}
-			{available "all artillery heavyart cannon mediumcan heavycan arcade light medium heavy sheavy hero inf_only sniper_only supply"}
+			{available "all infantry sniper armor light medium heavy artillery airborne mechanized"}
 		}
 		{commandPoints "*=%cp"}
 		{unitLimits ""}
@@ -21,18 +21,11 @@
 					{growTime	1500}		; in seconds
 					{growTable	"0.65 0.65 0.65 0.70 0.70 0.70 0.75 0.75 0.75 0.80 0.80 0.80 0.80 0.80 0.80 0.85 0.85 0.85 0.90 0.90 0.90 0.90 0.90 0.90 1.00"}
 					{payback
-						{cp			"0		10		20		30		40		50"}
-						{restore 	"0.00 	0.00	0.00	0.00	0.00	0.00"}
+						{cp			"0		10		20		30		40		45"}
+						{restore	"0		0		0		0		0		0"}
 					}
 				}
-				{buttons "squad1 squad2 v1 v2 v3 v4 v5"}
-			}
-			{hero
-				{resource
-					{start		10}
-				}
-				{buttons "hero"}
-				{tag "special"}
+				{buttons "s1 s2 v1 v2 v3"}
 			}
 		}
 	}
@@ -46,7 +39,7 @@
 	{common
 		{unitset
 			{value "all"}
-			{available "all artillery heavyart cannon mediumcan heavycan arcade light medium heavy sheavy hero inf_only sniper_only supply"}
+			{available "all infantry sniper armor light medium heavy artillery airborne mechanized"}
 		}
 		{commandPoints "*=%cp"}
 		{unitLimits ""}
@@ -64,21 +57,14 @@
 					{growTime	1500}		; in seconds
 					{growTable	"0.65 0.65 0.65 0.70 0.70 0.70 0.75 0.75 0.75 0.80 0.80 0.80 0.80 0.80 0.80 0.85 0.85 0.85 0.90 0.90 0.90 0.90 0.90 0.90 1.00"}
 					{payback
-						{cp			"0		10		20		30		40		50"}
-						{restore	"0.00	0.00	0.00	0.00	0.00	0.00"}
+						{cp			"0		10		20		30		40		45"}
+						{restore	"0		0		0		0		0		0"}
 					}
 					{limitmin	1000}
 					{limitmax	50000}
 					{speedset	"2500 3000 3500 4000 4500 5000 8000 10000 20000 50000"}
 				}
-				{buttons "squad1 squad2 v1 v2 v3 v4 v5"}
-			}
-			{hero
-				{resource
-					{start		10}
-				}
-				{buttons "hero"}
-				{tag "special"}
+				{buttons "s1 s2 v1 v2 v3"}
 			}
 		}
 	}
@@ -93,62 +79,62 @@
 		{gameMode "standard"}
 		{unitMode "user"}
 		{specMode "all_normal"}
-		("standard_user"		start(160) finish(2500) cp(50))
+		("standard_user"		start(160) finish(3000) cp(0:25,90:30,180:35,270:40,360:45,450:50))
 	}
 ;------------------------------------------------------------------------------------------------------------	
 	{"c:custom_50_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_50"}
-		("custom_user"			start(160) finish(2500) cp(50))
+		("custom_user"			start(160) finish(3000) cp(50))
 	}
 	{"c:custom_60_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_60"}
-		("custom_user"			start(160) finish(2500) cp(60))
+		("custom_user"			start(160) finish(3000) cp(60))
 	}
 	{"c:custom_80_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_80"}
-		("custom_user"			start(160) finish(2500) cp(80))
+		("custom_user"			start(160) finish(3000) cp(80))
 	}
 	{"c:custom_100_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_100"}
-		("custom_user"			start(160) finish(2500) cp(100))
+		("custom_user"			start(160) finish(3000) cp(100))
 	}
 	{"c:custom_120_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_120"}
-		("custom_user"			start(160) finish(2500) cp(120))
+		("custom_user"			start(160) finish(3000) cp(120))
 	}
 	{"c:custom_140_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_140"}
-		("custom_user"			start(160) finish(2500) cp(140))
+		("custom_user"			start(160) finish(3000) cp(140))
 	}
 	{"c:custom_160_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_160"}
-		("custom_user"			start(160) finish(2500) cp(160))
+		("custom_user"			start(160) finish(3000) cp(160))
 	}
 	{"c:custom_180_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_180"}
-		("custom_user"			start(160) finish(2500) cp(180))
+		("custom_user"			start(160) finish(3000) cp(180))
 	}
 	{"c:custom_200_user"
 		{gameMode "custom"}
 		{unitMode "user"}
 		{specMode "cp_200"}
-		("custom_user"			start(160) finish(2500) cp(200))
+		("custom_user"			start(160) finish(3000) cp(200))
 	}
 ;------------------------------------------------------------------------------------------------------------
 }

@@ -11,6 +11,7 @@
 		(include "perks_generic.inc")
 		("perk_t2")
 		{fortification}
+		{mechanic}
 	}
 	{veterancy
 		(include "veterancy_generic.inc")

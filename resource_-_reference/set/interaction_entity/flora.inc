@@ -1,13 +1,15 @@
 {"tree"
 	{inflammation_time 4}
 	{on spawn
-		{use_local_light 1}
+		{mtl_enable_skin 0}
+;		{use_local_light 1}
 		{view hide "shadow_fall"}
 		{call "update_texmod"}
 	}
 	(define "stir"
 		{if not "bare"
 			{if not "started"
+				{mtl_enable_skin 1}
 				{ani_play "stir" 1.0 %params}
 				{set "started" 1}
 			}
@@ -34,6 +36,7 @@
 			{if "started"
 				{set "started" 0}
 				{ani_stop "stir"}
+				{mtl_enable_skin 0}
 			}
 		}
 	}
@@ -59,6 +62,10 @@
 	{on contact
 		{call "stir"}
 		{if effector "tank"
+			{call "start_fall"}
+		else effector "armored_car"
+			{call "start_fall"}
+		else effector "car"
 			{call "start_fall"}
 		else effector "airborne"
 			{call "start_fall"}
@@ -107,15 +114,15 @@
 			("set_crown_visible" args disable)
 		else "bare"
 			("set_crown_visible" args disable)
-		else
+		else fallen
 			("set_crown_visible" args enable)
 		}
 	}
 	{on "update_wind"
 		{if "bare"
-			{depend_on_wind 0}
+			{depend_on_wind 1}
 		else fallen
-			{depend_on_wind 0}
+			{depend_on_wind 1}
 		else
 			{depend_on_wind 1}
 		}
@@ -332,6 +339,13 @@
 {"stack_bush"
 	{on spawn
 		{use_local_light 0}
+	}
+}
+
+{"wind_has_foliage"
+	{on spawn
+		{depend_on_wind 1}
+		{wind_detail_bending}
 	}
 }
 

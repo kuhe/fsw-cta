@@ -5,6 +5,8 @@
 
 {select_ammo
 	{human in_bush
+		{"ammo rocketlauncher atgm" {disable}}
+		{"ammo heat" {disable}}
 		{"grenade ic" {ready_for_shot}}
 		{"mortar fg" {ground}}
 		{"grenade fg" {check_grenade}}
@@ -21,6 +23,8 @@
 		{"light"}
 	}
 	{human in_cover
+		{"ammo rocketlauncher atgm" {disable}}
+		{"ammo heat" {disable}}
 		{"grenade ic" {ready_for_shot}}
 		{"mortar fg" {ground}}
 		{"grenade fg" {check_grenade}}
@@ -41,6 +45,8 @@
 		{"light"}
 	}
 	{human
+		{"ammo rocketlauncher atgm" {disable}}
+		{"ammo heat" {disable}}
 		{"grenade ic" {ready_for_shot}}
 		{"shell fg" {ground} {ready_for_shot}}
 		{"shell fg" {ready_for_shot}}

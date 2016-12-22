@@ -138,10 +138,10 @@
 		{ani_play "recoil"}
         {view start "flashbarrel1"}
 		{view start "flashbarrel1s"}
-		{delay 0.15
+		{## delay 0.15
 			{view pause "flashbarrel1"}
 		}
-		{delay 0.3
+		{## delay 0.3
 			{view pause "flashbarrel1s"}
 		}
 		{call "spawn_shell"}
@@ -334,7 +334,7 @@
 			name "%0"
 				{call "fire_barrel%0"}
 				{view start "flashbarrel%0"}
-				{delay 0.42
+				{## delay 0.42
 					{view pause "flashbarrel%0"}
 				}
 				{ani_play "fire%0"}
@@ -363,7 +363,7 @@
 		{view start "shell"}
 		{view start "dust"}
 		{delay 0.12 "shell_off"
-			{view pause "shell"}
+			{## view pause "shell"}
 			{view pause "dust"}
 		}
 	}
@@ -372,7 +372,7 @@
 {"flak barrel1"
 	{on fire "gun" overload
 		{view start "flashbarrel00"}
-		{delay 0.42
+		{## delay 0.42
 			{view pause "flashbarrel00"}
 		}
 		{ani_play "fire00"}
@@ -407,9 +407,9 @@
 		{kill_delay "shell_off"}
 		{view start "shell"}
 		{delay 0.12 "shell_off"
-			{view pause "shell"}
+			{## view pause "shell"}
 			{view start "smoke"}
-			{delay 0.3
+			{## delay 0.3
 				{view pause "flashbarrel1"}
 			}
 			{delay 5

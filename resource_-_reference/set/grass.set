@@ -188,6 +188,48 @@
 		{density 1}
 		{positionOffset 0.8}
 	}
+	{"grass_nettle_01"
+		{models
+ 			{"grass_nettle_01"}
+			{"grass_nettle_01a"}
+			{"grass_nettle_01b"}
+			{"grass_nettle_01b"}
+		}
+		{density 1}
+		{positionOffset 0.8}
+	}
+	{"grass_wildflower_01"
+		{models
+ 			{"grass_wildflower_01"}
+			{"grass_wildflower_01a"}
+		}
+		{density 1}
+		{positionOffset 0.8}
+	}
+	{"grass_wildflower_02"
+		{models
+ 			{"grass_wildflower_02"}
+ 			{"grass_wildflower_02a"}
+		}
+		{density 1}
+		{positionOffset 0.8}
+	}
+	{"grass_goldenrod_01"
+		{models
+			{"grass_goldenrod_01"}
+		}
+		{density 1}
+		{positionOffset 0.8}
+	}
+	{"grass_mugwort_01"
+		{models
+ 			{"grass_mugwort_01"}
+			{"grass_mugwort_01a"}
+			{"grass_mugwort_01b"}
+		}
+		{density 1}
+		{positionOffset 0.8}
+	}
 	{"dunegrass"
 		{models
 			{"dunegrass"}
@@ -252,6 +294,15 @@
 		{models                     
  			{"flower_03"}
 			{"flower_03a"}
+		}
+		{density 1}
+		{positionOffset 0.8}		
+	}
+	{"flower_mullein_01"					
+		{models                     
+ 			{"flower_mullein_01"}
+ 			{"flower_mullein_01a"}
+ 			{"flower_mullein_01b"}
 		}
 		{density 1}
 		{positionOffset 0.8}		
@@ -435,6 +486,89 @@
 		}
 		{density 1}				
 	}
+	{"desert_bush_winter_mixed"					
+		{models                     
+ 			{"desert_bush_01" "_winter2"}
+ 			{"desert_bush_02" "_winter1"}
+ 			{"desert_bush_03" "_winter1"}
+ 			{"desert_bush_03" "_winter2"}
+		}
+		{density 1}				
+	}
+	{"green_bush_01"					
+		{models                     
+ 			{"green_bush_01"}
+		}
+		{density 1}				
+	}
+	{"green_bush_winter01"					
+		{models                     
+ 			{"green_bush_01" "_winter1"}
+		}
+		{density 1}				
+	}
+	{"green_bush_02"					
+		{models                     
+ 			{"green_bush_02"}
+		}
+		{density 1}				
+	}
+	{"green_bush_winter02"					
+		{models                     
+ 			{"green_bush_02" "_winter1"}
+		}
+		{density 1}				
+	}
+	{"green_bush_03"					
+		{models                     
+ 			{"green_bush_03"}
+		}
+		{density 1}				
+	}
+	{"green_bush_winter03"					
+		{models                     
+ 			{"green_bush_03" "_winter1"}
+		}
+		{density 1}				
+	}
+	{"green_bush_04"					
+		{models                     
+ 			{"green_bush_04"}
+		}
+		{density 1}				
+	}
+	{"green_bush_winter04"					
+		{models                     
+ 			{"green_bush_04" "_winter1"}
+		}
+		{density 1}				
+	}
+	{"green_bush_05"					
+		{models                     
+ 			{"green_bush_05"}
+		}
+		{density 1}				
+	}
+	{"green_bush_winter05"					
+		{models                     
+ 			{"green_bush_05" "_winter1"}
+		}
+		{density 1}				
+	}
+	{"thicket_01"					
+		{models                     
+ 			{"thicket_01"}
+			{"thicket_01a"}
+		}
+		{density 1}				
+	}
+	{"thicket_winter01"					
+		{models                     
+ 			{"thicket_01" "_winter1"}
+			{"thicket_01a" "_winter1"}
+		}
+		{density 1}				
+	}
 	{"seagrass_01"
 		{models
  			{"seagrass"}
@@ -498,4 +632,5 @@
 		{density 1}
 		{positionOffset 0.8}
 	}
+	
 }		

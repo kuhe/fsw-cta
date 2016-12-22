@@ -3,4 +3,10 @@
 {from "aks74u_v1"
 	{entity "aks_74u_h"}
 	("accuracy_smg_improved")
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
 }

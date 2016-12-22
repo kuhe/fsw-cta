@@ -1,5 +1,5 @@
 {breed
-	{skin "grm_t2_3"}
+	{skin "grm_t2_1"}
 	{portrait "grm_t2"}
 	{nationality grm}
 	{icon "squad2"}
@@ -16,7 +16,7 @@
 		("veterancy_1")
 	}
 	{inventory
-		{item "enfield_v1" filled}
+		{item "akm_v2" filled}
 		{item "pistol_v1b" filled}
 		{item "grenade rgd-5" 1}
 		{item "grenade rdg-m" 1}

@@ -9,10 +9,10 @@
 	{entity "shell_ap_15"}
 	{trace
 		{view "/texture/fx/trace_zenite1.mtl"
-			{ScaleY 0.20}
-			{Light 2}
+			{ScaleY 0.1}
+			{Light 1}
 		}
-		{length 5.0}
+		{length 4.0}
 	}
 	{damage blastwave    
 		{energy 0.5}

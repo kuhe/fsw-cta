@@ -3,4 +3,10 @@
 {from "m4a1_v1"
 	{entity "m4a1_h"}
 	("accuracy_assault_improved")
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 2"}
+		}
+	}
 }

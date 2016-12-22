@@ -14,4 +14,17 @@
 		{range 20}
 		{spreading 0.5}
 	}
+	
+	{ThirdPersonParams
+		{position
+			{offset
+				{x			-150	}
+				{y			0	}
+				{z			250	}
+			}
+		}
+		{zoom
+			{fov "0"}
+		}
+	}
 }

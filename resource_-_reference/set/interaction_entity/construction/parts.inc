@@ -83,7 +83,6 @@
 				{set "first_stage" 1}
 				{set "last_stage" 1}
 				{call "effects"}
-				{use_blend_tex 1}
 				{call "cut_pieces"}
 				{ani_play "crush"}
 				{delay 0.1
@@ -126,7 +125,6 @@
 	}
 }
 
-
 {"concrete small parts construction"
 	{on "cut_pieces"
 		{volumes disable contact}
@@ -139,7 +137,6 @@
 		("cut_pieces")
 	}
 }
-
 
 {"concrete small parts construction big_impulse"
 	{on "cut_pieces" overload
@@ -157,7 +154,6 @@
 		}
 	}
 }
-
 
 {"big steel parts construction"
 	{on "cut_pieces"
@@ -298,7 +294,6 @@
 	}
 }
 
-
 {"building_part concrete"
 	{on ground_hit
 		{if "crush"
@@ -369,11 +364,11 @@
 	{on bullet_hit
 		{if not under_water
 			{if stuff "shell small"
-			 	{spawn	"stone_hit_br_small" inv_normal}
+				{spawn	"stone_hit_br_small" inv_normal}
 			else stuff "big shell fg"
-			 	{spawn	"stone_hit_br_big" inv_normal}
+				{spawn	"stone_hit_br_big" inv_normal}
 			else stuff "shell"
-			 	{spawn	"stone_hit_br" inv_normal}
+				{spawn	"stone_hit_br" inv_normal}
 			}
 		}
 	}
@@ -406,15 +401,30 @@
 		{if rand 0.25
 			{spawn "crash_brick3"		no_position}
 		else rand 0.25
-			{spawn "stonechip1"		no_position}
+			{spawn "stonechip1"			no_position}
 		else rand 0.25
 			{spawn "crash_stone2"		no_position}
 		else
 			{spawn "crash_brick3a"		no_position}
 		}
 	}
+}
+
+{"no_slices cornered wall parts construction"
 	{on "effects"
 		{start_sound "crush/big/concrete"}
+	}
+}
+
+{"wall cornered parts construction"
+	{on "effects"
+		{start_sound "crush/medium/concrete"}
+	}
+}
+
+{"small cornered parts construction"
+	{on "effects"
+		{start_sound "crush/small/concrete"}
 	}
 }
 
@@ -425,9 +435,6 @@
 			{call "change_model"}
 		}
 	}
-}
-
-{"concrete dot parts construction"
 }
 
 {"unbreakable parts construction"

@@ -3,8 +3,8 @@
 
 (define "t1_grm"
     {tags   "%side infantry man"}
-    {cp     1.66}
-    {score  0.66}
+    {cp     1.5625}
+    {score  0.75}
     {basic}
     {breed}
     {cw 1.0}
@@ -13,6 +13,19 @@
 {"mp/grm/t1_02" ("t1_grm" side(grm))}
 {"mp/grm/t1_03" ("t1_grm" side(grm))}
 {"mp/grm/t1_sq" ("t1_grm" side(grm))}
+
+(define "t1b_grm"
+    {tags   "%side infantry man"}
+    {cp     2.5}
+    {score  0.75}
+    {basic}
+    {breed}
+    {cw 1.0}
+)
+{"mp/grm/t1b_01" ("t1b_grm" side(grm))}
+{"mp/grm/t1b_02" ("t1b_grm" side(grm))}
+{"mp/grm/t1b_03" ("t1b_grm" side(grm))}
+{"mp/grm/t1b_sq" ("t1b_grm" side(grm))}
 
 
 (define "t2_usa"
@@ -27,6 +40,8 @@
 {"mp/usa/t2_02" ("t2_usa" side(usa))}
 {"mp/usa/t2_03" ("t2_usa" side(usa))}
 {"mp/usa/t2_04" ("t2_usa" side(usa))}
+{"mp/usa/t2_07" ("t2_usa" side(usa))}
+{"mp/usa/t2_medic" ("t2_usa" side(usa))}
 {"mp/usa/t2_sq" ("t2_usa" side(usa))}
 
 (define "t2_usa2"
@@ -61,27 +76,18 @@
 {"mp/grm/t2_02" ("t2_grm" side(grm))}
 {"mp/grm/t2_03" ("t2_grm" side(grm))}
 {"mp/grm/t2_05" ("t2_grm" side(grm))}
+{"mp/grm/t2_medic" ("t2_grm" side(grm))}
 {"mp/grm/t2_sq" ("t2_grm" side(grm))}
 
 (define "t2_grm2"
     {tags   "%side infantry man"}
     {cp     3.08}
-    {score  3.50}
+    {score  4.50}
     {basic}
     {breed}
     {cw 2.0}
 )
 {"mp/grm/t2_04" ("t2_grm2" side(grm))}
-
-(define "t2_grm3"
-    {tags   "%side infantry man"}
-    {cp     2.00}
-    {score  1.00}
-    {basic}
-    {breed}
-    {cw 2.0}
-)
-{"mp/grm/t2_05" ("t2_grm3" side(grm))}
 
 
 (define "t3_usa"
@@ -95,6 +101,7 @@
 {"mp/usa/t3_01" ("t3_usa" side(usa))}
 {"mp/usa/t3_02" ("t3_usa" side(usa))}
 {"mp/usa/t3_03" ("t3_usa" side(usa))}
+{"mp/usa/t3_medic" ("t3_usa" side(usa))}
 {"mp/usa/t3_sq" ("t3_usa" side(usa))}
 
 (define "t3_usa2"
@@ -119,6 +126,7 @@
 {"mp/grm/t3_01" ("t3_grm" side(grm))}
 {"mp/grm/t3_02" ("t3_grm" side(grm))}
 {"mp/grm/t3_03" ("t3_grm" side(grm))}
+{"mp/grm/t3_medic" ("t3_grm" side(grm))}
 {"mp/grm/t3_sq" ("t3_grm" side(grm))}
 
 (define "t3_grm2"
@@ -189,7 +197,7 @@
 
 (define "tx_tankman"
     {tags   "%side crew man"}
-    {cp     2.00}
+    {cp     1.00}
     {score  1.25}
     {basic}
     {breed}

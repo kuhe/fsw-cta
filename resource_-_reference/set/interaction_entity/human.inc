@@ -20,6 +20,7 @@
 		{add_view	"marker_ammo_out"		"marker_ammo_out" "head"}
 		{add_view	"marker_ammo_refill"	"marker_ammo_refill" "head"}
 		{add_view	"marker_personage"		"marker_personage" "head"}
+		{add_view	"marker_personage_acute""marker_personage_acute" "head"}
 		{add_view	"marker_veterancy"		"marker_veterancy" "head"}
 		{add_view	"marker_blinded"		"marker_blinded" "head"}
 		
@@ -574,14 +575,20 @@
 	}
 	
 	{on "link_weapon"
-		{if stuff "pistol"
+		{if stuff "silenced"
+			{add_view "flash_gun_silencer" "flashbarrel" "foresight3"}
+			{add_view "shell_smg"			"shell"			"FXshell"}
+		else stuff "pistol"
 			{add_view "flash_gun_small" "flashbarrel" "foresight3"}
 			{add_view "shell_smg"			"shell"			"FXshell"}
 		else stuff "shotgun"
 			{add_view "flash_shotgun" "flashbarrel" "foresight3"}
 			{add_view "shell_shotgun"			"shell"			"FXshell"}
 		else stuff "rifle"
-			{add_view "flash_gun_small" "flashbarrel" "foresight3"}
+			{add_view "flash_gun_small_x" "flashbarrel" "foresight3"}
+			{add_view "shell_mgun"			"shell"			"FXshell"}
+		else stuff "assaultrifle"
+			{add_view "flash_gun_small_x" "flashbarrel" "foresight3"}
 			{add_view "shell_mgun"			"shell"			"FXshell"}
 		else stuff "smg"
 			{add_view "flash_gun_small" "flashbarrel" "foresight3"}
@@ -762,10 +769,16 @@
 		}
 	}
 	{on "start_personage"
+		{view pause "marker_personage_acute"}
 		{view start "marker_personage"}
 	}
 	{on "stop_personage"
 		{view pause "marker_personage"}
+		{view pause "marker_personage_acute"}
+	}
+	{on "start_personage_acute"
+		{view pause "marker_personage"}
+		{view start "marker_personage_acute"}
 	}
 	{on "start_veterancy"
 		{view start "marker_veterancy"}
@@ -775,6 +788,9 @@
 	}
 	{on "stop_veterancy"
 		{view pause "marker_veterancy"}
+	}
+	{on "hide_veterancy"
+		{view hide "marker_veterancy"}
 	}
 	{on "start_blinded"
 		{view start "marker_blinded"}

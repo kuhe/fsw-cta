@@ -29,6 +29,7 @@
 		{"ground"			0xff93704d}
 		{"swamp"			0xffff8080}
 		{"no_pass"			0xffff0000}
+		{"no_pass_human"	0xff7f0000}
 		{"shallow_water"	0xff75bcf0}
 		{"water"			0xff2631f0}
 		{"deep_water"		0xff030980}

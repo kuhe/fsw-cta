@@ -15,6 +15,7 @@
 		{SpreadRadius 5}
 	}
 	{reloadSound "reload.smg"}
+	{reloadAnimBonus 0.5}
 	{foresight "Foresight3"}
 	{speed 60}
 	{calibre 7.62}

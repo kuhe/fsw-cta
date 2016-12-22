@@ -1,5 +1,5 @@
 (define "veterancy_1"
-		{"lvl_1" 4
+		{"lvl_1" 2
 		}
 		{"lvl_2" 8
 		}
@@ -10,7 +10,7 @@
 		{"lvl_5" 80
 		}
 		(mod "mp"
-			{"lvl_1" 2
+			{"lvl_1" 1
 			}
 			{"lvl_2" 4
 			}

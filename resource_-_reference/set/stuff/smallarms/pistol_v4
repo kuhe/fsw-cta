@@ -1,12 +1,14 @@
 ;//	M45C standard + laser + silencer
 
 {from "pistol_v1"
+	{tag "silenced"}
 	{entity "hk45"}
-	{fireSound	"pistol/silent/welrod"}
+	{fireSound	"small_arms/silenced_pistol1/"}
 	{filling "ammo 11x23" 7 56}
 	{inventory
 		{size 3 1}
 	}
 	("accuracy_pistol_improved")
-	{healthDamage 250}
+
+	("health_damage_11x23" d(381))
 }

@@ -1,12 +1,12 @@
 {from "pattern gun"
 	{filling "bullet25" 400}
 	{fireSound "gun/autocannon_medium/"}
-	{reloadSound "61k_reload"}
-	{rechargeTime 10.0}
+	{reloadSound "gun_small/"}
+	{rechargeTime 10}
 	("range_zenite_long")
 	
 	("speed" s(1100))
-	("caliber_minimum")
+	("caliber_zenite")
 	("recoveryTime" r(500))
 	{projectileDamage 55}
 	("damage" a(55) b(40) c(32) d(26) e(18))
@@ -21,4 +21,9 @@
 	{RelaxationTime 0}
 	
 	("accuracy_zenite_high")
+	
+	{healthDamage 100}
+	
+	{crosshair "crosshair5"}
+	{crosshairReloading "crosshair5_reload"}
 }

@@ -26,13 +26,13 @@
 	{reactive}
 	{gravity 0}
 	{rechargeTime 5}
-	{curve "cumulative"}
+	{curve "cumulative2"}
 	{projectileDamageThreshold 1}
 	{projectileDamage 10}
 	{parameters "ap"
 		{projectileDamage 400}
 	}
-	{range 55 60}
+	{range 65 70}
 	{AimingTolerance 3}
 	{cursor "cannon_on"}
 	{cursorReloading "cannon_reload"}
@@ -46,4 +46,10 @@
 		{SpreadPower	1}
 	}
 	("accuracy_boost")
+	
+	{ThirdPersonParams
+		{zoom
+			{fov "1 1.5"}
+		}
+	}
 }

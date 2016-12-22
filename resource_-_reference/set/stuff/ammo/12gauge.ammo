@@ -1,3 +1,5 @@
+;// 12-gauge
+
 {bullet
 	{tag "bullet big stackable pierce"}
 	{inventory
@@ -8,10 +10,10 @@
 	{mass 0.1}
 	{trace
 		{view "/texture/fx/trace_shotgun.mtl"
-			{ScaleY 0.175}
-			{Light 8}
+			{ScaleY 0.5}
+			{Light 3}
 		}
-		{length 2.5}
+		{length 10}
 	}
 	{damage blastwave  
 		{energy 0.25}

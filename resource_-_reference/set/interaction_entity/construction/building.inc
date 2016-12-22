@@ -37,7 +37,6 @@
 	{on "use_tex"
 		{if not "use_tex"
 			{set "use_tex" 1}
-			{use_blend_tex 1}
 		}
 	}
 	{on "try_break"
@@ -109,7 +108,6 @@
 		{if not "use_tex"
 			{set "use_tex" 1}
 			{call "effects"}
-			{use_blend_tex 1}
 		}
 	}
 	{on blast

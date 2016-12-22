@@ -4,6 +4,7 @@
 	{m4a1_v4 0.25}
 	{m4a1cqbr_v3 0.25}
 	{mp5_v1b 0.25}
+	{fn_scar_v2 0.25}
 	{uzi_v3 0.25}
 	{knife_v1 0}
 	{knife_v1b 0}
