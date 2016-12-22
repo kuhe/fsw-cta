@@ -1,6 +1,0 @@
-;//	M4A1 standard + ACOG scope + hand grip
-
-{from "m4a1_v1b"
-	{entity "m4a1_ag"}
-	("spreading_medium")
-}

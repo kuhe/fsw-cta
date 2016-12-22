@@ -13,6 +13,13 @@
     {cp %cp}
 )
 
+(define "generic_h"
+    {charge %c}
+    {tags "%t"}
+    {group "%g"}
+    {button "%b"}
+)
+
 
 ;°°°generic_v°°°
 
@@ -28,7 +35,33 @@
     {content "* ( mp/%s/t2_01:%n1 )"}
 )
 
+; 1 vehicle with pilots
+(define "vp"
+    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+    {content "* ( mp/%s/tx_pilot_01:%n1 )"}
+)
+
+; 1 vehicle with 3 infantry types
+(define "v3"
+    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+    {content "%v ( mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 )"}
+)
+
+; 1 vehicle with 4 infantry types
+(define "v4"
+    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+    {content "%v ( mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 mp/%s/%c4 )"}
+)
+
+; 1 vehicle with 5 infantry types
+(define "v5"
+    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+    {content "%v ( mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 mp/%s/%c4 mp/%s/%c5 )"}
+)
+
 ;------------------------------------------------------------------------------
 
 	(include "vehicles_usa.set")
 	(include "vehicles_grm.set")
+	
+	(include "vehicles_add1.set")

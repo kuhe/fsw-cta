@@ -1,8 +1,0 @@
-{levelofdetail
-	; level of detail in 3rd person mode zoom
-	
-	(define "off"
-		;{off}
-	)
-	(include "level_of_detail.inc")
-}

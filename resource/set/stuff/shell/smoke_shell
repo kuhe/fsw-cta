@@ -1,7 +1,0 @@
-{item
-	{tag "itemin2hands"}
-	{tag "smoke"}
-	{inventory {size 2 1}}
-	{entity "smoke_shell"}
-	{mass 0.3}
-}

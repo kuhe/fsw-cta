@@ -1,8 +1,0 @@
-;//	M-45 MEUSOC standard
-
-{from "pistol_v1"
-	{entity "m45_meusoc"}
-	{filling "ammo 11x23" 7 56}
- 	("speed" s(244))
-	{healthDamage 200}
-}

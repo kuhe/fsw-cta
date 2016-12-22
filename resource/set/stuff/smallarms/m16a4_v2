@@ -1,6 +1,0 @@
-;//	M16A4 standard + holographic sight
-
-{from "m16a4_v1"
-	{entity "m16a4_h"}
-	("accuracy_assault_improved")
-}

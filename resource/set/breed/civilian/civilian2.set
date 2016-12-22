@@ -1,8 +1,0 @@
-{breed
-	{behaviour civilian}
-	{skin "civilian2"}
-	{portrait "none"}
-	{icon "civilian"}
-	{icon_priority 0}
-	{nationality grm}
-}

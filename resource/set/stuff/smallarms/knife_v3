@@ -1,5 +1,0 @@
-;//	M11 Bayonet standard
-
-{from "knife_v1"
-	{entity "knife_m11"}
-}

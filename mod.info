@@ -1,7 +1,7 @@
 {Mod
 	{Name "FSW"}
 	{Desc "FSW"}
-	{MinGameVersion "0.650"}
-	{MaxGameVersion "0.765"}
+	{MinGameVersion "0.908"}
+	{MaxGameVersion "0.908"}
 	{FileId "494380573"}
 }

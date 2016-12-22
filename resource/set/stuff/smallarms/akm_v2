@@ -1,6 +1,0 @@
-;//	AKM standard + holographic sight
-
-{from "akm_v1"
-	{entity "akm_h"}
-	("accuracy_assault_improved")
-}

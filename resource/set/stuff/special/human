@@ -1,9 +1,0 @@
-{item
-	{inventory
-		{size 6 2}
-		{weight 100}
-		{fsm "hand-only"}
-	}
-	{entity "corpse"}
-	{mass 0.1}
-}

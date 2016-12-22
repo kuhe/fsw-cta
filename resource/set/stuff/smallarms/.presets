@@ -21,16 +21,34 @@
 		;{min 1}			; min burst shots in automatic mode
 		;{noaiming}			; no aiming during burst
 		{short 1 0}			; short burst shots on long distance, rand (+-)shots
-		{long 3 0}			; long burst shots on short distance, rand (+-)shots
-		{rangeKoef 0.5}		; rangeKoef * aimRange = max long burst distance
+		{long 1 0}			; long burst shots on short distance, rand (+-)shots
+		{rangeKoef 0.20}	; rangeKoef * aimRange = max long burst distance
+	}
+)
+
+(define "burst_single_x2"
+	{burst
+		;{min 1}
+		{short 1 0}
+		{long 1 0}
+		{rangeKoef 0.20}
+	}
+)
+
+(define "burst_single_x3"
+	{burst
+		;{min 1}
+		{short 1 0}
+		{long 1 0}
+		{rangeKoef 0.20}
 	}
 )
 
 (define "burst_pistol"
 	{burst
 		{short 1 0}
-		{long 2 0}
-		{rangeKoef 0.5}
+		{long 1 0}
+		{rangeKoef 0.25}
 	}
 )
 
@@ -38,39 +56,95 @@
 	{burst
 		{short 1 0}
 		{long 2 1}
-		{rangeKoef 0.4}
+		{rangeKoef 0.20}
 	}
 )
 
 (define "burst_short"
 	{burst
 		{short 1 0}
-		{long 3 1}
-		{rangeKoef 0.4}
+		{long 2 1}
+		{rangeKoef 0.20}
 	}
 )
 
 (define "burst_medium"
 	{burst
-		{short 1 1}
-		{long 4 2}
-		{rangeKoef 0.3}
+		{short 2 1}
+		{long 3 2}
+		{rangeKoef 0.20}
 	}
 )
 
 (define "burst_long"
 	{burst
-		{short 5 1}
-		{long 8 3}
-		{rangeKoef 0.3}
+		{short 2 1}
+		{long 3 2}
+		{rangeKoef 0.20}
 	}	
+)
+
+(define "health_damage_4x30"		; 4.6x30mm
+	{healthDamage (* 0.030 %d)}
+)
+
+(define "health_damage_5x39"		; 5.45x39mm
+	{healthDamage (* 0.0345 %d)}
+)
+
+(define "health_damage_5x45"		; 5.56x45mm
+	{healthDamage (* 0.035 %d)}
+)
+
+(define "health_damage_7x39"		; 7.62x39mm
+	{healthDamage (* 0.050 %d)}
+)
+
+(define "health_damage_7x51"		; 7.62x51mm
+	{healthDamage (* 0.050 %d)}
+)
+
+(define "health_damage_7x54"		; 7.62x54mm
+	{healthDamage (* 0.050 %d)}
+)
+
+(define "health_damage_7x67"		; 7.62x67mm
+	{healthDamage (* 0.050 %d)}
+)
+
+(define "health_damage_9x18"		; 9x18mm
+	{healthDamage (* 0.080 %d)}
+)
+
+(define "health_damage_9x19"		; 9x19mm
+	{healthDamage (* 0.080 %d)}
+)
+
+(define "health_damage_9x39"		; 9x39mm
+	{healthDamage (* 0.080 %d)}
+)
+
+(define "health_damage_11x23"		; 11.43x23mm
+	{healthDamage (* 0.125 %d)}
+)
+
+(define "health_damage_12x99"		; 12.7x99mm
+	{healthDamage (* 0.100 %d)}
+)
+
+(define "health_damage_12x108"		; 12.7x108mm
+	{healthDamage (* 0.100 %d)}
+)
+
+(define "health_damage_12gauge"		; 12-gauge
+	{healthDamage (* 0.175 %d)}
 )
 
 (define "spreading_short"
 	{spreading 1
 		{SpreadPower	1}
 		{BurstRecoveryTime 0.2}
-		{BurstAccuracy 100 95.0 90.0 80.0 75.0 70.0 65.0 60.0 55.0 50.0}
+		{BurstAccuracy 100 95.0 90.0 80.0 75.0 70.0 65.0 60.0 55.0 50.0 45.0 40.0}
 	}
 )
 
@@ -78,7 +152,7 @@
 	{spreading 1
 		{SpreadPower	1}
 		{BurstRecoveryTime 0.2}
-		{BurstAccuracy 100 97.5 92.5 82.5 77.5 72.5 72.5 62.5 57.5 52.5}
+		{BurstAccuracy 100 97.5 92.5 82.5 77.5 72.5 72.5 62.5 57.5 52.5 47.5 42.5}
 	}
 )
 
@@ -86,7 +160,7 @@
 	{spreading 1
 		{SpreadPower	1}
 		{BurstRecoveryTime 0.2}
-		{BurstAccuracy 100 99.0 95.0 85.0 80.0 75.0 70.0 65.0 60.0 55.0}
+		{BurstAccuracy 100 99.0 95.0 85.0 80.0 75.0 70.0 65.0 60.0 55.0 50.0 45.0}
 	}
 )
 
@@ -94,7 +168,7 @@
 	{spreading 1
 		{SpreadPower	1}
 		{BurstRecoveryTime 0.2}
-		{BurstAccuracy 100 95.0 90.0 85.0 80.0 70.0 65.0 60.0 55.0 50.0}
+		{BurstAccuracy 100 95.0 90.0 85.0 80.0 70.0 65.0 60.0 55.0 50.0 45.0 40.0}
 	}
 )
 
@@ -102,6 +176,6 @@
 	{spreading 1
 		{SpreadPower	1}
 		{BurstRecoveryTime 0.2}
-		{BurstAccuracy 100 97.5 92.5 87.5 82.5 72.5 67.5 62.5 57.5 52.5}
+		{BurstAccuracy 100 97.5 92.5 87.5 82.5 72.5 67.5 62.5 57.5 52.5 47.5 42.5}
 	}
 )

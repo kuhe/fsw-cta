@@ -1,8 +1,0 @@
-;//	GSh-18 standard
-
-{from "pistol_v1b"
-	{entity "gsh18"}
-	{filling "ammo 9x18" 15 60}
- 	("speed" s(325))
-	{healthDamage 175}
-}

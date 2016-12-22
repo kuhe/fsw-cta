@@ -1,7 +1,0 @@
-;//	Mini standard + holographic sight + hand grip + laser
-
-{from "uzi_v1"
-	{entity "mini_uzi_hgf"}
-	("accuracy_assault_improved")
-	("spreading_long")
-}
