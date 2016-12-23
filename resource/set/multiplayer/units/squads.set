@@ -105,13 +105,13 @@
 
 ;// GRM
 
-("squad_with4types" side(grm) name(squad1) c(30) g(a1) c1(tx_at_01:3) c2(t1_02:3) c3(t1_03:1) c4(t1_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(120) f(1))
-("squad_with4types" side(grm) name(squad2) c(0) g(a2) c1(t2_01:3) c2(t2_02:3) c3(t2_03:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(140) f(1))
-("squad_with4types" side(grm) name(squad3) c(0) g(a3) c1(t2_05:3) c2(t2_04:3) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(180) f(1))
+("squad_with4types" side(grm) name(squad1) c(30) g(a1) c1(tx_at_01:5) c2(t1_02:3) c3(t1_03:1) c4(t1_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(120) f(1))
+("squad_with4types" side(grm) name(squad2) c(0) g(a2) c1(t2_01:5) c2(t2_02:3) c3(t2_03:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(140) f(1))
+("squad_with4types" side(grm) name(squad3) c(0) g(a3) c1(t2_05:5) c2(t2_04:3) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(180) f(1))
 
-("squad_with5types" side(grm) name(squad4) c(0) g(a4) c1(t3_01:3) c2(t3_02:2) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms) level(2) cost(280) f(1))
-("squad_with4types" side(grm) name(squad5) c(0) g(a5) c1(t4_01:3) c2(t4_02:3) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms) level(4) cost(425) f(1))
-("squad_with4types" side(grm) name(squad6) c(0) g(a6) c1(t5_01:3) c2(t5_02:3) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms) level(6) cost(520) f(1))
+("squad_with5types" side(grm) name(squad4) c(0) g(a4) c1(t3_01:5) c2(t3_02:2) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms) level(2) cost(280) f(1))
+("squad_with4types" side(grm) name(squad5) c(0) g(a5) c1(t4_01:5) c2(t4_02:3) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms) level(4) cost(425) f(1))
+("squad_with4types" side(grm) name(squad6) c(0) g(a6) c1(t5_01:5) c2(t5_02:3) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms) level(6) cost(520) f(1))
 
 ("squad_with1types" side(grm) name(squad12) c(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(40) f(1))
 ("squad_with1types" side(grm) name(squad11) c(30) g(b2) c1(tx_engineer_01:2) b(s2) t(all infantry combined_arms) level(1) cost(50) f(1))
