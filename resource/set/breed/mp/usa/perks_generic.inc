@@ -1,5 +1,5 @@
 (define "perk_t1"
-		{"health" "150%"
+		{"health" "105%"
 		}
 		{"health_regeneration" "100%"
 		}
@@ -26,7 +26,7 @@
 		}
 )
 (define "perk_t2"
-		{"health" "200%"
+		{"health" "110%"
 		}
 		{"health_regeneration" "100%"
 		}
@@ -53,7 +53,7 @@
 		}
 )
 (define "perk_t3"
-		{"health" "300%"
+		{"health" "115%"
 		}
 		{"health_regeneration" "100%"
 		}
@@ -80,7 +80,7 @@
 		}
 )
 (define "perk_t4"
-		{"health" "400%"
+		{"health" "120%"
 		}
 		{"health_regeneration" "100%"
 		}
@@ -107,7 +107,7 @@
 		}
 )
 (define "perk_t5"
-		{"health" "500%"
+		{"health" "125%"
 		}
 		{"health_regeneration" "100%"
 		}
