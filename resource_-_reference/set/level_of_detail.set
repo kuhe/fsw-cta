@@ -7,5 +7,23 @@
 	(define "off_small"
 		{off}
 	)
+	(define "off_tiny"
+		{off}
+	)
+	
+	(define "scale"
+		(* 1.0 %d)
+	)
+	(mod "mp"
+		(define "scale"
+			(* 0.75 %d)
+		)
+	)
+	(mod "coop"
+		(define "scale"
+			(* 0.70 %d)
+		)
+	)
+	
 	(include "level_of_detail.inc")
 }

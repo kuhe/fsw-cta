@@ -5,9 +5,29 @@
 		;{off}
 	)
 	(define "off_small"
+		;{off}
+	)
+	(define "off_tiny"
 		{off}
 	)
-	{ZoomFactor 0.5}
+	
+	(define "scale"
+		(* 1.0 %d)
+	)
+	(mod "mp"
+		(define "scale"
+			(* 0.75 %d)
+		)
+	)
+	(mod "coop"
+		(define "scale"
+			(* 0.70 %d)
+		)
+	)
+	
+	{ZoomFactor 0.25}
 	{GrassZoomFactor 0.25}
+	{MinZoom 1}
+	
 	(include "level_of_detail.inc")
 }

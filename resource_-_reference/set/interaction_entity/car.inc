@@ -38,6 +38,9 @@
 ;		{link_sound "exhaust"		"vehicle/engine/car_up"}
 ;	}
 	{on pierce
+		{if stuff "atgm"
+			{call "blast_body"}
+		}
 		{if stuff "rocketlauncher"
 			{if volume "cabin"	
 				{call "blast_body"}

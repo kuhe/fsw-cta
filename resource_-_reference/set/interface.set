@@ -64,7 +64,7 @@
 		{view 30 40}
 		{spacing 15}
 	}
-	{manual_targetting
+	{manual_targeting
 		{range
 			{show}
 			{offset 40 10}
@@ -96,7 +96,7 @@
 			{bkg_disabled red}
 		}
 		{zeroing
-			{show}
+			;{show}
 			{offset 10 10 0}
 			{size 0 20 20}
 		}
@@ -105,6 +105,11 @@
 			{invalid red}
 			{satisfy yellow}
 			{optimal green}
+		}
+		{accuracy_circle
+			;{show}
+			{min 16}
+			{max 512}
 		}
 		{trajectory
 			{show}

@@ -19,7 +19,7 @@
 		{Terrain
 			"ground"		1
 			"snow"			0.75
-			"no_pass"		0
+			"no_pass"		1
 			"no_pass_human"	0
 			"swamp"			0.25
 			"shallow_water"	0.75

@@ -8,19 +8,6 @@
 ;			{off}
 ;		}
 ;	}
-	(define "scale"
-		(* 1.0 %d)
-	)
-	(mod "mp"
-		(define "scale"
-			(* 0.75 %d)
-		)
-	)
-	(mod "coop"
-		(define "scale"
-			(* 0.70 %d)
-		)
-	)
 	{"human"
 		{distance ("scale" d(300))
 			; LOD1
@@ -140,7 +127,7 @@
 			{NoCastShadow}
 		}
 		{distance ("scale" d(1500))
-			("off_small")
+			("off_tiny")
 		}
 	}
 	{"decor_small"
@@ -209,5 +196,4 @@
 	}
 	{GrassDistance 5000}
 	{GrassFadeDepth 500}
-	{MinZoom 1}
 ;}

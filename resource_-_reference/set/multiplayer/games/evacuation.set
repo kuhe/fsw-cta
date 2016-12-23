@@ -2,7 +2,7 @@
 	{order 90}
 	{parameters "base_capture_time=60;base_release_time=20;ammo_table=50,55,60,65,70,75;flag_capture_time=30;flag_release_time=10;flag_capture_factor=0.9;preparation_time=25;wave_time=180"}
 	{settings
-		{options			gameDuration enableSpectators}
+		{options			gameDuration randomSpawnPoints enableHardcore enableSpectators}
 		{optionsAdvanced	friendlyFire fogOfWar showPiercing showDamageReports}
 		{optionsRanked		}
 		{fogOfWar			fog_realistic}

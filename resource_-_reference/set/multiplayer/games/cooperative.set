@@ -3,7 +3,7 @@
 	{minPlayers	1}
 	{maxPlayers	8}
 	{settings
-		{options			fogOfWar difficulty friendlyFire showPiercing showDamageReports enableSpectators}
+		{options			fogOfWar difficulty friendlyFire showPiercing showDamageReports enableHardcore enableSpectators}
 		{difficulty			normal}
 		{fogOfWar			fog_off}
 		{floraRespawn		0}

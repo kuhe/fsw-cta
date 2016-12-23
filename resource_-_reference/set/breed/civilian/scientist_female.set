@@ -1,0 +1,8 @@
+{breed
+	{behaviour civilian}
+	{skin "scientist_female"}
+	{portrait "none"}
+	{icon "civilian"}
+	{icon_priority 0}
+	{nationality grm}
+}

@@ -2,7 +2,7 @@
 	{order 80}
 	{parameters	"freezeTime=30;flag_capture_time=300;flag_release_time=30;flag_capture_factor=0.2;hill_capture_bonus=0.5"}
 	{settings
-		{options			enableSpectators randomSpawnPoints}
+		{options			randomSpawnPoints enableHardcore enableSpectators}
 		{optionsAdvanced 	preparationTime friendlyFire fogOfWar showPiercing showDamageReports}
 		{optionsRanked		}
 		{fogOfWar			fog_realistic}
@@ -20,6 +20,7 @@
 		{showDamageReports}
 		{useUnitLevelRestrictions}
 		{enableBots}
+		{randomSpawnPoints}
 	}
 	{teamSettings
 		{teamsMode normal}

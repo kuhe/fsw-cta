@@ -62,3 +62,47 @@
 		}
 	}
 }
+{"traffic_light_blinking"
+	{on spawn
+		{set "light_on" 0}
+		{call "update_blinking"}
+	}
+	{on "break"
+		{set "light_on" 0}
+		{call "update_blinking"}
+	}
+	{on "update_blinking"
+		{if not fallen
+			{if "light_on"
+				{view hide "lights_glow"}
+				{set "light_on" 0}
+			else
+				{view show "lights_glow"}
+				{set "light_on" 1}
+			}
+			{delay_effect 0.5 "update_blinking"}
+		else
+			{kill_delay "update_blinking"}
+			{view hide "lights_glow"}
+		}
+	}
+}
+{"traffic_light_on"
+	{on spawn
+		{if fallen
+			{set "light_on" 0}
+		else
+			{set "light_on" 1}
+		}
+		{call "update_lights"}
+	}
+	{on "break"
+		{set "light_on" 0}
+		{call "update_lights"}
+	}
+	{on "update_lights"
+		{if not "light_on"
+			{view hide "lights_glow"}
+		}
+	}
+}

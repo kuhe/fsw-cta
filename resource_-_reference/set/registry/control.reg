@@ -2,19 +2,20 @@
 ; Third Person Control Registry Definitions
 (define "humvee"
 	{position
-		{linkBone		"basis"	}
+		{linkBone		"basis"}
 		{offset
-			{x			-110	}
+			{x			0		}
 			{y			0		}
-			{z			65		}
+			{z			70		}
+			{zMin		62		}
 		}
 	}
 	{positionZoom
-		{linkBone		"basis"	}
+		{linkBone		"turret"}
 		{offset
-			{x			-225	}
+			{x			10		}
 			{y			0		}
-			{z			55		}
+			{z			13		}
 		}
 	}
 	{clip
@@ -22,27 +23,28 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			0		}
-		{max			400	}
+		{min			50		}
+		{max			300		}
 		{fov			%zoomfov}
 		{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry02"}
 	}
 )
 (define "technical"
 	{position
-		{linkBone		"basis"	}
+		{linkBone		"basis"}
 		{offset
-			{x			-90		}
+			{x			0		}
 			{y			0		}
-			{z			60		}
+			{z			70		}
+			{zMin		55		}
 		}
 	}
 	{positionZoom
-		{linkBone		"basis"	}
+		{linkBone		"turret_mgun"}
 		{offset
-			{x			-225	}
+			{x			-7		}
 			{y			0		}
-			{z			50		}
+			{z			7		}
 		}
 	}
 	{clip
@@ -50,27 +52,28 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			0		}
-		{max			400		}
+		{min			70		}
+		{max			300		}
 		{fov			%zoomfov}
-		{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry01"}
+		{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry02"}
 	}
 )
 (define "stryker"
 	{position
 		{linkBone		"basis"	}
 		{offset
-			{x			-110	}
+			{x			0		}
 			{y			0		}
-			{z			75		}
+			{z			85		}
+			{zMin		70		}
 		}
 	}
 	{positionZoom
-		{linkBone		"basis"	}
+		{linkBone		"turret"}
 		{offset
-			{x			-250	}
+			{x			50		}
 			{y			0		}
-			{z			60		}
+			{z			5		}
 		}
 	}
 	{clip
@@ -78,8 +81,8 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			0		}
-		{max			400	}
+		{min			65		}
+		{max			300		}
 		{fov			%zoomfov}
 	}
 )
@@ -87,17 +90,18 @@
 	{position
 		{linkBone		"basis"	}
 		{offset
-			{x			-100	}
+			{x			0		}
 			{y			0		}
-			{z			75		}
+			{z			85		}
+			{zMin		70		}
 		}
 	}
 	{positionZoom
 		{linkBone		"basis"	}
 		{offset
-			{x			-250	}
+			{x			0		}
 			{y			0		}
-			{z			60		}
+			{z			0		}
 		}
 	}
 	{clip
@@ -105,25 +109,26 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			250		}
-		{max			400	}
+		{min			150		}
+		{max			300		}
 	}
 )
 (define "btr-80"
 	{position
-		{linkBone		"basis"	}
+		{linkBone		"basis"}
 		{offset
-			{x			-115	}
+			{x			0		}
 			{y			0		}
-			{z			70		}
+			{z			85		}
+			{zMin		70		}
 		}
 	}
 	{positionZoom
-		{linkBone		"basis"	}
+		{linkBone		"turret"}
 		{offset
-			{x			-250	}
+			{x			75		}
 			{y			0		}
-			{z			55		}
+			{z			20		}
 		}
 	}
 	{clip
@@ -131,8 +136,8 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			0		}
-		{max			400	}
+		{min			75		}
+		{max			300		}
 		{fov			"2 4 6"	}
 	}
 )
@@ -140,17 +145,18 @@
 	{position
 		{linkBone		"basis"	}
 		{offset
-			{x			-100	}
+			{x			0		}
 			{y			0		}
-			{z			75		}
+			{z			85		}
+			{zMin		72		}
 		}
 	}
 	{positionZoom
-		{linkBone		"basis"	}
+		{linkBone		"turret"}
 		{offset
-			{x			-250	}
+			{x			100		}
 			{y			0		}
-			{z			60		}
+			{z			25		}
 		}
 	}
 	{clip
@@ -158,26 +164,27 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			0		}
-		{max			400	}
+		{min			75		}
+		{max			300		}
 		{fov			"2 4 8 10"	}
 	}
 )
 (define "t-80"
 	{position
-		{linkBone		"basis"	}
+		{linkBone		"basis"}
 		{offset
-			{x			-100	}
+			{x			0		}
 			{y			0		}
-			{z			75		}
+			{z			85		}
+			{zMin		70		}
 		}
 	}
 	{positionZoom
-		{linkBone		"basis"	}
+		{linkBone		"turret"}
 		{offset
-			{x			-250	}
+			{x			100		}
 			{y			0		}
-			{z			60		}
+			{z			25		}
 		}
 	}
 	{clip
@@ -185,8 +192,8 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			0		}
-		{max			400	}
+		{min			75		}
+		{max			300		}
 		{fov			"2 4 8 10"	}
 	}
 )
@@ -194,15 +201,16 @@
 	{position
 		{linkBone		"basis"	}
 		{offset
-			{x			-75		}
+			{x			0		}
 			{y			0		}
-			{z			50		}
+			{z			35		}
+			{zMin		25		}
 		}
 	}
 	{positionZoom
 		{linkBone		"basis"	}
 		{offset
-			{x			-250	}
+			{x			50		}
 			{y			0		}
 			{z			500		}
 		}
@@ -212,24 +220,26 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			0		}
-		{max			300		}
+		{min			75		}
+		{max			100		}
 		{fov			"4 8"	}
+		{delta			25		}
 	}
 )
 (define "heavy_mg"
 	{position
 		{linkBone		"basis"	}
 		{offset
-			{x			-75		}
+			{x			0		}
 			{y			0		}
-			{z			35		}
+			{z			45		}
+			{zMin		35		}
 		}
 	}
 	{positionZoom
 		{linkBone		"basis"	}
 		{offset
-			{x			-225	}
+			{x			25		}
 			{y			0		}
 			{z			35		}
 		}
@@ -239,9 +249,10 @@
 		{viewMax		30		}
 	}
 	{zoom
-		{min			0		}
-		{max			300		}
+		{min			75		}
+		{max			100		}
 		{fov			"1 2"	}
+		{delta			25		}
 	}
 )
 {control
@@ -253,15 +264,16 @@
 				{position
 					{linkBone		"basis"	}
 					{offset
-						{x			-100	}
+						{x			0		}
 						{y			0		}
 						{z			75		}
+						{zMin		70		}
 					}
 				}
 				{positionZoom
 					{linkBone		"basis"	}
 					{offset
-						{x			-250	}
+						{x			50		}
 						{y			0		}
 						{z			60		}
 					}
@@ -271,47 +283,122 @@
 					{viewMax		30		}
 				}
 				{zoom
-					{min			0		}
-					{max			400	}
+					{min			75		}
+					{max			300		}
 					{fov			"2 4 8"	}
 					;{vignette    "path with resources as root, like /texture/common/vignette"}
 				}
 			}
 			{"humvee_m2hb"
-				("humvee" zoomfov("2"))
+				("humvee" zoomfov("1 2"))
 			}
 			{"humvee_m240"
-				("humvee" zoomfov("2"))
+				("humvee" zoomfov("1 2"))
 			}
 			{"humvee_mk19"
-				("humvee" zoomfov("2"))
+				("humvee" zoomfov("1 2"))
 			}
 			{"humvee_nvst"
-				("humvee" zoomfov("2"))
+				("humvee" zoomfov("1 2"))
 			}
 			{"humvee_pkm"
-				("humvee" zoomfov("2"))
+				("humvee" zoomfov("1 2"))
 			}
 			{"humvee_ags30"
-				("humvee" zoomfov("2"))
+				("humvee" zoomfov("1 2"))
 			}
 			{"humvee_tow"
-				("humvee" zoomfov("2 4 6"))
+				{position
+					{linkBone		"basis"}
+					{offset
+						{x			0		}
+						{y			0		}
+						{z			60		}
+						{zMin		60		}
+					}
+				}
+				{positionZoom
+					{linkBone		"turret"}
+					{offset
+						{x			75		}
+						{y			0		}
+						{z			13		}
+					}
+				}
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
 				{zoom
+					{min			50		}
+					{max			300		}
+					{fov			"2 4 6"}
 					{vignette		"/texture/common/environment/lens_effects/zoom_vignette"}
 				}
 			}
 			{"technical_lmg"
-				("technical" zoomfov("2"))
+				("technical" zoomfov("1 2"))
 			}
 			{"technical_hmg"
-				("technical" zoomfov("2"))
+				("technical" zoomfov("1 2"))
 			}
 			{"technical_spg"
-				("technical" zoomfov("2 4"))
+				{position
+					{linkBone		"basis"}
+					{offset
+						{x			0		}
+						{y			0		}
+						{z			70		}
+						{zMin		50		}
+					}
+				}
+				{positionZoom
+						{linkBone		"turret_mgun"}
+					{offset
+						{x			75		}
+						{y			0		}
+						{z			8		}
+					}
+				}
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
+				{zoom
+					{min			70		}
+					{max			300		}
+					{fov			"2 4"}
+					{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry01"}
+				}
 			}
 			{"technical_zpu"
-				("technical" zoomfov("2"))
+				{position
+					{linkBone		"basis"}
+					{offset
+						{x			0		}
+						{y			0		}
+						{z			70		}
+						{zMin		50		}
+					}
+				}
+				{positionZoom
+					{linkBone		"turret"}
+					{offset
+						{x			75		}
+						{y			0		}
+						{z			15		}
+					}
+				}
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
+				{zoom
+					{min			75		}
+					{max			300		}
+					{fov			"2"}
+					{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry01"}
+				}
 			}
 			{"stryker_m2hb"
 				("stryker" zoomfov("2 4"))
@@ -320,10 +407,32 @@
 				("stryker" zoomfov("2 4"))
 			}
 			{"stryker_m1128"
-				("stryker" zoomfov("2 4 8 10"))
-			}
-			{"lav25a2"
-				("stryker" zoomfov("2 4"))
+				{position
+					{linkBone		"basis"	}
+					{offset
+						{x			0		}
+						{y			0		}
+						{z			85		}
+						{zMin		70		}
+					}
+				}
+				{positionZoom
+					{linkBone		"turret"}
+					{offset
+						{x			100		}
+						{y			0		}
+						{z			28		}
+					}
+				}
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
+				{zoom
+					{min			65		}
+					{max			300		}
+					{fov			"2 4 8 10"}
+				}
 			}
 			{"fmtv"
 				("fmtv")
@@ -352,21 +461,22 @@
 			{"t-62"
 				("t-80")
 			}
-			{"m2_bradley"
+			{"lav25a2"
 				{position
 					{linkBone		"basis"	}
 					{offset
-						{x			-85		}
+						{x			0		}
 						{y			0		}
-						{z			80		}
+						{z			85		}
+						{zMin		65		}
 					}
 				}
 				{positionZoom
-					{linkBone		"basis"	}
+					{linkBone		"turret"}
 					{offset
-						{x			-250	}
+						{x			75		}
 						{y			0		}
-						{z			60		}
+						{z			16		}
 					}
 				}
 				{clip
@@ -374,8 +484,36 @@
 					{viewMax		30		}
 				}
 				{zoom
-					{min			0		}
-					{max			400	}
+					{min			75		}
+					{max			300		}
+					{fov			"2 4"}
+				}
+			}
+			{"m2_bradley"
+				{position
+					{linkBone		"basis"	}
+					{offset
+						{x			0		}
+						{y			0		}
+						{z			85		}
+						{zMin		75		}
+					}
+				}
+				{positionZoom
+					{linkBone		"turret"}
+					{offset
+						{x			75		}
+						{y			0		}
+						{z			18		}
+					}
+				}
+				{clip
+					{viewMin		-45		}
+					{viewMax		30		}
+				}
+				{zoom
+					{min			75		}
+					{max			300		}
 					{fov			"2 4 6"	}
 				}
 			}
@@ -383,17 +521,18 @@
 				{position
 					{linkBone		"basis"	}
 					{offset
-						{x			-90		}
+						{x			0		}
 						{y			0		}
-						{z			70		}
+						{z			85		}
+						{zMin		70		}
 					}
 				}
 				{positionZoom
-					{linkBone		"basis"	}
+					{linkBone		"turret"}
 					{offset
-						{x			-250	}
+						{x			75		}
 						{y			0		}
-						{z			50		}
+						{z			20		}
 					}
 				}			
 				{clip
@@ -401,8 +540,8 @@
 					{viewMax		30		}
 				}
 				{zoom
-					{min			0		}
-					{max			400	}
+					{min			90		}
+					{max			300		}
 					{fov			"2 4 6"	}
 				}
 			}
@@ -410,17 +549,18 @@
 				{position
 					{linkBone		"basis"	}
 					{offset
-						{x			-105	}
+						{x			0		}
 						{y			0		}
-						{z			75		}
+						{z			85		}
+						{zMin		75		}
 					}
 				}
 				{positionZoom
-					{linkBone		"basis"	}
+					{linkBone		"turret"}
 					{offset
-						{x			-250	}
+						{x			100		}
 						{y			0		}
-						{z			55		}
+						{z			25		}
 					}
 				}		
 				{clip
@@ -428,8 +568,8 @@
 					{viewMax		30		}
 				}
 				{zoom
-					{min			0		}
-					{max			400	}
+					{min			75		}
+					{max			300		}
 					{fov			"2 4 6"	}
 				}
 			}
@@ -458,17 +598,18 @@
 				{position
 					{linkBone		"body"	}
 					{offset
-						{x			-180	}
-						{y			-12		}
-						{z			15		}
+						{x			0		}
+						{y			12		}
+						{z			25		}
+						{zMin		15		}
 					}
 				}
 				{positionZoom
 					{linkBone		"head"	}
 					{offset
-						{x			-201	}
+						{x			2		}
 						{y			-0.5	}
-						{z			1.5	}
+						{z			1.5		}
 					}
 				}
 				{clip
@@ -477,9 +618,10 @@
 				}
 				{zoom
 					{viewoff 		"head"	}
-					{min			0		}
-					{max			300		}
-					{fov			"1 1.5 2 4"	}
+					{min			15		}
+					{max			100		}
+					{fov			"1 1.5"	}
+					{delta			25		}
 					{vignette		"/texture/common/environment/lens_effects/zoom_vignette_infantry02"}
 				}
 			}

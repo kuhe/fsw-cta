@@ -2,7 +2,7 @@
 	{order 10}
 	{parameters	"flag_count=3:1:3,5:1:5,7:3:7,9:3:9,11:5:11,13:5:13,15:7:15,17:7:16;base_capture_time=60;base_release_time=10;base_capture_factor=0.9;flag_capture_time=300;flag_release_time=10;flag_capture_factor=0.9;maximum_ammo_payback=200;enable_time=120"}
 	{settings
-		{options			scoreFinal enableSpectators randomSpawnPoints}
+		{options			scoreFinal randomSpawnPoints enableHardcore enableSpectators}
 		{optionsAdvanced	preparationTime friendlyFire fogOfWar showPiercing showDamageReports}
 		{optionsRanked		}
 		{fogOfWar			fog_realistic}
@@ -20,6 +20,7 @@
 		{showDamageReports}
 		{useUnitLevelRestrictions}
 		{enableBots}
+		{randomSpawnPoints}
 	}
 	{teamSettings
 		{teamsMode normal}

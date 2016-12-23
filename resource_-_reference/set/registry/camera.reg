@@ -11,3 +11,12 @@
 		{centered		1}
 	}
 }
+;different setup values for camera lens effects
+{lens_effects
+	;holds values for effects, when a human in TPC enters low health state
+	{human_low_health
+		{brightness_drop 0.5}	;factor describing how much the image brightness gets reduced graduately, when at low health (0.5 -> 50%)
+		{low_health_cap 0.5}	;factor describing at how much health the effects start (0.5 -> 50%)
+		{pulse_constant 0.75}	;factor influencing the flashing rate of the vignette
+	}
+}
