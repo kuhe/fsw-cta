@@ -1,7 +1,7 @@
 (define "perk_t1"
 		{"health" "105%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "500%"
 		}
 		{"stamina" "75%"
 		}
@@ -28,7 +28,7 @@
 (define "perk_t2"
 		{"health" "110%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "500%"
 		}
 		{"stamina" "100%"
 		}
@@ -55,7 +55,7 @@
 (define "perk_t3"
 		{"health" "115%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "500%"
 		}
 		{"stamina" "125%"
 		}
@@ -82,7 +82,7 @@
 (define "perk_t4"
 		{"health" "120%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "500%"
 		}
 		{"stamina" "150%"
 		}
@@ -109,7 +109,7 @@
 (define "perk_t5"
 		{"health" "125%"
 		}
-		{"health_regeneration" "100%"
+		{"health_regeneration" "500%"
 		}
 		{"stamina" "175%"
 		}
