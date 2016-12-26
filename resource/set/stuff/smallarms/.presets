@@ -81,7 +81,7 @@
 		{short 2 1}
 		{long 3 2}
 		{rangeKoef 0.20}
-	}	
+	}
 )
 
 (define "health_damage_4x30"		; 4.6x30mm
@@ -137,7 +137,7 @@
 )
 
 (define "health_damage_12gauge"		; 12-gauge
-	{healthDamage (* 0.175 %d)}
+	{healthDamage (* 0.150 %d)}
 )
 
 (define "spreading_short"

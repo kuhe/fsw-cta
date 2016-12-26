@@ -4,7 +4,7 @@
 		{crawl_hitchance 0.85}  		; the probabiltiy of hitting a soldier in crawl position
 		{cover_damage 0.12}  		; damage when protected by cover
 
-		{vehicle_burst 50.0}			; increase timeout between bursts for all vehicles
+		{vehicle_burst 8.0}			; increase timeout between bursts for all vehicles
 		{cover_mgun_burst 2}		; increase bullet count in 1 burst of soldier with mgun in horizontal cover
 		{cover_mgun_delay 0.1}		; decrease timeout between bursts of soldier with mgun in horizontal cover
 
