@@ -13,5 +13,6 @@ Changes:
 (MP only)
 
 - Increased Squad manpower
+- Increased Team manpower
 - Increased AT weapon availability in assault squads and AT teams
 - Reduced CP cost of infantry units
