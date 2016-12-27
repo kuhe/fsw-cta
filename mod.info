@@ -3,4 +3,5 @@
 	{Desc "FSW"}
 	{MinGameVersion "0.908"}
 	{MaxGameVersion "0.910"}
+	{FileId "825899198"}
 }
