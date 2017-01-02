@@ -90,16 +90,16 @@
 ("squad_with4types" side(usa) name(squad5) c(0) g(a5) c1(t4_01:3) c2(t4_02:2) c3(t4_03:2) c4(t4_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(450) f(1))
 ("squad_with4types" side(usa) name(squad6) c(0) g(a6) c1(t5_01:3) c2(t5_02:2) c3(t5_03:2) c4(t5_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(550) f(1))
 
-("squad_with1types" side(usa) name(squad12) c(30) g(b1) c1(tx_tankman_01:4) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(50) f(1))
-("squad_with1types" side(usa) name(squad11) c(30) g(b2) c1(tx_engineer_01:4) b(s2) t(all infantry combined_arms) level(1) cost(70) f(1))
-("squad_with3types" side(usa) name(squad7) c(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:2) b(s2) t(all infantry combined_arms) level(1) cost(100) f(1))
+("squad_with1types" side(usa) name(squad12) c(30) g(b1) c1(tx_tankman_01:8) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(100) f(1))
+("squad_with1types" side(usa) name(squad11) c(30) g(b2) c1(tx_engineer_01:8) b(s2) t(all infantry combined_arms) level(1) cost(140) f(1))
+("squad_with3types" side(usa) name(squad7) c(30) g(b3) c1(t2_01:2) c2(t2_02:2) c3(t2_medic:4) b(s2) t(all infantry combined_arms) level(1) cost(200) f(1))
 
-("squad_with2types" side(usa) name(squad8) c(30) g(b4) c1(t2_07:2) c2(t2_05:2) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(150) f(1))
-("squad_with2types" side(usa) name(squad9) c(30) g(b5) c1(t2_02:2) c2(tx_at_01:2) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(150) f(1))
+("squad_with2types" side(usa) name(squad8) c(30) g(b4) c1(t2_07:4) c2(t2_05:4) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(300) f(1))
+("squad_with2types" side(usa) name(squad9) c(30) g(b5) c1(t2_02:4) c2(tx_at_01:4) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(300) f(1))
 ("squad_with2types" side(usa) name(squad10) c(30) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms) level(1) cost(400) f(1))
 
-("squad_with2types" side(usa) name(squad13) c(60) g(b7) c1(t2_06:2) c2(t2_sq:2) b(s2) t(all infantry combined_arms) level(1) cost(135) f(1))
-("squad_with2types" side(usa) name(squad14) c(60) g(b8) c1(t3_04:2) c2(t3_sq:2) b(s2) t(all infantry combined_arms) level(1) cost(175) f(1))
+("squad_with2types" side(usa) name(squad13) c(60) g(b7) c1(t2_06:4) c2(t2_sq:4) b(s2) t(all infantry combined_arms) level(1) cost(270) f(1))
+("squad_with2types" side(usa) name(squad14) c(60) g(b8) c1(t3_04:4) c2(t3_sq:4) b(s2) t(all infantry combined_arms) level(1) cost(350) f(1))
 ("squad_with2types" side(usa) name(squad15) c(60) g(b9) c1(tx_sniper_03:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms) level(1) cost(550) f(1))
 
 
@@ -113,17 +113,17 @@
 ("squad_with4types" side(grm) name(squad5) c(0) g(a5) c1(t4_01:5) c2(t4_02:3) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(425) f(1))
 ("squad_with4types" side(grm) name(squad6) c(0) g(a6) c1(t5_01:5) c2(t5_02:3) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms) level(1) cost(520) f(1))
 
-("squad_with1types" side(grm) name(squad12) c(30) g(b1) c1(tx_tankman_01:4) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(40) f(1))
-("squad_with1types" side(grm) name(squad11) c(30) g(b2) c1(tx_engineer_01:4) b(s2) t(all infantry combined_arms) level(1) cost(50) f(1))
-("squad_with3types" side(grm) name(squad7) c(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:2) b(s2) t(all infantry combined_arms) level(1) cost(80) f(1))
+("squad_with1types" side(grm) name(squad12) c(30) g(b1) c1(tx_tankman_01:8) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(80) f(1))
+("squad_with1types" side(grm) name(squad11) c(30) g(b2) c1(tx_engineer_01:8) b(s2) t(all infantry combined_arms) level(1) cost(100) f(1))
+("squad_with3types" side(grm) name(squad7) c(30) g(b3) c1(t2_01:2) c2(t2_02:2) c3(t2_medic:4) b(s2) t(all infantry combined_arms) level(1) cost(160) f(1))
 
-("squad_with2types" side(grm) name(squad8) c(30) g(b4) c1(t2_05:2) c2(t2_04:2) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(135) f(1))
-("squad_with2types" side(grm) name(squad9) c(30) g(b5) c1(t2_02:2) c2(tx_at_01:2) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(140) f(1))
+("squad_with2types" side(grm) name(squad8) c(30) g(b4) c1(t2_05:4) c2(t2_04:4) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(270) f(1))
+("squad_with2types" side(grm) name(squad9) c(30) g(b5) c1(t2_02:4) c2(tx_at_01:4) b(s2) t(all infantry armored_warfare combined_arms) level(1) cost(280) f(1))
 ("squad_with2types" side(grm) name(squad10) c(30) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms) level(1) cost(375) f(1))
 
-("squad_with4types" side(grm) name(squad13) c(60) g(b7) c1(t1b_01:2) c2(t1b_02:2) c3(t1b_03:2) c4(t1b_sq:2) b(s2) t(all infantry combined_arms) level(1) cost(75) f(1))
-("squad_with2types" side(grm) name(squad14) c(60) g(b8) c1(t3_04:2) c2(t3_sq:2) b(s2) t(all infantry combined_arms) level(1) cost(120) f(1))
-("squad_with2types" side(grm) name(squad15) c(60) g(b9) c1(t4_02:2) c2(tx_at_02:2) b(s2) t(all infantry combined_arms) level(1) cost(300) f(1))
+("squad_with4types" side(grm) name(squad13) c(60) g(b7) c1(t1b_01:4) c2(t1b_02:4) c3(t1b_03:4) c4(t1b_sq:4) b(s2) t(all infantry combined_arms) level(1) cost(150) f(1))
+("squad_with2types" side(grm) name(squad14) c(60) g(b8) c1(t3_04:4) c2(t3_sq:4) b(s2) t(all infantry combined_arms) level(1) cost(240) f(1))
+("squad_with2types" side(grm) name(squad15) c(60) g(b9) c1(t4_02:4) c2(tx_at_02:4) b(s2) t(all infantry combined_arms) level(1) cost(600) f(1))
 
 
 (include "squads_add1.set")
