@@ -1,6 +1,5 @@
 {curve "gun_std"}
 
-
 (define "speed"
 	{speed (* 1.0 %s)}
 )
@@ -11,6 +10,13 @@
 
 (define "recoveryTime"
 	{recoveryTime (/ 60 %r)}
+)
+
+(define "healthDamage"
+	{healthDamage (* 1.0 %h)}
+	(mod "hardcore"
+		{healthDamage (* 1.5 %h)}
+	)
 )
 
 

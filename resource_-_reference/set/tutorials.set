@@ -1,17 +1,26 @@
 {tutorials
 	{categories
 		{category1
-			{"Controls #1 - Direct Control" 			"6WUh3jxseow"}
-			{"Controls #2 - Grenades" 					"sQuDPq3yv-4"}
-			{"Controls #3 - Healing" 					"zm8i9xFu4Es"}
-			{"Controls #5 - Claymores"					"6jBezv5q6kY"}
+			{"Controls - Direct Control" 			"6WUh3jxseow"}
+			{"Controls - Grenades" 					"sQuDPq3yv-4"}
+			{"Controls - Healing" 					"zm8i9xFu4Es"}
+			{"Controls - Claymores"					"6jBezv5q6kY"}
+			{"Controls - Looting Corpses"			"h97c6hhdYp0"}
+			{"Controls - Repair Vehicles"			"xDaYTnrWWoc"}
+			{"Controls - Quick Select"				"iee7rdOVnIE"}
+			
 		}
 		{category2
-			{"Units #1 - Sniper"						"cRjeCitFgds"}
-			{"Units #4 - TOW"							"UfVOOrUwbrc"}
-			{"Units #5 - Mortar"						"YACwVLN1-oU"}
-			{"Units #6 - Light vehicles"				"Mh2Ihb_CtaI"}
-			{"Units #7 - Heavy tanks"					"Tuq0XGjkiOM"}
+			{"Units - Sniper"						"cRjeCitFgds"}
+			{"Units - TOW"							"UfVOOrUwbrc"}
+			{"Units - Mortar"						"YACwVLN1-oU"}
+			{"Units - Light vehicles"				"Mh2Ihb_CtaI"}
+			{"Units - Heavy tanks"					"Tuq0XGjkiOM"}
+			{"Units - Grenade Launcher"				"clvZLsb5cEY"}
+			{"Units - Mechanized Infantry"			"hxwgTKGTx28"}
+		}
+		{category3
+			{"Options - In Game Market"				"YLw-P-eJcMM"}
 		}
 	}
 }

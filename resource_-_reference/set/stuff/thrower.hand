@@ -15,17 +15,17 @@
 	{ThirdPersonParams
 		{position
 			{offset
-				{x			0		}
-				{y			30		}
+				{x			-100	}
+				{y			25		}
 				{z			75		}
-				{zMin		50		}
+				{zMin		15		}
 			}
 		}
 		{zoom
 			{disabled}
-			{min	100	}
-			{max	200	}
-			{delta	25	}
+			{min			15		}
+			{max			100		}
+			{delta			25		}
 		}
 	}
 	

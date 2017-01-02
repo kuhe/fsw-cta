@@ -22,7 +22,7 @@
 	
 	("accuracy_zenite_high")
 	
-	{healthDamage 100}
+	("healthDamage" h(100))
 	
 	{crosshair "crosshair5"}
 	{crosshairReloading "crosshair5_reload"}

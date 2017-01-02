@@ -41,7 +41,7 @@
 	("health_damage_12gauge" d(500))
 	
 	("accuracy_smg")
-	;("accuracy_boost")
+;	("accuracy_boost")
 	
 	{ThirdPersonParams
 		{zoom

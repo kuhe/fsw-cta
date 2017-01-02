@@ -17,7 +17,7 @@
 		{bullet_view "9m117_ammo"
 			{tail "tow_tail" "tail"}
 		}		
-		("speed2" s(278))
+		("speed" s(278))
 		{gravity 0}
 	}
 	

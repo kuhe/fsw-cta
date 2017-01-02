@@ -13,9 +13,9 @@
 	{positionZoom
 		{linkBone		"turret"}
 		{offset
-			{x			10		}
+			{x			5		}
 			{y			0		}
-			{z			13		}
+			{z			16		}
 		}
 	}
 	{clip
@@ -23,6 +23,7 @@
 		{viewMax		30		}
 	}
 	{zoom
+		{viewoff 		"gunner"}
 		{min			50		}
 		{max			300		}
 		{fov			%zoomfov}
@@ -42,9 +43,9 @@
 	{positionZoom
 		{linkBone		"turret_mgun"}
 		{offset
-			{x			-7		}
+			{x			-5		}
 			{y			0		}
-			{z			7		}
+			{z			8		}
 		}
 	}
 	{clip
@@ -52,6 +53,7 @@
 		{viewMax		30		}
 	}
 	{zoom
+		{viewoff 		"gunner"}
 		{min			70		}
 		{max			300		}
 		{fov			%zoomfov}
@@ -608,12 +610,12 @@
 					{linkBone		"head"	}
 					{offset
 						{x			2		}
-						{y			-0.5	}
+						{y			-0.25	}
 						{z			1.5		}
 					}
 				}
 				{clip
-					{viewMin		-45		}
+					{viewMin		-50		}
 					{viewMax		35		}
 				}
 				{zoom

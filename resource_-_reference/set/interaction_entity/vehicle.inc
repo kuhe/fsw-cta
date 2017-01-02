@@ -56,13 +56,11 @@
 	{on "stop_on"
 		{ani_stop "start"}
 		{ani_play "stop"}
-	}
-	{on "stop_signal_on"
 		{view show "stop_signal"}
 		{view start "stop_signal"}
-	}
-	{on "stop_signal_off"
-		{view hide "stop_signal"}
+		{delay 1
+			{view hide "stop_signal"}
+		}
 	}
 	{on "exhaust_on"
 		{play_sound "exhaust"}
@@ -94,22 +92,12 @@
 	}
 	{on accelerate on
 		{call "exhaust_on"}
-		{if move_backward
-			{call "stop_signal_on"}
-		}
 	}
 	{on accelerate off
 		{call "exhaust_off"}
-		{if move_backward
-			{call "stop_signal_off"}
-		}
 	}
 	{on brake on
 		{call "stop_on"}
-		{call "stop_signal_on"}
-	}
-	{on brake off
-		{call "stop_signal_off"}
 	}
 	{on engine on
 		{kill_delay "engine_stopped"}

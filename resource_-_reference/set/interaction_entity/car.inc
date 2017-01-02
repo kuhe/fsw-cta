@@ -307,7 +307,7 @@
 				{chassis_work 0}
 			else not work "track"
 				{chassis_work 0}
-			else work "wheel" 1
+			else work "wheel" 3
 				{chassis_work 1}
 				{if broken "wheel" 2
 					{movement_limit slow}
@@ -317,8 +317,8 @@
 					{movement_limit fast}
 				}
 			else
-				;{chassis_work 0}
-				{movement_limit slow}
+				{chassis_work 0}
+				;{movement_limit slow}
 			}
 		}
 	}

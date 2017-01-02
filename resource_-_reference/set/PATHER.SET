@@ -69,8 +69,8 @@
 		{BattleCrusher}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
-			"snow"			0.45
+			"ground"		0.60
+			"snow"			0.40
 			"no_pass"		0
 			"swamp"			0.25
 			"shallow_water"	0.25
@@ -89,8 +89,8 @@
 		{Priority 4}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
-			"snow"			0.45
+			"ground"		0.60
+			"snow"			0.40
 			"no_pass"		0
 			"swamp"			0.25
 			"shallow_water"	0.25
@@ -110,8 +110,8 @@
 		{BattleCrusher}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
-			"snow"			0.45
+			"ground"		0.60
+			"snow"			0.40
 			"no_pass"		0
 			"swamp"			0.50
 			"shallow_water"	0.50
@@ -130,8 +130,8 @@
 		{Priority 3}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
-			"snow"			0.45
+			"ground"		0.60
+			"snow"			0.40
 			"no_pass"		0
 			"swamp"			0.25
 			"shallow_water"	0.25
@@ -150,8 +150,8 @@
 		{Priority 2}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
-			"snow"			0.35
+			"ground"		0.60
+			"snow"			0.30
 			"no_pass"		0
 			"swamp"			0.15
 			"shallow_water"	0.15
@@ -170,8 +170,8 @@
 		{Priority 2}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
-			"snow"			0.35
+			"ground"		0.60
+			"snow"			0.30
 			"no_pass"		0
 			"swamp"			0.15
 			"shallow_water"	0.15
@@ -190,7 +190,7 @@
 		{Priority 2}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
+			"ground"		0.60
 			"snow"			0.30
 			"no_pass"		0
 			"swamp"			0.15
@@ -210,7 +210,7 @@
 		{Priority 2}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
+			"ground"		0.60
 			"snow"			0.30
 			"no_pass"		0
 			"swamp"			0.15
@@ -230,7 +230,7 @@
 		{Priority 2}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
+			"ground"		0.60
 			"snow"			0.30
 			"no_pass"		0
 			"swamp"			0.15
@@ -250,8 +250,8 @@
 		{Priority 2}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
-			"snow"			0.35
+			"ground"		0.60
+			"snow"			0.30
 			"no_pass"		0
 			"swamp"			0.15
 			"shallow_water"	0.15
@@ -270,8 +270,8 @@
 		{Priority 2}
 		{Terrain
 			"road"			1.00
-			"ground"		0.65
-			"snow"			0.35
+			"ground"		0.60
+			"snow"			0.30
 			"no_pass"		0
 			"swamp"			0.15
 			"shallow_water"	0.15

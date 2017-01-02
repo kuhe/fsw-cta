@@ -3,6 +3,9 @@
 		{cover_hitchance 1}   		; the probability of hitting a soldier behind cover
 		{crawl_hitchance 1}  		; the probabiltiy of hitting a soldier in crawl position
 		{cover_damage 0.50}  		; damage when protected by cover
+		(mod "hardcore"
+			{cover_damage 0.75}
+		)		
 
 		{vehicle_burst 1.5}			; increase timeout between bursts for all vehicles
 		{cover_mgun_burst 3}		; increase bullet count in 1 burst of soldier with mgun in horizontal cover

@@ -21,7 +21,7 @@
 	{RelaxationTime 0}
 	
 	("accuracy_zenite_medium")
-	{healthDamage 75}
+	("healthDamage" h(75))
 	
 	{crosshair "crosshair1"}
 	{crosshairReloading "crosshair1_reload"}

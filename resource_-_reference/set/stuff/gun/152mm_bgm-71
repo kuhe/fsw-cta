@@ -5,7 +5,7 @@
 	{rechargeTime 25}
 	("range_long")
 	{fillingVisible "rocket"}
-	("speed2" s(278))
+	("speed" s(278))
 	("caliber_large")
 	("recoveryTime" r(10))
 	{projectileDamage 1500}
